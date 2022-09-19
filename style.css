@@ -222,6 +222,11 @@ body {
     display: none;
 }
 
+.widget a:visited {
+    text-decoration: none;
+    color: #FFF7DA;
+}
+
 .widget-area {
     grid-template-columns: 1fr;
     max-width: 100vw;
@@ -258,6 +263,29 @@ body {
     margin-right: 50px;
 }
 
-.wct23_footer-group p:nth-last-of-type() {
-    margin-right: 160px;
+.wct23_footer-group p:last-child() {
+    margin-right: 120px;
+}
+
+@media only screen and (max-width: 1079px) {
+    .wct23_footer-group {
+        font-size: clamp(0.9rem, 0.04vw + 0.89rem, 0.94rem);
+    }
+
+    .wct23_footer-group p {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .wct23_footer {
+        height: 253px;
+    }
+
+    .wct23_footer-group p {
+        margin-right: 0;
+        width: 100vw;
+        text-align: end;
+    }
 }
