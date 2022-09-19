@@ -242,3 +242,21 @@ body {
     background-color: #0F3A4A;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
+
+.wp-block-group .wp-block-group__inner-container {
+    margin: 0;
+}
+
+.wct23_footer-group {
+    max-width: max-content !important;
+    font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
+    color: #FFF7DA;
+}
+
+.wct23_footer-group p {
+    margin-right: 50px;
+}
+
+.wct23_footer-group p:nth-last-of-type() {
+    margin-right: 160px;
+}
