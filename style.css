@@ -222,11 +222,6 @@ body {
     display: none;
 }
 
-.widget a:visited {
-    text-decoration: none;
-    color: #FFF7DA;
-}
-
 .widget-area {
     grid-template-columns: 1fr;
     max-width: 100vw;
@@ -267,7 +262,12 @@ body {
     margin-right: 120px;
 }
 
-@media only screen and (max-width: 1079px) {
+.wct23_footer-group .wct23_footer-text a {
+    text-decoration: none;
+    color: #FFF7DA;
+}
+
+@media only screen and (max-width: 1200px) {
     .wct23_footer-group {
         font-size: clamp(0.9rem, 0.04vw + 0.89rem, 0.94rem);
     }
@@ -277,8 +277,7 @@ body {
     }
 }
 
-
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: 900px) {
 
     .wct23_footer {
         height: 253px;
@@ -289,7 +288,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
     .wct23_footer-group p {
         margin-right: 0;
