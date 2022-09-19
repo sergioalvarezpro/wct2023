@@ -222,7 +222,7 @@ body {
 .wct23_hero {
     position: relative;
     z-index: 1;
-    /* min-height: 958px; */
+    min-height: 876px;
     overflow: hidden;
 }
 
@@ -259,9 +259,25 @@ body {
 
 
 @media only screen and (max-width: 764px) {
+
+    .wct23_hero {
+        min-height: 630px;
+    }
+
     .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
         width: 100vw;
+        position: relative;
+        z-index: 15;
     }
+
+    .wct23_hero .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
+        grid-column: 1;
+        width: 100vw;
+        position: initial;
+        z-index: 10;
+    }
+
+
 }
 
 
