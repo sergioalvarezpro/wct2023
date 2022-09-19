@@ -226,7 +226,7 @@ body {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 1520px) {
+/* @media only screen and (max-width: 1520px) {
     .wp-block-media-text.has-media-on-the-right {
         grid-template-columns: 1fr 20%;
     }
@@ -234,7 +234,7 @@ body {
     .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
         grid-column: 1;
     }
-}
+} */
 
 .wct23_hero-content {
     position: relative;
@@ -257,7 +257,18 @@ body {
     background-color: #FFE87F;
 }
 
-.home .is-style-default .wp-block-media-text__media img {
+
+@media only screen and (max-width: 764px) {
+    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+        width: 100vw;
+    }
+}
+
+
+
+
+
+.wct23_hero .wp-block-media-text__media img {
     position: absolute;
     z-index: 3;
     max-width: 1244px;
