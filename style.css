@@ -210,3 +210,23 @@ body {
         z-index: 4;
     }
 }
+
+/**
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*         FOOTER
+*/
+.entry-footer,
+.site-footer {
+    display: none;
+}
+
+.wct23_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    min-height: 273px;
+    background-color: #0F3A4A;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
