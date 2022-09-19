@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/**
+ *            WORDCAMP TORRELODONES 2023
+ * *´¨) 
+ *¸.•´¸.•*´¨) ¸.•*¨) 
+ *(¸.•´ (¸.•` ¤ Content: 
+ *                  1. General
+ *                  2. Header
+ *                                              oooO
+ *                                             (....)     Oooo
+ *                                               ...(     (....)
+ *                                                ._)      )../
+ *                                                         (_/
+ *                                            Solo pasaba por aquí
+ *                                                  ¡Saludos!
+ */
+
+/**
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*         GENERAL
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    color: #0F3A4A;
+}
+
+/**Quitar gap, margin y padding entre bloques**/
+:where(.wp-block-columns.is-layout-flex) {
+    gap: 0;
+}
+
+.site-main>article>*,
+.site-main>.not-found>*,
+.entry-content>*,
+[class*="inner-container"]>*,
+.wp-block-template-part>*,
+.wp-block-post-template :where(li > *) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-main {
+    padding: 0;
+}
+
+/**Tipografia**/
+.wct23_title-h1 {
+    font-family: 'Metamorphous';
+    font-size: clamp(2.75rem, 1.33vw + 2.35rem, 3.95rem);
+    line-height: 1.1em;
+}
+
+.wct23_title-h2 {
+    font-family: 'Metamorphous';
+    font-size: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
+    line-height: 1.1em;
+}
+
+.wct23_text-p {
+    font-family: 'Source Sans 3';
+    font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
+    line-height: 1.6em;
+}
