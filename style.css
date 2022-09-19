@@ -222,11 +222,17 @@ body {
     display: none;
 }
 
+.widget-area {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    background-color: transparent;
+}
+
 .wct23_footer {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    min-height: 273px;
+    height: 273px;
     background-color: #0F3A4A;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
