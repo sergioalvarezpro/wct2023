@@ -238,6 +238,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    justify-content: flex-end;
     height: 273px;
     background-color: #0F3A4A;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
