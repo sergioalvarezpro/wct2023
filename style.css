@@ -222,7 +222,7 @@ body {
 .wct23_hero {
     position: relative;
     z-index: 1;
-    min-height: 958px;
+    /* min-height: 958px; */
     overflow: hidden;
 }
 
@@ -239,22 +239,21 @@ body {
 .wct23_hero-content {
     position: relative;
     z-index: 3;
-    padding-left: 126px;
+    padding: 0 126px;
 }
 
 .wct23_hero-fecha {
     font-family: 'Metamorphous';
-    font-size: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
-    margin: 2rem 0;
-    line-height: 1.1em;
-    letter-spacing: -2%;
+    font-size: clamp(2.2rem, 0.85vw + 1.94rem, 2.96rem);
+    line-height: 3em;
 }
 
-.wct23_button {
+.wct23_button-CTA {
     border: 3px solid #0F3A4A;
+    font-size: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
 }
 
-.wct23_button:hover {
+.wct23_button-CTA:hover {
     background-color: #FFE87F;
 }
 
