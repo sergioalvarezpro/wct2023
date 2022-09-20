@@ -229,17 +229,18 @@ body {
     grid-column: 1/-1;
     position: relative;
     z-index: 15;
-    padding: 0 126px;
+    padding: 0 162px;
 }
 
 .wct23_hero-fecha {
-    font-size: clamp(2.2rem, 0.85vw + 1.94rem, 2.96rem);
+    font-family: 'Metamorphous';
+    font-size: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
     line-height: 3em;
 }
 
 .wct23_button-CTA {
     border: 3px solid #0F3A4A;
-    font-size: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
+    font-size: clamp(2.2rem, 0.85vw + 1.94rem, 2.96rem);
 }
 
 .wct23_button-CTA:hover {
@@ -257,6 +258,18 @@ body {
     max-width: 1244px;
     right: -55px;
     bottom: -665px;
+}
+
+.wct23_hero-frame {
+    width: 100vw;
+}
+
+.wct23_hero-frame img {
+    position: absolute;
+    max-height: 134.46px;
+    width: 100vw;
+    left: 0;
+    bottom: -195px;
 }
 
 @media only screen and (max-width: 1480px) {
@@ -291,6 +304,10 @@ body {
         position: absolute;
         right: -35px;
         bottom: -529px;
+    }
+
+    .wct23_hero-frame img {
+        bottom: -100px;
     }
 }
 
@@ -329,6 +346,14 @@ body {
         right: -35px;
         bottom: -352px;
     }
+
+    .wct23_hero-frame img {
+        position: absolute;
+        max-height: 134.46px;
+        width: 100vw;
+        left: 0;
+        bottom: -50px;
+    }
 }
 
 .wct23_hero-nube-xl img {
@@ -345,19 +370,9 @@ body {
     top: 319px;
 }
 
-.wct23_hero-frame {
-    width: 100%;
-}
 
-.wct23_hero-frame img {
-    position: absolute;
-    object-fit: cover;
-    z-index: 4;
-    max-height: 134.46px;
-    width: 100vw;
-    left: 0;
-    bottom: -30px;
-}
+
+
 
 
 /**
