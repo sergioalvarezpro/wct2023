@@ -229,7 +229,7 @@ body {
 .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
     grid-column: 1/-1;
     position: relative;
-    z-index: 15;
+    z-index: 30;
     padding: 0 162px;
 }
 
@@ -254,7 +254,7 @@ body {
 .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
     grid-column: 1/-1;
     position: relative;
-    z-index: 10;
+    z-index: 20;
 }
 
 .wp-block-media-text__media img {
@@ -276,11 +276,15 @@ body {
     bottom: -195px;
 }
 
+.wct23_hero-group-cloud {
+    margin: 0;
+}
+
 .wct23_hero-nube-xl img {
     position: absolute;
     z-index: 4;
     left: -70px;
-    top: 146px;
+    top: 115px;
 }
 
 .wct23_hero-nube-sm img {
