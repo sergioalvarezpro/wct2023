@@ -66,7 +66,7 @@ body {
 .wct23_title-h2 {
     font-family: 'Metamorphous';
     font-size: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
-    line-height: 1.1em;
+    line-height: 1.5em;
 }
 
 .wct23_text-p {
@@ -396,7 +396,7 @@ body {
 }
 
 .wct23_intro-content {
-    margin-right: 160px;
+    margin-right: calc(50% - 160px);
 }
 
 .wct23_intro-text {
@@ -407,6 +407,18 @@ body {
 .wp-block-columns.alignfull .wp-block-column p:not(.has-background) {
     padding: 0;
 }
+
+@media only screen and (max-width: 764px) {
+    .wct23_intro-content {
+        margin: 0 auto;
+        padding: 0 8%;
+    }
+
+    .wct23_image img {
+        max-width: 75%;
+    }
+}
+
 
 
 /**
