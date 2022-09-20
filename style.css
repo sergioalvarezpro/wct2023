@@ -8,6 +8,7 @@
  *                  2. Header
  *                  3. Hero
  *                  4. Intro
+ *                  5. Participa
  *                  8. Footer
  *                                              oooO
  *                                             (....)     Oooo
@@ -423,6 +424,51 @@ body {
     }
 }
 
+
+/**
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*        PARTICIPA
+*/
+.wct23_participa-title {
+    margin-top: 50px !important;
+}
+
+.wct23_participa-text {
+    margin-bottom: 58px !important;
+}
+
+.wct23_participa-group-bandera {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wct23_participa-bandera {
+    position: relative;
+    z-index: 4;
+}
+
+.wct23_participa-btn {
+    position: absolute;
+    z-index: 5;
+}
+
+.wct23_participa-btn img {
+    background-color: #FFF7DA;
+}
+
+.wct23_participa-btn img:hover {
+    cursor: pointer;
+    background-color: #F2C94C;
+}
+
+.wct23_participa-btn img:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, .24);
+}
 
 
 /**
