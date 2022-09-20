@@ -437,6 +437,8 @@ body {
 
 .wct23_participa-text {
     margin-bottom: 58px !important;
+    font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
+    font-weight: 600;
 }
 
 .wct23_participa-group-bandera {
@@ -449,11 +451,13 @@ body {
 .wct23_participa-bandera {
     position: relative;
     z-index: 4;
+    max-width: 75vw;
 }
 
 .wct23_participa-btn {
     position: absolute;
     z-index: 5;
+    max-width: 15vw;
 }
 
 .wct23_participa-btn img {
@@ -470,6 +474,15 @@ body {
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, .24);
 }
 
+@media only screen and (max-width: 781px) {
+    .wct23_participa-bandera {
+        max-width: 50vw;
+    }
+
+    .wct23_participa-btn {
+        max-width: 35vw;
+    }
+}
 
 /**
 *          \|||/
