@@ -282,9 +282,9 @@ body {
     }
 
     .wct23_hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .wp-block-media-text__media img {
