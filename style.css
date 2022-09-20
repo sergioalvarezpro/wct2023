@@ -277,7 +277,7 @@ body {
 }
 
 .wct23_hero-group-cloud {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .wct23_hero-nube-xl img {
