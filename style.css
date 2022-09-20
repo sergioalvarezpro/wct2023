@@ -284,6 +284,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 1226px) {
+    .wct23_hero-frame img {
+        bottom: -223px;
+    }
+}
+
 @media only screen and (max-width: 967px) {
 
     .wct23_hero {
@@ -307,7 +313,7 @@ body {
     }
 
     .wct23_hero-frame img {
-        bottom: -100px;
+        bottom: -120px;
     }
 }
 
@@ -348,11 +354,7 @@ body {
     }
 
     .wct23_hero-frame img {
-        position: absolute;
-        max-height: 134.46px;
-        width: 100vw;
-        left: 0;
-        bottom: -50px;
+        bottom: -68px;
     }
 }
 
