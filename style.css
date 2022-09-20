@@ -7,6 +7,7 @@
  *                  1. General
  *                  2. Header
  *                  3. Hero
+ *                  4. Intro
  *                  8. Footer
  *                                              oooO
  *                                             (....)     Oooo
@@ -289,7 +290,6 @@ body {
     top: 351px;
 }
 
-
 @media only screen and (max-width: 1480px) {
     .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
         mix-blend-mode: multiply;
@@ -382,6 +382,30 @@ body {
     .wct23_hero-frame img {
         bottom: -68px;
     }
+}
+
+
+/**
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*          INTRO
+*/
+.wct23_intro {
+    margin: 0;
+}
+
+.wct23_intro-content {
+    margin-right: 160px;
+}
+
+.wct23_intro-text {
+    margin: 2rem 0 !important;
+}
+
+.wp-block-columns.alignfull .wp-block-column h2:not(.has-background),
+.wp-block-columns.alignfull .wp-block-column p:not(.has-background) {
+    padding: 0;
 }
 
 
