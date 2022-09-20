@@ -9,6 +9,7 @@
  *                  3. Hero
  *                  4. Intro
  *                  5. Participa
+ *                  6. Pregones
  *                  8. Footer
  *                                              oooO
  *                                             (....)     Oooo
@@ -483,6 +484,41 @@ body {
         max-width: 35vw;
     }
 }
+
+
+/**
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*        PREGONES
+*/
+
+.wct23_pregones-title {
+    margin-top: 16px !important;
+}
+
+.wct23_pregones-subtitle {
+    margin-bottom: 65px !important;
+}
+
+@media only screen and (max-width: 1080px) {
+    .wct23_group-pregones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+    .wct23_group-pregones {
+        display: grid;
+        grid-template-columns: repeat (1, 1fr);
+        column-gap: 20px;
+    }
+}
+
+
+
 
 /**
 *          \|||/
