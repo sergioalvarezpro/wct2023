@@ -489,6 +489,10 @@ body {
     text-decoration: none !important;
 }
 
+.wct23_group-pregones a:hover {
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 1080px) {
 
     .wct23_group-pregones {
