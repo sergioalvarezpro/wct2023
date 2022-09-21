@@ -484,12 +484,12 @@ body {
 * ------ooO-(_)-Ooo------
 *       3.3 PREGONES
 */
-.wct23_group-pregones a,
-.wct23_group-pregones a:hover {
+.wct23_group-pregones .wp-block-latest-posts__post-title,
+.wct23_group-pregones .wp-block-latest-posts__post-title:hover {
     text-decoration: none !important;
 }
 
-.wct23_group-pregones a:hover {
+.wct23_group-pregones .wp-block-latest-posts__post-title:hover {
     font-weight: 600;
 }
 
