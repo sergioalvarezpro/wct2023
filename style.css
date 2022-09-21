@@ -6,11 +6,16 @@
  *(¸.•´ (¸.•` ¤ Content: 
  *                  1. General
  *                  2. Header
- *                  3. Hero
- *                  4. Intro
- *                  5. Participa
- *                  6. Pregones
- *                  8. Footer
+ *                  3. Plantilla 'HOME'
+ *                      3.1 Hero
+ *                      3.2 Intro
+ *                      3.3 Pregones
+ *                  4. Bloques Reutilizables:
+ *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES)
+ *                      4.1 Participa
+ *                      4.2 Suscripcion
+ *                      4.3 Patrocinadores
+ *                  5. Footer
  *                                              oooO
  *                                             (....)     Oooo
  *                                               ...(     (....)
@@ -24,7 +29,7 @@
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*         GENERAL
+*        1. GENERAL
 */
 * {
     margin: 0;
@@ -72,7 +77,6 @@ body {
 }
 
 .wct23_text-p {
-    font-family: 'Source Sans 3';
     font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
     line-height: 1.6em;
 }
@@ -81,7 +85,7 @@ body {
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*         HEADER
+*        2. HEADER
 */
 .site-header {
     padding: 0;
@@ -216,11 +220,14 @@ body {
     }
 }
 
+
 /**
+*▂ ▃ ▅ ▆ █ 3. Plantilla HOME █ ▆ ▅ ▃ ▂
+*
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*           HERO
+*         3.1 HERO
 */
 .wct23_hero {
     position: relative;
@@ -241,16 +248,17 @@ body {
     line-height: 3em;
 }
 
-.wct23_button-CTA-text a {
-    font-size: clamp(2.2rem, 0.85vw + 1.94rem, 2.96rem);
-}
-
 .wct23_button-CTA {
     border: 3px solid #0F3A4A;
 }
 
 .wct23_button-CTA:hover {
     background-color: #FFE87F;
+}
+
+.wct23_button-CTA-text a {
+    font-size: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem) !important;
+    font-weight: 700 !important;
 }
 
 .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
@@ -282,14 +290,14 @@ body {
     margin: 0 !important;
 }
 
-.wct23_hero-nube-xl img {
+.wct23_hero-cloud-xl img {
     position: absolute;
     z-index: 4;
     left: -70px;
     top: 115px;
 }
 
-.wct23_hero-nube-sm img {
+.wct23_hero-cloud-sm img {
     position: absolute;
     z-index: 4;
     right: 53px;
@@ -392,15 +400,13 @@ body {
 
 
 /**
+*▂ ▃ ▅ ▆ █ 3. Plantilla HOME █ ▆ ▅ ▃ ▂
+*
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*          INTRO
+*        3.2 INTRO
 */
-.wct23_intro {
-    margin: 0;
-}
-
 .wct23_intro-content {
     margin-right: calc(50% - 160px);
 }
@@ -427,15 +433,52 @@ body {
 
 
 /**
+*▂ ▃ ▅ ▆ █ 3. Plantilla HOME █ ▆ ▅ ▃ ▂
+*
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*        PARTICIPA
+*       3.3 PREGONES
 */
-.wct23_participa-title {
-    margin-top: 50px !important;
+.wct23_pregones-title {
+    margin-top: 16px !important;
 }
 
+.wct23_pregones-subtitle {
+    margin-bottom: 65px !important;
+}
+
+.wct23_group-pregones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .wct23_group-pregones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+    .wct23_group-pregones {
+        display: grid;
+        grid-template-columns: repeat (1, 1fr);
+        column-gap: 20px;
+    }
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 4. BLOQUE REUTILIZABLE █ ▆ ▅ ▃ ▂
+*
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*       4.1 PARTICIPA
+*/
 .wct23_participa-text {
     margin-bottom: 58px !important;
     font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
@@ -487,44 +530,51 @@ body {
 
 
 /**
+*▂ ▃ ▅ ▆ █ 4. BLOQUE REUTILIZABLE █ ▆ ▅ ▃ ▂
+*
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*        PREGONES
+*     4.2 SUSCRIPCION
 */
-
-.wct23_pregones-title {
-    margin-top: 16px !important;
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form p#subscribe-email input[type=email] {
+    background-color: #FFF7DA;
 }
 
-.wct23_pregones-subtitle {
-    margin-bottom: 65px !important;
-}
-
-@media only screen and (max-width: 1080px) {
-    .wct23_group-pregones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-    }
-}
-
-@media only screen and (max-width: 764px) {
-    .wct23_group-pregones {
-        display: grid;
-        grid-template-columns: repeat (1, 1fr);
-        column-gap: 20px;
-    }
+.wct23_section-suscribete .jetpack_subscription_widget .success {
+    font-size: clamp(0.9rem, 0.04vw + 0.89rem, 0.94rem);
+    color: #FFF7DA;
+    background-color: #0F3A4A;
+    padding: 15px;
 }
 
 
+/**
+*▂ ▃ ▅ ▆ █ 4. BLOQUE REUTILIZABLE █ ▆ ▅ ▃ ▂
+*
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*    4.3 PATROCINADORES
+*/
+.wct23_patrocinadores-group {
+    margin-bottom: 80px !important;
+}
+
+.wct23_patrocinadores-group:last-child {
+    margin-bottom: 0 !important;
+}
+
+.wct23_patrocinadores-group-logotipos {
+    margin-top: 32px !important;
+}
 
 
 /**
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*         FOOTER
+*        5. FOOTER
 */
 .entry-footer,
 .site-footer {
