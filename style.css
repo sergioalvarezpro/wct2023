@@ -484,6 +484,11 @@ body {
 * ------ooO-(_)-Ooo------
 *       3.3 PREGONES
 */
+.wct23_group-pregones a,
+.wct23_group-pregones a:hover {
+    text-decoration: none !important;
+}
+
 @media only screen and (max-width: 1080px) {
 
     .wct23_group-pregones {
