@@ -12,11 +12,12 @@
  *                      3.2 Intro
  *                      3.3 Pregones
  *                  4. Bloques Reutilizables:
- *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES)
+ *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES, ORGANIZADORES)
  *                      4.1 Participa
  *                      4.2 Suscribete
  *                      4.3 Patrocinadores
  *                  5. Footer
+ *                  6. Plantilla 'ORGANIZADORES'
  *                                              oooO
  *                                             (....)     Oooo
  *                                               ...(     (....)
@@ -85,6 +86,11 @@ body {
     min-height: 100vh;
     color: #0F3A4A;
     font-family: 'Source Sans 3';
+}
+
+/** clase con margin top **/
+.mt-2 {
+    margin-top: 2em !important;
 }
 
 /**Quitar gap, margin y padding entre bloques**/
@@ -196,6 +202,18 @@ body {
 .primary-navigation>div>.menu-wrapper>li>.sub-menu li {
     background-color: #FFF7DA;
 }
+
+/* No se muestra el título de la páginas que no son la home */
+header .entry-title {
+    display: none;
+}
+
+.singular .entry-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 
 @media only screen and (min-width: 1000px) {
     .primary-navigation .primary-menu-container {
@@ -591,6 +609,15 @@ body {
     padding: 15px;
 }
 
+/** el borde como si fuera una almena **/
+.wct23_section-suscribete {
+    border-top: 1.8em dashed #FFF7DA;
+    border-bottom: 1.8em dashed #FFF7DA;
+    border-left: 2em dashed #FFF7DA;
+    border-right: 2em dashed #FFF7DA;
+}
+
+
 @media only screen and (max-width: 480px) {
     .wct23_section-suscribete .wct23_title-h2 {
         font-size: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem);
@@ -702,5 +729,151 @@ body {
         margin-right: 0;
         width: 100vw;
         text-align: end;
+    }
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES █ ▆ ▅ ▃ ▂
+*/
+
+/* el heroe de las páginas diferentes a la home, es mas estrecho en altura
+por eso he creado una clase nueva modificando la altura */
+.wct23_hero_2 {
+    min-height: 476px !important;
+}
+
+/* posicionamos las almenas  */
+.wct23_hero-2-frame img {
+    position: absolute;
+    max-height: 134.46px;
+    left: 0;
+    bottom: -195px;
+}
+
+/* posicionamos el wabalie */
+.wct23_hero_2 .wp-block-media-text__media img {
+    max-width: 19em;
+    right: calc(0vw - -5em);
+    bottom: calc(0vh - 12em);
+}
+
+/* posicionamos el titulo */
+.wct23_hero_2 .wct23_title-h1 {
+    position: relative;
+    top: .9em;
+}
+
+/* nombre de los organizadores */
+.wct23_organizer h3 {
+    font-family: 'Metamorphous';
+    font-size: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem);
+    line-height: 1.5em;
+    position: relative;
+    top: 10.6rem;
+}
+
+/* clase que se asocia al <ul> de los organizadores */
+.wordcamp-organizers {
+    margin: 3% 0 !important;
+    padding: 0 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wordcamp-organizers li {
+    margin: 2% !important;
+}
+
+.wordcamp-organizers li img {
+    position: relative;
+    top: -2rem;
+    margin: .5em auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #82EEFD;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    filter: saturate(100%);
+}
+
+.wordcamp-organizers li img:hover {
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    filter: saturate(130%);
+    box-shadow: 0 0 15px 15px #82EEFD;
+    -webkit-box-shadow: 0 0 15px 15px #82EEFD;
+}
+
+.wordcamp-organizers .wordcamp-image__avatar-container {
+    text-align: center;
+}
+
+/* mostramos únicamente el primer <p> dentro de la clase .wordcamp-organizers__content
+ * en este primer parrafo es donde viene la función dentro de la WC */
+.wordcamp-organizers .wordcamp-organizers__content p:not(:first-child) {
+    display: none;
+}
+
+@media only screen and (max-width: 1028px) {
+    .wordcamp-organizers {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wct23_hero_2 .wp-block-media-text__media img {
+        right: calc(0vw - -4em);
+    }
+}
+
+@media only screen and (max-width: 967px) {
+    .wct23_hero_2 {
+        min-height: 460px !important;
+    }
+
+    .wct23_hero_2 .wp-block-media-text__media img {
+        max-width: 17em;
+        right: 0;
+        bottom: calc(0vh - 10em);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wordcamp-organizers {
+        padding: 0 1%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wordcamp-organizers li {
+        border-bottom: 6px dotted #82EEFD;
+        padding-bottom: .8em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wordcamp-organizers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wct23_hero_2 {
+        min-height: 480px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wct23_hero_2 .wct23_title-h1 {
+        position: relative;
+        top: -2.1em;
+    }
+
+    .wct23_hero_2 .wp-block-media-text__media img {
+        max-width: 12em;
+        right: calc(66% - 12em);
+        bottom: calc(0vh - 10em);
     }
 }
