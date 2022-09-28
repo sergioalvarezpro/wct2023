@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /**
  *            WORDCAMP TORRELODONES 2023
- * *´¨) 
- *¸.•´¸.•*´¨) ¸.•*¨) 
+ * *´¨)
+ *¸.•´¸.•*´¨) ¸.•*¨)
  *(¸.•´ (¸.•` ¤ Content:
  *                  0. Referencias
  *                  1. General
@@ -615,6 +615,16 @@ header .entry-title {
     border-bottom: 1.8em dashed #FFF7DA;
     border-left: 2em dashed #FFF7DA;
     border-right: 2em dashed #FFF7DA;
+    margin: 3em;
+    padding: 4% 0 !important;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .wct23_section-suscribete{
+        margin: .2em;
+        padding: 2% 0 !important;
+    }
 }
 
 
@@ -764,10 +774,15 @@ por eso he creado una clase nueva modificando la altura */
     top: .9em;
 }
 
+.wct23_organizer {
+    margin: 0 5em;
+}
+
 /* nombre de los organizadores */
 .wct23_organizer h3 {
     font-family: 'Metamorphous';
-    font-size: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem);
+    font-size: 1em;
+    font-weight:700;
     line-height: 1.5em;
     position: relative;
     top: 10.6rem;
@@ -781,6 +796,7 @@ por eso he creado una clase nueva modificando la altura */
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    text-align: center;
 }
 
 .wordcamp-organizers li {
@@ -811,21 +827,19 @@ por eso he creado una clase nueva modificando la altura */
     -webkit-box-shadow: 0 0 15px 15px #82EEFD;
 }
 
-.wordcamp-organizers .wordcamp-image__avatar-container {
-    text-align: center;
-}
-
 /* mostramos únicamente el primer <p> dentro de la clase .wordcamp-organizers__content
  * en este primer parrafo es donde viene la función dentro de la WC */
 .wordcamp-organizers .wordcamp-organizers__content p:not(:first-child) {
     display: none;
 }
 
-@media only screen and (max-width: 1028px) {
+@media only screen and (max-width: 1240px) {
     .wordcamp-organizers {
         grid-template-columns: repeat(3, 1fr);
     }
+}
 
+@media only screen and (max-width: 1028px) {
     .wct23_hero_2 .wp-block-media-text__media img {
         right: calc(0vw - -4em);
     }
@@ -841,6 +855,13 @@ por eso he creado una clase nueva modificando la altura */
         right: 0;
         bottom: calc(0vh - 10em);
     }
+
+    .wordcamp-organizers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .wct23_organizer {
+        margin: 0 2em;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -853,6 +874,10 @@ por eso he creado una clase nueva modificando la altura */
         border-bottom: 6px dotted #82EEFD;
         padding-bottom: .8em;
     }
+
+    .wct23_organizer {
+        margin: 0 .5em;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -863,9 +888,17 @@ por eso he creado una clase nueva modificando la altura */
     .wct23_hero_2 {
         min-height: 480px !important;
     }
+
+    .wct23_hero-2-frame img {
+        bottom: -185px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    .wct23_hero-2-frame img {
+        bottom: -192px;
+    }
+
     .wct23_hero_2 .wct23_title-h1 {
         position: relative;
         top: -2.1em;
@@ -875,5 +908,11 @@ por eso he creado una clase nueva modificando la altura */
         max-width: 12em;
         right: calc(66% - 12em);
         bottom: calc(0vh - 10em);
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .wct23_hero-2-frame img {
+        bottom: -161px;
     }
 }
