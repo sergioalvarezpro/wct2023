@@ -503,7 +503,11 @@ header .entry-title {
 *        3.2 INTRO
 */
 .wct23_intro-content {
-    margin-right: calc(50% - 160px);
+    margin-right: calc(50% - 329px);
+}
+
+.wct23_intro-content .wct23_intro-h2 {
+    padding-right: 305px;
 }
 
 .wct23_intro-text {
@@ -514,6 +518,14 @@ header .entry-title {
 .wp-block-columns.alignfull .wp-block-column p:not(.has-background) {
     padding: 0;
 }
+
+.wct23_image img {
+    position: absolute;
+    top: 54em;
+    left: 0;
+    z-index: -1;
+}
+
 
 @media only screen and (max-width: 764px) {
     .wct23_intro-content {
