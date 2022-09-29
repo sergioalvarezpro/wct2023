@@ -366,25 +366,19 @@ header .entry-title {
     bottom: -7.7em;
 }
 
-@media only screen and (max-width: 805px) {
+@media only screen and (max-width: 773px) {
     .wct23_hero-frame img {
         bottom: -5em !important;
     }
 }
 
-@media only screen and (max-width: 685px) {
+@media only screen and (max-width: 653px) {
     .wct23_hero-frame img {
         bottom: -2.5em !important;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .wct23_hero-frame img {
-        bottom: -1.2em !important;
-    }
-}
-
-@media only screen and (max-width: 548px) {
+@media only screen and (max-width: 516px) {
     .wct23_hero-frame img {
         bottom: -0.2em !important;
     }
