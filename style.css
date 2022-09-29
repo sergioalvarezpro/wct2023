@@ -378,6 +378,12 @@ header .entry-title {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .wct23_hero-frame img {
+        bottom: -1.2em !important;
+    }
+}
+
 @media only screen and (max-width: 516px) {
     .wct23_hero-frame img {
         bottom: -0.2em !important;
@@ -625,6 +631,11 @@ header .entry-title {
 * ------ooO-(_)-Ooo------
 *     4.2 SUSCRIBETE
 */
+
+.wct23_section-suscribete {
+    overflow: hidden;
+}
+
 .wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form p#subscribe-email input[type=email] {
     background-color: #FFF7DA;
 }
