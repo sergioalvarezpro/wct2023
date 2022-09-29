@@ -502,16 +502,21 @@ header .entry-title {
 * ------ooO-(_)-Ooo------
 *        3.2 INTRO
 */
+
+.wct24_section-intro {
+    min-height: 738px;
+}
+
 .wct23_intro-content {
-    margin-right: calc(50% - 329px);
+    margin-right: calc(50% - 400px);
 }
 
 .wct23_intro-content .wct23_intro-h2 {
-    padding-right: 305px;
+    padding-right: 370px !important;
 }
 
 .wct23_intro-text {
-    margin: 2rem 0 !important;
+    margin: 1rem 0 !important;
 }
 
 .wp-block-columns.alignfull .wp-block-column h2:not(.has-background),
@@ -521,7 +526,7 @@ header .entry-title {
 
 .wct23_image img {
     position: absolute;
-    top: 54em;
+    top: 59em;
     left: 0;
     z-index: -1;
 }
