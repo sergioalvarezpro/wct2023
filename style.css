@@ -300,12 +300,12 @@ header .entry-title {
     overflow: hidden;
 }
 
-/* .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+.wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
     grid-column: 1/-1;
     position: relative;
     z-index: 30;
-    padding: 0 162px;
-} */
+    padding-left: 10.125rem;
+}
 
 .wct23_hero-fecha {
     font-family: 'Metamorphous';
@@ -362,8 +362,8 @@ header .entry-title {
 .wct23_hero-cloud-xl img {
     position: absolute;
     z-index: 4;
-    left: -70px;
-    top: 115px;
+    left: -19px;
+    top: 104px;
 }
 
 .wct23_hero-cloud-sm img {
