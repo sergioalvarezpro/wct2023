@@ -813,14 +813,14 @@ por eso he creado una clase nueva modificando la altura */
     position: absolute;
     max-height: 134.46px;
     left: 0;
-    bottom: -195px;
+    bottom: -131px;
 }
 
 /* posicionamos el wabalie */
 .wct23_hero_2 .wp-block-media-text__media img {
     max-width: 19em;
     right: calc(0vw - -5em);
-    bottom: calc(0vh - 12em);
+    bottom: 0;
 }
 
 /* posicionamos el titulo */
@@ -830,7 +830,7 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 .wct23_organizer {
-    margin: 0 5em;
+    margin: 0 10%;
 }
 
 /* nombre de los organizadores */
@@ -888,7 +888,42 @@ por eso he creado una clase nueva modificando la altura */
     display: none;
 }
 
-@media only screen and (max-width: 1240px) {
+/* si añadimos el icono dentro de en la página de cada uno de los organizadores,
+ * hacemos que no se muestre en el listado, ya que el plugin de organizadores lo muestra automáticamente */
+.wordcamp-organizers .wordcamp-organizers__content figure {
+    display: none;
+}
+
+.wordcamp-organizers a {
+    text-decoration:none;
+    color: #0F3A4A;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    .wct23_hero_2 .wp-block-media-text__media img {
+        right: 0;
+    }
+
+    .wct23_hero_2 .wct23_title-h1 {
+        top: 1em;
+        font-size: 5rem;
+        line-height: 1.35em;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .wct23_hero_2 .wp-block-media-text__media img {
+        right: -1em;
+    }
+
+    .wct23_hero_2 .wct23_title-h1 {
+        top: 1.3em;
+        font-size: 4.6rem;
+        line-height: 1.45em;
+    }
+
     .wordcamp-organizers {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -896,7 +931,22 @@ por eso he creado una clase nueva modificando la altura */
 
 @media only screen and (max-width: 1028px) {
     .wct23_hero_2 .wp-block-media-text__media img {
-        right: calc(0vw - -4em);
+        right: 0;
+        z-index: 10;
+        max-width: 15em;
+        top: 3.5em;
+        left: 35%;
+    }
+
+    .wct23_hero_2 .wct23_title-h1 {
+        top: -3.2em;
+        left: 25%;
+        font-size: 3.6rem;
+        line-height: 2em;
+    }
+
+    .wct23_organizer .wct23_title-h2 {
+    font-size: 2rem;
     }
 }
 
@@ -936,6 +986,24 @@ por eso he creado una clase nueva modificando la altura */
     }
 }
 
+@media only screen and (max-width: 650px) {
+    .wct23_hero_2 .wct23_title-h1 {
+        top: -4.1em;
+        left: 25%;
+        font-size: 2.6rem;
+        line-height: 2.5em;
+    }
+
+    .wct23_organizer .wct23_title-h2 {
+    font-size: 1.8rem;
+    }
+
+    .wct23_organizer {
+    margin: 0 .5%;
+    }
+
+}
+
 @media only screen and (max-width: 500px) {
     .wordcamp-organizers {
         grid-template-columns: repeat(1, 1fr);
@@ -948,9 +1016,17 @@ por eso he creado una clase nueva modificando la altura */
     .wct23_hero-2-frame img {
         bottom: -185px;
     }
+
+    .wct23_hero_2 .wct23_title-h1 {
+        top: -6.1em;
+        left: 29%;
+        font-size: 2rem;
+        line-height: 4em;
+    }
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 478px) {
     .wct23_hero-2-frame img {
         bottom: -192px;
     }
@@ -958,14 +1034,20 @@ por eso he creado una clase nueva modificando la altura */
     .wct23_hero_2 .wct23_title-h1 {
         position: relative;
         top: -2.1em;
+        left: 20%;
+        line-height: 4.2em;
     }
 
     .wct23_hero_2 .wp-block-media-text__media img {
-        max-width: 12em;
-        right: calc(66% - 12em);
-        bottom: calc(0vh - 10em);
+        max-width: 17em;
+        top: 3em;
+        left: 20%;
     }
 }
+
+
+
+
 
 @media only screen and (max-width: 445px) {
     .wct23_hero-2-frame img {
