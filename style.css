@@ -12,12 +12,13 @@
  *                      3.2 Intro
  *                      3.3 Pregones
  *                  4. Bloques Reutilizables:
- *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES, ORGANIZADORES)
+ *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES, ORGANIZADORES, LOCALIZACION)
  *                      4.1 Participa
  *                      4.2 Suscribete
  *                      4.3 Patrocinadores
  *                  5. Footer
  *                  6. Plantilla 'ORGANIZADORES'
+ *                  7. Plantilla 'LOCALIZACION'*
  *                                              oooO
  *                                             (....)     Oooo
  *                                               ...(     (....)
@@ -809,15 +810,24 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 /* posicionamos las almenas  */
-.wct23_hero-2-frame img {
+.wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
     position: absolute;
     max-height: 134.46px;
     left: 0;
     bottom: -131px;
 }
 
+.wct23_hero-2-frame img {
+    left: 0;
+}
+
+.wct23_hero-2-almena-derecha img {
+    right: 0;
+}
+
+
 /* posicionamos el wabalie */
-.wct23_hero_2 .wp-block-media-text__media img {
+.wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
     max-width: 19em;
     right: calc(0vw - -5em);
     bottom: 0;
@@ -902,7 +912,7 @@ por eso he creado una clase nueva modificando la altura */
 
 
 @media only screen and (max-width: 1400px) {
-    .wct23_hero_2 .wp-block-media-text__media img {
+    .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         right: 0;
     }
 
@@ -914,10 +924,6 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 @media only screen and (max-width: 1280px) {
-    .wct23_hero_2 .wp-block-media-text__media img {
-        right: -1em;
-    }
-
     .wct23_hero_2 .wct23_title-h1 {
         top: 1.3em;
         font-size: 4.6rem;
@@ -927,10 +933,8 @@ por eso he creado una clase nueva modificando la altura */
     .wordcamp-organizers {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-@media only screen and (max-width: 1028px) {
-    .wct23_hero_2 .wp-block-media-text__media img {
+    .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         right: 0;
         z-index: 10;
         max-width: 15em;
@@ -955,7 +959,7 @@ por eso he creado una clase nueva modificando la altura */
         min-height: 460px !important;
     }
 
-    .wct23_hero_2 .wp-block-media-text__media img {
+    .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         max-width: 17em;
         right: 0;
         bottom: calc(0vh - 10em);
@@ -1013,7 +1017,7 @@ por eso he creado una clase nueva modificando la altura */
         min-height: 480px !important;
     }
 
-    .wct23_hero-2-frame img {
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
         bottom: -185px;
     }
 
@@ -1027,30 +1031,88 @@ por eso he creado una clase nueva modificando la altura */
 
 
 @media only screen and (max-width: 478px) {
-    .wct23_hero-2-frame img {
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
         bottom: -192px;
     }
 
     .wct23_hero_2 .wct23_title-h1 {
         position: relative;
-        top: -2.1em;
         left: 20%;
-        line-height: 4.2em;
+        line-height: .5em;
     }
 
-    .wct23_hero_2 .wp-block-media-text__media img {
+    .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         max-width: 17em;
         top: 3em;
         left: 20%;
     }
 }
 
-
-
-
-
 @media only screen and (max-width: 445px) {
-    .wct23_hero-2-frame img {
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
         bottom: -161px;
+    }
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 7. Plantilla LOCALIZACION █ ▆ ▅ ▃ ▂
+*/
+
+.wordcamp-organizers a:hover {
+    text-decoration: underline;
+}
+
+/* posicionamos el wabalie */
+.wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
+    max-width: 19em;
+    right: calc(0vw - -8em);
+    bottom: 20%;
+}
+
+.wct23_localizacion {
+    margin: 2% 10%;
+}
+
+.wct23_localizacion .wct_23_fecha_font_primary, .wct23_localizacion .wct_23_evento_font_primary {
+   font-family: 'Metamorphous';
+}
+.wct23_localizacion .wct_23_fecha_font_primary{
+    font-size: 1rem;
+    margin-bottom:0;
+}
+
+.wct23_localizacion .wct_23_evento_font_primary {
+   font-size: 1.6rem;
+    margin-top: 0;
+}
+
+
+@media only screen and (max-width: 1028px){
+    .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
+        right: 0;
+        z-index: 10;
+        max-width: 15em;
+        top: 5.5em;
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
+        max-width: 20em;
+        left: 15%;
+    }
+
+}
+
+
+@media only screen and (max-width: 478px) {
+
+    .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
+        max-width: 20em;
+        top: 7em;
+        left: 3%;
     }
 }
