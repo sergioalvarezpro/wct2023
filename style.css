@@ -1023,6 +1023,19 @@ por eso he creado una clase nueva modificando la altura */
 
 }
 
+@media only screen and (max-width: 592px) {
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
+        bottom: -6.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
+        bottom: -9.7em;
+    }
+}
+
+
 @media only screen and (max-width: 500px) {
     .wordcamp-organizers {
         grid-template-columns: repeat(1, 1fr);
@@ -1044,10 +1057,9 @@ por eso he creado una clase nueva modificando la altura */
     }
 }
 
-
 @media only screen and (max-width: 478px) {
     .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
-        bottom: -12rem
+        bottom: -6.7rem
     }
 
     .wct23_hero_2 .wct23_title-h1 {
@@ -1060,12 +1072,6 @@ por eso he creado una clase nueva modificando la altura */
         max-width: 17em;
         top: 3em;
         left: 20%;
-    }
-}
-
-@media only screen and (max-width: 445px) {
-    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
-        bottom: -161px;
     }
 }
 
