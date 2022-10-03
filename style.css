@@ -806,14 +806,15 @@ header .entry-title {
 /* el heroe de las páginas diferentes a la home, es mas estrecho en altura
 por eso he creado una clase nueva modificando la altura */
 .wct23_hero_2 {
-    min-height: 476px !important;
+    min-height: 45rem !important;
 }
 
 /* posicionamos las almenas  */
 .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
     position: absolute;
-    max-height: 134.46px;
-    bottom: -131px;
+    max-height: 4em;
+    bottom: -16rem;
+    max-width: 61%;
 }
 
 .wct23_hero-2-frame img {
@@ -827,7 +828,7 @@ por eso he creado una clase nueva modificando la altura */
 
 /* posicionamos el wabalie */
 .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
-    max-width: 19em;
+    max-width: 29em;
     right: calc(0vw - -5em);
     bottom: 0;
 }
@@ -835,7 +836,7 @@ por eso he creado una clase nueva modificando la altura */
 /* posicionamos el titulo */
 .wct23_hero_2 .wct23_title-h1 {
     position: relative;
-    top: .9em;
+    top: -0.2em;
 }
 
 .wct23_organizer {
@@ -910,13 +911,12 @@ por eso he creado una clase nueva modificando la altura */
 
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1550px) {
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         right: 0;
     }
 
     .wct23_hero_2 .wct23_title-h1 {
-        top: 1em;
         font-size: 5rem;
         line-height: 1.35em;
     }
@@ -924,9 +924,7 @@ por eso he creado una clase nueva modificando la altura */
 
 @media only screen and (max-width: 1280px) {
     .wct23_hero_2 .wct23_title-h1 {
-        top: 1.3em;
-        font-size: 4.6rem;
-        line-height: 1.45em;
+        top: -3.7em;
     }
 
     .wordcamp-organizers {
@@ -934,10 +932,8 @@ por eso he creado una clase nueva modificando la altura */
     }
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
-        right: 0;
-        z-index: 10;
-        max-width: 15em;
-        top: 3.5em;
+        max-width: 24em;
+        top: 4.5em;
         left: 35%;
     }
 
