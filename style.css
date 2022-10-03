@@ -831,6 +831,7 @@ por eso he creado una clase nueva modificando la altura */
     max-width: 29em;
     right: calc(0vw - -5em);
     bottom: 0;
+    z-index: 10;
 }
 
 /* posicionamos el titulo */
@@ -923,25 +924,26 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 @media only screen and (max-width: 1280px) {
-    .wct23_hero_2 .wct23_title-h1 {
-        top: -3.7em;
-    }
-
     .wordcamp-organizers {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
-        max-width: 24em;
-        top: 4.5em;
-        left: 35%;
+        right: 0;
+        max-width: 46%;
+        top: 2%;
+        z-index: 10;
     }
 
+
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
+        bottom: -17rem;
+        max-width: 100%;
+    }
+
+
     .wct23_hero_2 .wct23_title-h1 {
-        top: -3.2em;
-        left: 25%;
-        font-size: 3.6rem;
-        line-height: 2em;
+        font-size: 5.4vw;
     }
 
     .wct23_organizer .wct23_title-h2 {
@@ -953,6 +955,12 @@ por eso he creado una clase nueva modificando la altura */
     .wct23_hero_2 {
         min-height: 460px !important;
     }
+
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
+        bottom: -9.3rem;
+    }
+
+
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         max-width: 17em;
@@ -970,6 +978,13 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 @media only screen and (max-width: 700px) {
+
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
+        bottom: -9.5rem;
+        max-width: 100%;
+    }
+
+
     .wordcamp-organizers {
         padding: 0 1%;
         grid-template-columns: repeat(2, 1fr);
@@ -986,6 +1001,11 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 @media only screen and (max-width: 650px) {
+
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
+        bottom: -7.8rem;
+    }
+
     .wct23_hero_2 .wct23_title-h1 {
         top: -4.1em;
         left: 25%;
@@ -1013,7 +1033,7 @@ por eso he creado una clase nueva modificando la altura */
     }
 
     .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
-        bottom: -185px;
+        bottom: -8rem;
     }
 
     .wct23_hero_2 .wct23_title-h1 {
@@ -1027,7 +1047,7 @@ por eso he creado una clase nueva modificando la altura */
 
 @media only screen and (max-width: 478px) {
     .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
-        bottom: -192px;
+        bottom: -12rem
     }
 
     .wct23_hero_2 .wct23_title-h1 {
