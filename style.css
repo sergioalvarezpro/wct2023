@@ -813,7 +813,6 @@ por eso he creado una clase nueva modificando la altura */
 .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
     position: absolute;
     max-height: 134.46px;
-    left: 0;
     bottom: -131px;
 }
 
