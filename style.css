@@ -1052,10 +1052,13 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 @media only screen and (max-width: 482px) {
-    .wct23_hero-2{ width: 102%;}
+    .wct23_hero-2{
+        max-width: 102% !important;
+        width: 102% !important;
+    }
 
     .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
-        bottom: -8.3em;
+        bottom: -6.9em;
     }
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
@@ -1069,6 +1072,13 @@ por eso he creado una clase nueva modificando la altura */
         position: relative;
         left: 20%;
         line-height: .5em;
+    }
+}
+
+
+@media only screen and (max-width: 478px) {
+    .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
+        bottom: -9.6em;
     }
 }
 
