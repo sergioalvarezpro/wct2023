@@ -1058,7 +1058,7 @@ por eso he creado una clase nueva modificando la altura */
     }
 
     .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
-        bottom: -6.9em;
+        bottom: -9.6em;
     }
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
@@ -1077,6 +1077,11 @@ por eso he creado una clase nueva modificando la altura */
 
 
 @media only screen and (max-width: 478px) {
+    .wct23_hero-2{
+        max-width: 102% !important;
+        width: 102% !important;
+    }
+
     .wct23_hero-2-frame img, .wct23_hero-2-almena-derecha img {
         bottom: -9.6em;
     }
