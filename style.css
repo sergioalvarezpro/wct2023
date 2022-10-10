@@ -18,7 +18,7 @@
  *                      4.3 Patrocinadores
  *                  5. Footer
  *                  6. Plantilla 'ORGANIZADORES'
- *                  7. Plantilla 'LOCALIZACION'*
+ *                  7. Plantilla 'LOCALIZACION'
  *                                              oooO
  *                                             (....)     Oooo
  *                                               ...(     (....)
@@ -117,7 +117,8 @@ body {
 .wct23_title-h1 {
     font-family: 'Metamorphous';
     font-weight: 400;
-    font-size: 6rem;
+    font-size: clamp(3.43rem, 2.03vw + 2.82rem, 6rem);
+    ;
     line-height: 1.1em;
 }
 
@@ -517,12 +518,12 @@ header .entry-title {
 } */
 
 .wct23_intro-h2 {
-    padding-right: 23vw;
+    padding-right: 23vw !important;
 }
 
 .wct23_intro-text {
     margin: 1rem 0 !important;
-    padding-right: 5vw;
+    padding-right: 5vw !important;
 }
 
 .wp-block-columns.alignfull .wp-block-column h2:not(.has-background),
@@ -540,6 +541,10 @@ header .entry-title {
 
 @media only screen and (max-width: 764px) {
 
+    .wct23_section-intro {
+        min-height: 105vh !important;
+    }
+
     .wct23_intro-content {
         display: flex !important;
         flex-wrap: wrap;
@@ -547,6 +552,12 @@ header .entry-title {
 
     .wct23_image {
         order: 2;
+    }
+
+    .wct23_image img {
+        position: absolute;
+        left: 0;
+        z-index: -1;
     }
 
     .wct23_content {
@@ -557,10 +568,12 @@ header .entry-title {
         margin: 0 auto;
         padding: 0 8%;
     }
+}
 
-    /* .wct23_image img {
-        max-width: 75%;
-    } */
+@media only screen and (max-width: 480px) {
+    .wct23_section-intro {
+        min-height: 115vh !important;
+    }
 }
 
 
