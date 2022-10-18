@@ -691,8 +691,7 @@ header .entry-title {
 }
 
 .wct23_group-maspregrones {
-    display: flex;
-    align-items: end;
+    align-items: end !important;
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:hover,
@@ -889,14 +888,14 @@ header .entry-title {
 }
 
 /** el borde como si fuera una almena **/
-.wct23_section-suscribete {
+/* .wct23_section-suscribete {
     border-top: 1.8em dashed #FFF7DA;
     border-bottom: 1.8em dashed #FFF7DA;
     border-left: 2em dashed #FFF7DA;
     border-right: 2em dashed #FFF7DA;
     margin: 3em;
     padding: 4% 0 !important;
-}
+} */
 
 
 @media only screen and (max-width: 700px) {
