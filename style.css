@@ -897,6 +897,16 @@ header .entry-title {
     padding: 4% 0 !important;
 } */
 
+.wct23_section-suscribete {
+    width: 100%;
+    border: 20px solid black;
+    border-style: solid;
+    border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
+    border-image-slice: 100;
+    border-image-outset: 0;
+    border-image-repeat: round;
+}
+
 
 @media only screen and (max-width: 700px) {
     .wct23_section-suscribete {
