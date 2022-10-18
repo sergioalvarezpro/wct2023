@@ -899,12 +899,24 @@ header .entry-title {
 
 .wct23_section-suscribete {
     width: 100%;
-    border: 20px solid black;
+    border: 5rem solid black;
     border-style: solid;
     border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
     border-image-slice: 100;
     border-image-outset: 0;
     border-image-repeat: round;
+}
+
+@media only screen and (max-width: 764px) {
+    .wct23_section-suscribete {
+        width: 100%;
+        border: 2rem solid black;
+        border-style: solid;
+        border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
+        border-image-slice: 100;
+        border-image-outset: 0;
+        border-image-repeat: round;
+    }
 }
 
 
@@ -915,11 +927,33 @@ header .entry-title {
     }
 }
 
+@media only screen and (max-width: 600px) {
+
+    .wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form {
+        flex-wrap: wrap !important;
+    }
+
+    #subscribe-email {
+        width: 100% !important;
+    }
+
+    #subscribe-submit {
+        width: 50% !important;
+    }
+}
 
 @media only screen and (max-width: 480px) {
-    .wct23_section-suscribete .wct23_title-h2 {
-        font-size: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem);
+    .wct23_section-suscribete {
+        width: 100%;
+        border: .7rem solid black;
+        border-style: solid;
+        border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
+        border-image-slice: 100;
+        border-image-outset: 0;
+        border-image-repeat: round;
     }
+
+
 }
 
 
