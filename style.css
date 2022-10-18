@@ -935,10 +935,15 @@ header .entry-title {
 
     #subscribe-email {
         width: 100% !important;
+        margin-bottom: 1rem !important;
     }
 
     #subscribe-submit {
         width: 50% !important;
+    }
+
+    #subscribe-submit button {
+        margin-left: 0px !important;
     }
 }
 
