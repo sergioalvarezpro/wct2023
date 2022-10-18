@@ -129,8 +129,8 @@ body {
 }
 
 .wct23_text-p {
-    font-size: 1.5rem;
     font-weight: 400;
+    font-size: 1.5rem;
     line-height: 1.6em;
 }
 
@@ -688,6 +688,33 @@ header .entry-title {
 
 .wct23_group-pregones .wp-block-latest-posts__post-title:hover {
     font-weight: 600;
+}
+
+.wct23_group-maspregrones {
+    display: flex;
+    align-items: end;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-button.is-style-outline .wp-block-button__link:active {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    color: #0F3A4A !important;
+    text-decoration-line: none;
+    font-family: 'Metamorphous';
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
+.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-background),
+.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active).has-background {
+    border-color: transparent !important;
+    color: #0F3A4A !important;
+    text-decoration-line: underline;
+    font-family: 'Metamorphous';
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 1080px) {
