@@ -356,7 +356,7 @@ header .entry-title {
 }
 
 /* posicionamos las almenas */
-.wct23_hero-frame {
+/* .wct23_hero-frame {
     width: 100vw;
 }
 
@@ -390,7 +390,18 @@ header .entry-title {
     .wct23_hero-frame img {
         bottom: -0.2em !important;
     }
-}
+} */
+
+
+/* .wct23_section-suscribete {
+    width: 100%;
+    border: 5rem solid black;
+    border-style: solid;
+    border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
+    border-image-slice: 100;
+    border-image-outset: 0;
+    border-image-repeat: round;
+} */
 
 
 /* posicionamos las nubes */
@@ -694,6 +705,7 @@ header .entry-title {
     align-items: end !important;
 }
 
+/*Botón con enlace a ver más pregones*/
 .wp-block-button.is-style-outline .wp-block-button__link:hover,
 .wp-block-button.is-style-outline .wp-block-button__link:active {
     border-color: transparent !important;
@@ -957,8 +969,6 @@ header .entry-title {
         border-image-outset: 0;
         border-image-repeat: round;
     }
-
-
 }
 
 
