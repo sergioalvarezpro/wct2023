@@ -355,40 +355,52 @@ header .entry-title {
     bottom: calc(0vh - 9.2em);
 }
 
-/* posicionamos las almenas */
-.wct23_hero-frame {
+/* posicionamos la almena */
+.wct23_hero-almena {
     width: 100vw;
 }
 
-.wct23_hero-frame img {
+.wct23_hero-almena img {
     position: absolute;
-    max-height: 8.404rem;
+    max-height: 4.5rem;
     width: 100vw;
     left: 0;
     bottom: -7.7em;
 }
 
-@media only screen and (max-width: 773px) {
-    .wct23_hero-frame img {
-        bottom: -5em !important;
+@media only screen and (max-width: 1103px) {
+    .wct23_hero-almena img {
+        bottom: -9em !important;
     }
 }
 
-@media only screen and (max-width: 653px) {
-    .wct23_hero-frame img {
-        bottom: -2.5em !important;
+@media only screen and (max-width: 906px) {
+    .wct23_hero-almena img {
+        bottom: -10em !important;
+    }
+}
+
+@media only screen and (max-width: 771px) {
+    .wct23_hero-almena img {
+        bottom: -11em !important;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .wct23_hero-almena img {
+        bottom: -12em !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .wct23_hero-frame img {
-        bottom: -1.2em !important;
+    .wct23_hero-almena img {
+        bottom: -6.3em !important;
     }
 }
 
-@media only screen and (max-width: 516px) {
-    .wct23_hero-frame img {
-        bottom: -0.2em !important;
+@media only screen and (max-width: 401px) {
+    .wct23_hero-almena img {
+        bottom: -5em !important;
     }
 }
 
