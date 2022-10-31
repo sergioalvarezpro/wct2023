@@ -18,9 +18,7 @@
  *                      4.3 Patrocinadores
  *                  5. Footer
  *                  6. Plantilla 'ORGANIZADORES'
- *                  7. Plantilla 'LOCALIZACION'
- *                  8. Plantilla 'ASISTENTES'
- *                  9. Plantilla 'ENTRADAS'
+ *                  7. Plantilla 'LOCALIZACION'*
  *                                              oooO
  *                                             (....)     Oooo
  *                                               ...(     (....)
@@ -92,9 +90,9 @@ body {
 }
 
 /** clase con margin top **/
-.mt-1 { margin-top: 1em !important;}
-.mt-2 { margin-top: 2em !important;}
-
+.mt-2 {
+    margin-top: 2em !important;
+}
 
 /**Quitar gap, margin y padding entre bloques**/
 :where(.wp-block-columns.is-layout-flex) {
@@ -119,31 +117,22 @@ body {
 .wct23_title-h1 {
     font-family: 'Metamorphous';
     font-weight: 400;
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(3.43rem, 2.03vw + 2.82rem, 6rem);
+    ;
     line-height: 1.1em;
 }
 
 .wct23_title-h2 {
     font-family: 'Metamorphous';
     font-weight: 400;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2.2rem, 0.85vw + 1.94rem, 3rem);
     line-height: 1.5em;
 }
 
-.wct23_title-h3 {
-    font-family: 'Metamorphous';
-    font-weight: 400;
-    line-height: 2.5em;
-}
-
 .wct23_text-p {
-    font-weight: 400;
     font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1.6em;
-}
-
-.entry-content, .entry-summary {
-    font-family: 'Source Sans 3' !important;
 }
 
 
@@ -265,6 +254,7 @@ header .entry-title {
     .primary-navigation .primary-menu-container {
         margin-right: 100px !important;
     }
+
     .site-header .site-branding {
         position: absolute;
         z-index: 50;
@@ -272,14 +262,17 @@ header .entry-title {
         left: 100px;
         margin-top: 0;
     }
+
     .site-logo .custom-logo {
         max-height: 180px;
     }
 }
+
 @media only screen and (max-width: 825px) {
     .primary-navigation .primary-menu-container {
         margin-right: 50px !important;
     }
+
     .site-header .site-branding {
         position: absolute;
         z-index: 50;
@@ -287,15 +280,18 @@ header .entry-title {
         left: 20px;
         margin-top: 0;
     }
+
     .site-logo .custom-logo {
         max-height: 180px;
     }
 }
+
 @media only screen and (max-width: 480px) {
     .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
         padding-top: 0 !important;
         left: 10px;
     }
+
     .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
         max-height: 122px !important;
         position: relative;
@@ -328,7 +324,7 @@ header .entry-title {
 .wct23_hero-fecha {
     font-family: 'Metamorphous';
     font-weight: 400;
-    font-size: clamp(1.875rem, 5vw, 2.5rem);
+    font-size: 2.5rem;
     line-height: 3em;
 }
 
@@ -354,7 +350,6 @@ header .entry-title {
 /* posicionamos el wabalie */
 .wct23_hero .wp-block-media-text__media img {
     position: absolute;
-    z-index: 10;
     max-width: 77rem;
     right: calc(0vw - 2.4em);
     bottom: calc(0vh - 9.2em);
@@ -437,32 +432,40 @@ header .entry-title {
 
 
 /* @media only screen and (max-width: 1480px) {
+
 @media only screen and (max-width: 1226px) {
     .wct23_hero-frame img {
         bottom: -223px;
     }
 }
+
 @media only screen and (max-width: 967px) {
+
     .wct23_hero {
         min-height: 661px;
     }
+
     .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
         padding: 0;
     }
+
     .wct23_hero-content {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
     }
+
     .wp-block-media-text__media img {
         position: absolute;
         right: -35px;
         bottom: -529px;
     }
+
     .wct23_hero-frame img {
         bottom: -120px;
     }
 }
+
 @media only screen and (max-width: 816px) {
     .wp-block-media-text__media img {
         position: absolute;
@@ -470,6 +473,8 @@ header .entry-title {
         bottom: -475px;
     }
 }
+
+
 @media only screen and (max-width: 764px) {
     .wp-block-media-text__media img {
         position: absolute;
@@ -477,6 +482,7 @@ header .entry-title {
         bottom: -475px;
     }
 }
+
 @media only screen and (max-width: 700px) {
     .wp-block-media-text__media img {
         position: absolute;
@@ -484,15 +490,18 @@ header .entry-title {
         bottom: -435px;
     }
 }
+
 @media only screen and (max-width: 480px) {
     .wct23_hero {
         min-height: 530px;
     }
+
     .wp-block-media-text__media img {
         position: absolute;
         right: -35px;
         bottom: -352px;
     }
+
     .wct23_hero-frame img {
         bottom: -68px;
     }
@@ -507,19 +516,26 @@ header .entry-title {
 * ------ooO-(_)-Ooo------
 *        3.2 INTRO
 */
-.wct23_section-intro {
-    min-height: 46rem;
-}
 
-.wct23_image img {
-    position: absolute;
-    top: 71rem;
-    left: 0;
-    z-index: -1;
+/* .wct23_section-intro {
+    min-height: 738px;
+} */
+
+/* .wct23_intro-content {
+    margin-right: calc(50% - 400px);
+} */
+
+/* .wct23_intro-content .wct23_intro-h2 {
+    padding-right: 370px !important;
+} */
+
+.wct23_intro-h2 {
+    padding-right: 23vw !important;
 }
 
 .wct23_intro-text {
     margin: 1rem 0 !important;
+    padding-right: 5vw !important;
 }
 
 .wp-block-columns.alignfull .wp-block-column h2:not(.has-background),
@@ -527,9 +543,23 @@ header .entry-title {
     padding: 0;
 }
 
-@media only screen and (max-width: 781px) {
+.wct23_image img {
+    position: absolute;
+    top: 74rem;
+    left: 0;
+    z-index: -1;
+}
+
+
+@media only screen and (max-width: 764px) {
+
     .wct23_section-intro {
-        min-height: 73rem;
+        min-height: 105vh !important;
+    }
+
+    .wct23_intro-content {
+        display: flex !important;
+        flex-wrap: wrap;
     }
 
     .wct23_image {
@@ -538,7 +568,6 @@ header .entry-title {
 
     .wct23_image img {
         position: absolute;
-        top: 105rem;
         left: 0;
         z-index: -1;
     }
@@ -553,125 +582,9 @@ header .entry-title {
     }
 }
 
-@media only screen and (max-width: 744px) {
+@media only screen and (max-width: 480px) {
     .wct23_section-intro {
-        min-height: 72.5rem;
-    }
-
-    .wct23_image img {
-        top: 106rem;
-    }
-}
-
-@media only screen and (max-width: 685px) {
-    .wct23_section-intro {
-        min-height: 74rem;
-    }
-
-    .wct23_image img {
-        top: 110rem;
-    }
-}
-
-@media only screen and (max-width: 611px) {
-    .wct23_section-intro {
-        min-height: 78rem;
-    }
-
-    .wct23_image img {
-        top: 117rem;
-    }
-}
-
-@media only screen and (max-width: 606px) {
-
-    .wct23_image img {
-        top: 124rem;
-    }
-}
-
-@media only screen and (max-width: 488px) {
-    .wct23_section-intro {
-        min-height: 76rem;
-    }
-
-    .wct23_image img {
-        top: 129rem;
-    }
-}
-
-@media only screen and (max-width: 481px) {
-    .wct23_section-intro {
-        min-height: 78.5rem;
-    }
-
-    .wct23_image img {
-        top: 124rem;
-    }
-}
-
-@media only screen and (max-width: 436px) {
-    .wct23_image img {
-        top: 125.5rem;
-    }
-
-    .wct23_button-CTA-text a {
-        font-size: 1.5rem !important;
-        padding: 13px 15px;
-    }
-}
-
-@media only screen and (max-width: 432px) {
-    .wct23_image img {
-        top: 132rem;
-    }
-}
-
-@media only screen and (max-width: 394px) {
-    .wct23_image img {
-        top: 134rem;
-    }
-}
-
-@media only screen and (max-width: 388px) {
-
-    .wct23_section-intro {
-        min-height: 82.5rem;
-    }
-
-    .wct23_image img {
-        top: 138rem;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .wct23_section-intro {
-        min-height: 82rem;
-    }
-
-    .wct23_image img {
-        top: 136rem;
-    }
-
-    .wct23_text-content {
-        margin: 0 auto;
-        padding: 0 5%;
-    }
-}
-
-@media only screen and (max-width: 363px) {
-    .wct23_section-intro {
-        min-height: 82rem;
-    }
-
-    .wct23_image img {
-        top: 139rem;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .wct23_image img {
-        top: 145.5rem;
+        min-height: 115vh !important;
     }
 }
 
@@ -691,33 +604,6 @@ header .entry-title {
 
 .wct23_group-pregones .wp-block-latest-posts__post-title:hover {
     font-weight: 600;
-}
-
-.wct23_group-maspregrones {
-    align-items: end !important;
-}
-
-/*Botón con enlace a ver más pregones*/
-.wp-block-button.is-style-outline .wp-block-button__link:hover,
-.wp-block-button.is-style-outline .wp-block-button__link:active {
-    border-color: transparent !important;
-    background-color: transparent !important;
-    color: #0F3A4A !important;
-    text-decoration-line: none;
-    font-family: 'Metamorphous';
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
-.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-background),
-.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active).has-background {
-    border-color: transparent !important;
-    color: #0F3A4A !important;
-    text-decoration-line: underline;
-    font-family: 'Metamorphous';
-    font-weight: 400;
-    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -765,19 +651,17 @@ header .entry-title {
 .wct23_participa-bandera {
     position: relative;
     z-index: 4;
-    max-width: none !important;
+    max-width: 75vw;
 }
 
 .wct23_participa-btn {
     position: absolute;
     z-index: 5;
-    max-width: none !important;
-    margin-top: 20 !important;
+    max-width: 15vw;
 }
 
 .wct23_participa-btn img {
     background-color: #FFF7DA;
-    width: 70%;
 }
 
 .wct23_participa-btn img:hover {
@@ -790,79 +674,13 @@ header .entry-title {
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, .24);
 }
 
-
-@media only screen and (max-width: 1367px) {
-    .wct23_participa-btn img {
-        width: 65%;
-    }
-}
-
-@media only screen and (max-width: 1303px) {
-    .wct23_participa-btn img {
-        width: 61%;
-    }
-}
-
-@media only screen and (max-width: 1249px) {
-    .wct23_participa-btn img {
-        width: 56%;
-    }
-}
-
-@media only screen and (max-width: 1205px) {
-    .wct23_participa-btn img {
-        width: 53%;
-    }
-}
-
-@media only screen and (max-width: 1153px) {
-    .wct23_participa-btn img {
-        width: 49%;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .wct23_participa-btn img {
-        width: 43%;
-    }
-}
-
-@media only screen and (max-width: 1030px) {
-    .wct23_participa-btn img {
-        width: 38%;
-    }
-}
-
-@media only screen and (max-width: 963px) {
-    .wct23_participa-btn img {
-        width: 33%;
-    }
-}
-
-@media only screen and (max-width: 905px) {
-    .wct23_participa-btn img {
-        width: 28%;
-    }
-}
-
-@media only screen and (max-width: 849px) {
-    .wct23_participa-btn img {
-        width: 24%;
-    }
-}
-
 @media only screen and (max-width: 781px) {
-
-    .wct23_participa-group-bandera {
-        padding-right: 0 !important;
-    }
-
     .wct23_participa-bandera {
-        max-width: none !important;
+        max-width: 50vw;
     }
 
-    .wct23_participa-btn img {
-        width: 100%;
+    .wct23_participa-btn {
+        max-width: 35vw;
     }
 }
 
@@ -892,35 +710,13 @@ header .entry-title {
 }
 
 /** el borde como si fuera una almena **/
-/* .wct23_section-suscribete {
+.wct23_section-suscribete {
     border-top: 1.8em dashed #FFF7DA;
     border-bottom: 1.8em dashed #FFF7DA;
     border-left: 2em dashed #FFF7DA;
     border-right: 2em dashed #FFF7DA;
     margin: 3em;
     padding: 4% 0 !important;
-} */
-
-.wct23_section-suscribete {
-    width: 100%;
-    border: 5rem solid black;
-    border-style: solid;
-    border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
-    border-image-slice: 100;
-    border-image-outset: 0;
-    border-image-repeat: round;
-}
-
-@media only screen and (max-width: 764px) {
-    .wct23_section-suscribete {
-        width: 100%;
-        border: 2rem solid black;
-        border-style: solid;
-        border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
-        border-image-slice: 100;
-        border-image-outset: 0;
-        border-image-repeat: round;
-    }
 }
 
 
@@ -931,35 +727,10 @@ header .entry-title {
     }
 }
 
-@media only screen and (max-width: 600px) {
-
-    .wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form {
-        flex-wrap: wrap !important;
-    }
-
-    #subscribe-email {
-        width: 100% !important;
-        margin-bottom: 1rem !important;
-    }
-
-    #subscribe-submit {
-        width: 50% !important;
-    }
-
-    #subscribe-submit button {
-        margin-left: 0px !important;
-    }
-}
 
 @media only screen and (max-width: 480px) {
-    .wct23_section-suscribete {
-        width: 100%;
-        border: .7rem solid black;
-        border-style: solid;
-        border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
-        border-image-slice: 100;
-        border-image-outset: 0;
-        border-image-repeat: round;
+    .wct23_section-suscribete .wct23_title-h2 {
+        font-size: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem);
     }
 }
 
@@ -983,23 +754,6 @@ header .entry-title {
 .wct23_patrocinadores-group-logotipos {
     margin-top: 32px !important;
 }
-
-
-.wct23_sponsors {
-    margin: 0 10%;
-}
-
-.wordcamp-sponsors > li {
-    margin: 0 0 5em !important;
-}
-
-/*posicionar wapu*/
-.wct23_section-hero-sponsors .wct23_hero_2 .wp-block-media-text__media img {
-    max-width: 30em;
-    right: 0;
-    bottom: calc(0vh - -5em);
-}
-
 
 
 /**
@@ -1400,7 +1154,7 @@ por eso he creado una clase nueva modificando la altura */
 .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
     max-width: 19em;
     right: calc(0vw - -8em);
-    bottom: calc(0vh - -14em);
+    bottom: 20%;
 }
 
 .wct23_localizacion {
@@ -1420,15 +1174,6 @@ por eso he creado una clase nueva modificando la altura */
 .wct23_localizacion .wct_23_evento_font_primary {
     font-size: 1.6rem;
     margin-top: 0;
-}
-
-.wct23_localizacion .wct23_button-CTA {
-    border: none;
-    margin-top: 2em;
-}
-
-.wct23_localizacion .wct23_button-CTA .wct23_button-CTA-text a {
-    border: 3px solid #0F3A4A;
 }
 
 
@@ -1456,44 +1201,7 @@ por eso he creado una clase nueva modificando la altura */
 
     .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
         max-width: 20em;
-        top: 10em;
+        top: 7em;
         left: 3%;
     }
-}
-
-/**
-*▂ ▃ ▅ ▆ █ 8. Plantilla ASISTENTES █ ▆ ▅ ▃ ▂
-*/
-#tix-attendees .avatar {
-    border-radius: 40%;
-    width: 70px;
-    height: 70px;
-    border: 2px solid #82EEFD;
-}
-
-#tix-attendees .tix-attendee-name {
-    padding: 0 0 0 10px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 0 20px 20px 10px;
-    text-transform: capitalize;
-}
-
-ul[class^='tix-columns']>li {
-    color: #0F0;
-}
-
-@media (max-width: 737px) {
-    /*el mosaico de asistentes en columna*/
-    #tix-attendees  li {
-        width: 100% !important;
-    }
-}
-
-
-/**
-*▂ ▃ ▅ ▆ █ 9. Plantilla ENTRADAS █ ▆ ▅ ▃ ▂
-*/
-.wct_23_entradas input[type=submit] {
-    margin-top: 1em;
 }
