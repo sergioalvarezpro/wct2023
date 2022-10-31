@@ -1145,17 +1145,6 @@ por eso he creado una clase nueva modificando la altura */
     top: 10.6rem;
 }
 
-/* clase que se asocia al <ul> de los organizadores */
-.wordcamp-organizers {
-    margin: 3% 0 !important;
-    padding: 0 3%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    text-align: center;
-}
-
 .wordcamp-organizers li {
     margin: 2% !important;
 }
@@ -1184,12 +1173,6 @@ por eso he creado una clase nueva modificando la altura */
     -webkit-box-shadow: 0 0 15px 15px #82EEFD;
 }
 
-/* mostramos únicamente el primer <p> dentro de la clase .wordcamp-organizers__content
- * en este primer parrafo es donde viene la función dentro de la WC */
-.wordcamp-organizers .wordcamp-organizers__content p:not(:first-child) {
-    display: none;
-}
-
 /* si añadimos el icono dentro de en la página de cada uno de los organizadores,
  * hacemos que no se muestre en el listado, ya que el plugin de organizadores lo muestra automáticamente */
 .wordcamp-organizers .wordcamp-organizers__content figure {
@@ -1215,9 +1198,6 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 @media only screen and (max-width: 1280px) {
-    .wordcamp-organizers {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         right: 0;
@@ -1261,10 +1241,6 @@ por eso he creado una clase nueva modificando la altura */
         bottom: calc(0vh - 10em);
     }
 
-    .wordcamp-organizers {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .wct23_organizer {
         margin: 0 2em;
     }
@@ -1276,12 +1252,6 @@ por eso he creado una clase nueva modificando la altura */
     .wct23_hero-2-almena-derecha img {
         bottom: -9.5rem;
         max-width: 100%;
-    }
-
-
-    .wordcamp-organizers {
-        padding: 0 1%;
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .wordcamp-organizers li {
@@ -1328,9 +1298,6 @@ por eso he creado una clase nueva modificando la altura */
 
 
 @media only screen and (max-width: 500px) {
-    .wordcamp-organizers {
-        grid-template-columns: repeat(1, 1fr);
-    }
 
     .wct23_hero_2 {
         min-height: 480px !important;
@@ -1391,10 +1358,6 @@ por eso he creado una clase nueva modificando la altura */
 /**
 *▂ ▃ ▅ ▆ █ 7. Plantilla LOCALIZACION █ ▆ ▅ ▃ ▂
 */
-
-.wordcamp-organizers a:hover {
-    text-decoration: underline;
-}
 
 /* posicionamos el wabalie */
 .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
