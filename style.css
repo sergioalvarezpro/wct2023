@@ -1119,7 +1119,7 @@ por eso he creado una clase nueva modificando la altura */
 
 /* posicionamos el wabalie */
 .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
-    max-width: 29em;
+    max-width: 22em;
     right: calc(0vw - -5em);
     bottom: 0;
     z-index: 10;
@@ -1135,6 +1135,13 @@ por eso he creado una clase nueva modificando la altura */
     margin: 0 10%;
 }
 
+
+
+.wordcamp-organizers {
+    margin: 3% 0 !important;
+    padding: 0 3%;
+}
+
 /* nombre de los organizadores */
 .wct23_organizer h3 {
     font-family: 'Metamorphous';
@@ -1142,17 +1149,25 @@ por eso he creado una clase nueva modificando la altura */
     font-weight: 700;
     line-height: 1.5em;
     position: relative;
-    top: 10.6rem;
+    margin:  1em ;
+    top: 0;
+    text-align: center;
 }
 
+
 .wordcamp-organizers li {
-    margin: 2% !important;
+    margin: 0 0 1em;
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    padding: 1em;
 }
+
 
 .wordcamp-organizers li img {
     position: relative;
-    top: -2rem;
-    margin: .5em auto;
+    top: 0;
+    margin: .5em 1em;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -1161,6 +1176,7 @@ por eso he creado una clase nueva modificando la altura */
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     filter: saturate(100%);
+    float: left;
 }
 
 .wordcamp-organizers li img:hover {
@@ -1183,6 +1199,30 @@ por eso he creado una clase nueva modificando la altura */
     text-decoration: none;
     color: #0F3A4A;
 }
+
+
+.wordcamp-organizers li .wordcamp-image__avatar-container {
+    max-width: 15%;
+    float: left;
+    overflow: hidden;
+}
+
+.wordcamp-organizers li .wordcamp-block__item-content {
+    max-width: 85%;
+    float: left;
+    overflow: hidden;
+}
+
+.wordcamp-organizers .link_twitter,
+.wordcamp-organizers .link_web {
+    background-color: #82eefd;
+    padding: .5em;
+    display: inline-block;
+    margin: .5em;
+    border-radius: 200px;
+}
+
+
 
 
 
@@ -1459,4 +1499,11 @@ ul[class^='tix-columns']>li {
 */
 .wct_23_entradas input[type=submit] {
     margin-top: 1em;
+}
+
+.tix_tickets_table .tix-column-price,
+.tix_tickets_table .tix-column-remaining,
+.tix_tickets_table .tix-column-quantity {
+    white-space: nowrap;
+    text-align: right;
 }
