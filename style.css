@@ -88,8 +88,11 @@ body {
     width: 100%;
     min-height: 100vh;
     color: #0F3A4A;
-    font-family: 'Source Sans 3';
+    font-family: 'Source Sans 3' !important;
 }
+
+p, ul, ol, li, span, input { font-family: 'Source Sans 3' !important;}
+
 
 /** clase con margin top **/
 .mt-1 { margin-top: 1em !important;}
@@ -144,6 +147,14 @@ body {
 
 .entry-content, .entry-summary {
     font-family: 'Source Sans 3' !important;
+}
+
+.post header .entry-title {
+    color: #0F3A4A;
+    font-family: 'Metamorphous';
+    letter-spacing: -0.05rem;
+    margin-top: 10rem;
+    text-align: center;
 }
 
 
@@ -1467,6 +1478,36 @@ por eso he creado una clase nueva modificando la altura */
 /**
 *▂ ▃ ▅ ▆ █ 8. Plantilla ASISTENTES █ ▆ ▅ ▃ ▂
 */
+
+.wct23_asistentes{
+    margin: 0 10%;
+}
+
+#tix-attendees {
+    margin: 0;
+    overflow: hidden;
+    max-width: 99%;
+}
+
+#tix-attendees .tix-attendee-name, #tix-attendees .tix-field.tix-attendee-twitter{
+    padding: 0 0 0 15px;
+}
+#tix-attendees .tix-field.tix-attendee-twitter{
+    text-decoration: none
+}
+
+#tix-attendees .tix-field.tix-attendee-twitter::before {
+    content: '';
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    width: 24px;
+    height: 24px;
+    background-image: url(https://torrelodones.wordcamp.org/2023/files/2022/11/twitter.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
 #tix-attendees .avatar {
     border-radius: 40%;
     width: 70px;
@@ -1475,16 +1516,22 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 #tix-attendees .tix-attendee-name {
-    padding: 0 0 0 10px;
     font-size: 16px;
     font-weight: bold;
-    padding: 0 20px 20px 10px;
     text-transform: capitalize;
 }
 
 ul[class^='tix-columns']>li {
     color: #0F0;
 }
+
+
+
+
+
+
+
+
 
 @media (max-width: 737px) {
     /*el mosaico de asistentes en columna*/
