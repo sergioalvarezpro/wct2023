@@ -217,7 +217,7 @@ body {
 }
 
 /* No se muestra el título de la páginas que no son la home */
-header .entry-title {
+header .page .entry-title {
     display: none;
 }
 
