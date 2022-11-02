@@ -217,9 +217,9 @@ body {
 }
 
 /* No se muestra el título de la páginas que no son la home */
-/*header .page .entry-title {
+.page header .entry-title {
     display: none;
-}*/
+}
 
 .singular .entry-header {
     border-bottom: 0;
