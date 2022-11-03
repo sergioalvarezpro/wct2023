@@ -389,8 +389,8 @@ input {
     overflow: hidden;
     z-index: -1;
     top: 3vh;
-    right: -5vw;
-    width: 73rem;
+    right: 0vw;
+    width: 64rem;
 }
 
 /* Posicionamos las nubes */
