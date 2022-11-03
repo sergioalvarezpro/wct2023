@@ -364,7 +364,7 @@ input {
 }
 
 .wct23_hero-fecha {
-    font-family: 'Metamorphous';
+    font-family: 'Metamorphous' !important;
     font-weight: 400;
     font-size: clamp(1.875rem, 5vw, 2.5rem);
 }
@@ -645,12 +645,17 @@ input {
 
 .wct23_image img {
     position: absolute;
-    top: 65rem;
+    top: 83vh;
     left: 0;
-    z-index: -1;
+    z-index: 7;
+}
+
+.wct23_intro-h2 {
+    max-width: 32vw;
 }
 
 .wct23_intro-text {
+    max-width: 44vw;
     margin: 1rem 0 !important;
 }
 
@@ -665,6 +670,8 @@ input {
     }
 
     .wct23_image {
+        position: inherit;
+        z-index: 1;
         order: 2;
     }
 
@@ -676,6 +683,8 @@ input {
     }
 
     .wct23_content {
+        position: relative;
+        z-index: 5;
         order: 1;
     }
 
@@ -691,7 +700,7 @@ input {
     }
 
     .wct23_image img {
-        top: 106rem;
+        top: 121rem;
     }
 }
 
