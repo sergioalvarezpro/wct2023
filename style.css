@@ -1323,7 +1323,7 @@ por eso he creado una clase nueva modificando la altura */
 .wct23_organizer h3 {
     font-family: 'Metamorphous';
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5em;
     position: relative;
     margin: 1em;
@@ -1372,6 +1372,11 @@ por eso he creado una clase nueva modificando la altura */
     display: none;
 }
 
+.wordcamp-organizers__content>p:first-child{
+    font-family: 'Metamorphous' !important;
+    font-weight: 600;
+}
+
 .wordcamp-organizers a {
     text-decoration: none;
     color: #0F3A4A;
@@ -1380,12 +1385,11 @@ por eso he creado una clase nueva modificando la altura */
 
 .wordcamp-organizers li .wordcamp-image__avatar-container {
     width: 25%;
-    max-width: 25%;
     float: left;
 }
 
 .wordcamp-organizers li .wordcamp-block__item-content {
-    max-width: 75%;
+    width: 75%;
     float: right;
 }
 
