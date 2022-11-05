@@ -92,6 +92,7 @@ body {
 }
 
 p, ul, ol, li, span, input { font-family: 'Source Sans 3' !important;}
+h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 
 
 /** clase con margin top **/
@@ -155,6 +156,17 @@ p, ul, ol, li, span, input { font-family: 'Source Sans 3' !important;}
     letter-spacing: -0.05rem;
     margin-top: 10rem;
     text-align: center;
+}
+
+
+/* Anuncios */
+.single .entry-content p {
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.single .wp-block-code {
+    margin-bottom: 1.5rem;
 }
 
 
@@ -731,6 +743,21 @@ p, ul, ol, li, span, input { font-family: 'Source Sans 3' !important;}
     font-size: 1.5rem;
 }
 
+/** Ultimos pregones **/
+.content-area .site-main .wct23_group-pregones {
+    text-align: center;
+}
+
+.wct23_group-pregones li a {
+    font-family: 'Metamorphous' !important;
+}
+
+.wct23_group-pregones li a.more-link {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+
 @media only screen and (max-width: 1080px) {
 
     .wct23_group-pregones {
@@ -1104,6 +1131,10 @@ p, ul, ol, li, span, input { font-family: 'Source Sans 3' !important;}
 *▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES █ ▆ ▅ ▃ ▂
 */
 
+.page-slug-organizadores {
+    background-color: #82EEFD !important;
+}
+
 /* el heroe de las páginas diferentes a la home, es mas estrecho en altura
 por eso he creado una clase nueva modificando la altura */
 .wct23_hero_2 {
@@ -1142,9 +1173,13 @@ por eso he creado una clase nueva modificando la altura */
     top: -0.2em;
 }
 
+
 .wct23_organizer {
-    margin: 0 10%;
+    margin: 0 0 15%;
+    padding: 0 20%;
+    background-color: #fff7da;
 }
+
 
 
 
@@ -1162,7 +1197,7 @@ por eso he creado una clase nueva modificando la altura */
     position: relative;
     margin:  1em ;
     top: 0;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -1213,15 +1248,14 @@ por eso he creado una clase nueva modificando la altura */
 
 
 .wordcamp-organizers li .wordcamp-image__avatar-container {
-    max-width: 15%;
-    float: left;
-    overflow: hidden;
+    width: 25%;
+    max-width: 25%;
+    float: right;
 }
 
 .wordcamp-organizers li .wordcamp-block__item-content {
-    max-width: 85%;
-    float: left;
-    overflow: hidden;
+    max-width: 75%;
+    float: right;
 }
 
 .wordcamp-organizers .link_twitter,
@@ -1480,7 +1514,17 @@ por eso he creado una clase nueva modificando la altura */
 */
 
 .wct23_asistentes{
-    margin: 0 10%;
+    padding: 0 20%;
+}
+
+#tix {
+    padding-top: 5%;
+    max-width: 80%;
+}
+
+#tix h2 {
+    margin: 4% 0 1%;
+    text-align: center;
 }
 
 #tix-attendees {
@@ -1521,10 +1565,25 @@ por eso he creado una clase nueva modificando la altura */
     text-transform: capitalize;
 }
 
+.tix_tickets_table {
+    border: 0;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+}
+
+
+
 ul[class^='tix-columns']>li {
     color: #0F0;
 }
 
+table td, table th, .wp-block-table td, .wp-block-table th {
+    border-top: 1px solid #ccc;
+}
 
 
 
