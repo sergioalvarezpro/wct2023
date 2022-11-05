@@ -1271,16 +1271,17 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
     background-color: #82EEFD !important;
 }
 
-/* el heroe de las páginas diferentes a la home, es mas estrecho en altura
-por eso he creado una clase nueva modificando la altura */
-.wct23_hero_2 {
-    /*min-height: 45rem !important;*/
+/*Se incluye la Almena como Border Bottom de la sección Hero de los organizadores*/
+.wct23_section-hero-organizadores {
+    width: 100%;
+    border-bottom: 6rem solid black;
+    border-bottom-style: solid;
+    border-image-source: url(https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png);
+    border-image-slice: 160;
+    border-image-outset: .01;
+    border-image-repeat: round;
 }
 
-
-.wct23_hero-2-frame img {
-    left: 0;
-}
 
 
 /* posicionamos el wabalie */
