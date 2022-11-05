@@ -91,13 +91,22 @@ body {
     font-family: 'Source Sans 3' !important;
 }
 
+
 p, ul, ol, li, span, input { font-family: 'Source Sans 3' !important;}
 h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 
+.home {
+    background-color: #82EEFD !important;
+}
 
 /** clase con margin top **/
-.mt-1 { margin-top: 1em !important;}
-.mt-2 { margin-top: 2em !important;}
+.mt-1 {
+    margin-top: 1em !important;
+}
+
+.mt-2 {
+    margin-top: 2em !important;
+}
 
 
 /**Quitar gap, margin y padding entre bloques**/
@@ -146,7 +155,8 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
     line-height: 1.6em;
 }
 
-.entry-content, .entry-summary {
+.entry-content,
+.entry-summary {
     font-family: 'Source Sans 3' !important;
 }
 
@@ -335,24 +345,40 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 * ------ooO-(_)-Ooo------
 *         3.1 HERO
 */
-.wct23_hero {
-    position: relative;
-    min-height: 59.875rem;
-    overflow: hidden;
+
+/*Se incluye la Almena como Border Bottom de la sección Hero*/
+.wct23_section-new-hero {
+    width: 100%;
+    border-bottom: 6rem solid black;
+    border-bottom-style: solid;
+    border-image-source: url('https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png');
+    border-image-slice: 160;
+    border-image-outset: .01;
+    border-image-repeat: round;
 }
 
-.wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
-    grid-column: 1/-1;
-    position: relative;
-    z-index: 30;
-    padding-left: 10.125rem;
+/*Posicionar bloque de texto y boton CTA*/
+.wct23_hero-content {
+    padding-left: 10rem !important;
+    padding-top: 9rem !important;
+}
+
+/*Quitar padding del H1 para alinear con resto de texto del bloque*/
+.wct23_hero-content .wct23_title-h1 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .wct23_hero-fecha {
-    font-family: 'Metamorphous';
+    font-family: 'Metamorphous' !important;
     font-weight: 400;
     font-size: clamp(1.875rem, 5vw, 2.5rem);
-    line-height: 3em;
+}
+
+/*Estilos al botón CTA*/
+.wct23_button-CTA-text a {
+    font-size: clamp(1.5rem, 2vw, 2rem) !important;
+    font-weight: 600 !important;
 }
 
 .wct23_button-CTA {
@@ -363,163 +389,252 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
     background-color: #FFE87F;
 }
 
-.wct23_button-CTA-text a {
-    font-size: 2rem !important;
-    font-weight: 600 !important;
-}
-
-/* .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
-    grid-column: 1/-1;
-    position: relative;
-    z-index: 20;
-} */
-
-/* posicionamos el wabalie */
-.wct23_hero .wp-block-media-text__media img {
+/* Posicionamos el wabalie */
+.wct23_new-wabali img {
     position: absolute;
-    z-index: 10;
-    max-width: 77rem;
-    right: calc(0vw - 2.4em);
-    bottom: calc(0vh - 9.2em);
+    overflow: hidden;
+    z-index: -1;
+    top: 3vh;
+    right: 0vw;
+    width: 64rem;
 }
 
-/* posicionamos la almena */
-.wct23_hero-almena {
-    width: 100vw;
-}
-
-.wct23_hero-almena img {
-    position: absolute;
-    max-height: 4.5rem;
-    width: 100vw;
-    left: 0;
-    bottom: -7.7em;
-}
-
-@media only screen and (max-width: 1103px) {
-    .wct23_hero-almena img {
-        bottom: -9em !important;
-    }
-}
-
-@media only screen and (max-width: 906px) {
-    .wct23_hero-almena img {
-        bottom: -10em !important;
-    }
-}
-
-@media only screen and (max-width: 771px) {
-    .wct23_hero-almena img {
-        bottom: -11em !important;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    .wct23_hero-almena img {
-        bottom: -12em !important;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .wct23_hero-almena img {
-        bottom: -6.3em !important;
-    }
-}
-
-@media only screen and (max-width: 401px) {
-    .wct23_hero-almena img {
-        bottom: -5em !important;
-    }
-}
-
-
-/* posicionamos las nubes */
+/* Posicionamos las nubes */
 .wct23_hero-group-cloud {
     margin: 0 !important;
 }
 
 .wct23_hero-cloud-xl img {
     position: absolute;
-    z-index: 4;
-    left: -19px;
-    top: 146px;
+    z-index: -1;
+    left: -1vw;
+    top: 11vh;
 }
 
 .wct23_hero-cloud-sm img {
     position: absolute;
-    z-index: 4;
-    right: 53px;
-    top: 351px;
+    z-index: -1;
+    right: 2vw;
+    top: 27vh;
 }
 
-@media only screen and (max-width: 1020px) {
-    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
-        padding-left: 2rem !important;
-    }
+/* Ajustes en estructura para mantener el texto por encima de la imagen Wabali sobre montaña */
+.wct23_hero-block-content {
+    position: relative;
+    z-index: 200;
 }
 
+.wct23_hero-block-image {
+    position: absolute;
+    z-index: -1;
+}
 
-/* @media only screen and (max-width: 1480px) {
-@media only screen and (max-width: 1226px) {
-    .wct23_hero-frame img {
-        bottom: -223px;
-    }
-}
-@media only screen and (max-width: 967px) {
-    .wct23_hero {
-        min-height: 661px;
-    }
-    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
-        padding: 0;
-    }
-    .wct23_hero-content {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-    }
-    .wp-block-media-text__media img {
-        position: absolute;
-        right: -35px;
-        bottom: -529px;
-    }
-    .wct23_hero-frame img {
-        bottom: -120px;
-    }
-}
-@media only screen and (max-width: 816px) {
-    .wp-block-media-text__media img {
-        position: absolute;
-        right: -35px;
-        bottom: -475px;
-    }
-}
 @media only screen and (max-width: 764px) {
-    .wp-block-media-text__media img {
+    .wct23_section-new-hero {
+        min-height: 91vh;
+    }
+
+    .wct23_hero-content {
+        padding-left: 2rem !important;
+        padding-top: 2rem !important;
+    }
+
+    .wct23_new-wabali img {
         position: absolute;
-        right: -35px;
-        bottom: -475px;
+        overflow: hidden;
+        z-index: -1;
+        top: 42vh;
+        right: -12vw;
+        width: 73rem;
+    }
+
+    .wct23_hero-cloud-xl img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        left: -40vw;
+        top: 17vh;
+    }
+
+    .wct23_hero-cloud-sm img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        right: -16vw;
+        top: 58vh;
     }
 }
-@media only screen and (max-width: 700px) {
-    .wp-block-media-text__media img {
+
+@media only screen and (max-width: 720px) {
+    .wct23_new-wabali img {
         position: absolute;
-        right: -35px;
-        bottom: -435px;
+        overflow: hidden;
+        z-index: -1;
+        top: 45vh;
+        right: -12vw;
+        width: 73rem;
+    }
+
+    .wct23_section-new-hero {
+        border-bottom: 4rem solid black;
+        border-bottom-style: solid;
+        border-image-source: url('https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png');
+        border-image-slice: 160;
+        border-image-outset: .03;
+        border-image-repeat: round;
+    }
+
+    .wct23_hero-cloud-sm img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        right: -16vw;
+        top: 61vh;
     }
 }
+
+@media only screen and (max-width: 690px) {
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 47vh;
+        right: -12vw;
+        width: 73rem;
+    }
+}
+
+@media only screen and (max-width: 656px) {
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 49vh;
+        right: -12vw;
+        width: 73rem;
+    }
+
+    .wct23_hero-cloud-sm img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        right: -23vw;
+        top: 72vh;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 51vh;
+        right: -12vw;
+        width: 73rem;
+    }
+}
+
+@media only screen and (max-width: 592px) {
+    .wct23_section-new-hero {
+        min-height: 73vh;
+    }
+
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 35vh;
+        right: -12vw;
+        width: 73rem;
+    }
+
+    .wct23_hero-cloud-sm img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        right: -29vw;
+        top: 56vh;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 36vh;
+        right: -12vw;
+        width: 73rem;
+    }
+}
+
+@media only screen and (max-width: 547px) {
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 37vh;
+        right: -12vw;
+        width: 73rem;
+    }
+
+    .wct23_hero-cloud-sm img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        right: -33vw;
+        top: 58vh;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 38vh;
+        right: -12vw;
+        width: 73rem;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .wct23_new-wabali img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        top: 39vh;
+        right: -12vw;
+        width: 73rem;
+    }
+}
+
 @media only screen and (max-width: 480px) {
-    .wct23_hero {
-        min-height: 530px;
+    .wct23_section-new-hero {
+        min-height: 68vh;
     }
-    .wp-block-media-text__media img {
+
+    .wct23_new-wabali img {
         position: absolute;
-        right: -35px;
-        bottom: -352px;
+        overflow: hidden;
+        z-index: -1;
+        top: 36vh;
+        right: -12vw;
+        width: 73rem;
     }
-    .wct23_hero-frame img {
-        bottom: -68px;
+
+    .wct23_hero-cloud-sm img {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        right: -40vw;
+        top: 48vh;
     }
-} */
+
+    .wct23_hero-block-content {
+        z-index: 0;
+    }
+}
 
 
 /**
@@ -534,14 +649,19 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
     min-height: 46rem;
 }
 
-.wct23_image img {
+/* .wct23_image img {
     position: absolute;
-    top: 71rem;
+    top: 83vh;
     left: 0;
-    z-index: -1;
+    z-index: 7;
+} */
+
+.wct23_intro-h2 {
+    max-width: 32vw;
 }
 
 .wct23_intro-text {
+    max-width: 44vw;
     margin: 1rem 0 !important;
 }
 
@@ -556,17 +676,21 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
     }
 
     .wct23_image {
+        position: inherit;
+        z-index: 1;
         order: 2;
     }
 
-    .wct23_image img {
+    /* .wct23_image img {
         position: absolute;
         top: 105rem;
         left: 0;
         z-index: -1;
-    }
+    } */
 
     .wct23_content {
+        position: relative;
+        z-index: 5;
         order: 1;
     }
 
@@ -581,9 +705,9 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 72.5rem;
     }
 
-    .wct23_image img {
-        top: 106rem;
-    }
+    /* .wct23_image img {
+        top: 121rem;
+    } */
 }
 
 @media only screen and (max-width: 685px) {
@@ -591,9 +715,9 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 74rem;
     }
 
-    .wct23_image img {
+    /* .wct23_image img {
         top: 110rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 611px) {
@@ -601,26 +725,26 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 78rem;
     }
 
-    .wct23_image img {
+    /* .wct23_image img {
         top: 117rem;
-    }
+    } */
 }
 
-@media only screen and (max-width: 606px) {
+/* @media only screen and (max-width: 606px) {
 
     .wct23_image img {
         top: 124rem;
     }
-}
+} */
 
 @media only screen and (max-width: 488px) {
     .wct23_section-intro {
         min-height: 76rem;
     }
 
-    .wct23_image img {
+    /* .wct23_image img {
         top: 129rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 481px) {
@@ -628,15 +752,15 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 78.5rem;
     }
 
-    .wct23_image img {
+    /* .wct23_image img {
         top: 124rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 436px) {
-    .wct23_image img {
+    /* .wct23_image img {
         top: 125.5rem;
-    }
+    } */
 
     .wct23_button-CTA-text a {
         font-size: 1.5rem !important;
@@ -644,17 +768,17 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
     }
 }
 
-@media only screen and (max-width: 432px) {
+/* @media only screen and (max-width: 432px) {
     .wct23_image img {
         top: 132rem;
     }
-}
+} */
 
-@media only screen and (max-width: 394px) {
+/* @media only screen and (max-width: 394px) {
     .wct23_image img {
         top: 134rem;
     }
-}
+} */
 
 @media only screen and (max-width: 388px) {
 
@@ -662,9 +786,9 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 82.5rem;
     }
 
-    .wct23_image img {
+    /* .wct23_image img {
         top: 138rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 375px) {
@@ -672,9 +796,9 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 82rem;
     }
 
-    .wct23_image img {
+    /* .wct23_image img {
         top: 136rem;
-    }
+    } */
 
     .wct23_text-content {
         margin: 0 auto;
@@ -687,16 +811,17 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 82rem;
     }
 
+    /*
     .wct23_image img {
         top: 139rem;
-    }
+    } */
 }
 
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
     .wct23_image img {
         top: 145.5rem;
     }
-}
+} */
 
 
 /**
@@ -787,6 +912,11 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 * ------ooO-(_)-Ooo------
 *       4.1 PARTICIPA
 */
+.wct23_section-participa {
+    position: relative;
+    z-index: 10;
+}
+
 .wct23_participa-text {
     margin-bottom: 58px !important;
     font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
@@ -1027,7 +1157,7 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
     margin: 0 10%;
 }
 
-.wordcamp-sponsors > li {
+.wordcamp-sponsors>li {
     margin: 0 0 5em !important;
 }
 
@@ -1054,9 +1184,10 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 .widget-area {
     grid-template-columns: 1fr;
     max-width: 100vw;
-    background-color: transparent;
+    background-color: #FFF7DA;
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: 0 !important;
 }
 
 .widget-area .widget_block {
@@ -1195,7 +1326,7 @@ por eso he creado una clase nueva modificando la altura */
     font-weight: 700;
     line-height: 1.5em;
     position: relative;
-    margin:  1em ;
+    margin: 1em;
     top: 0;
     text-align: left;
 }
@@ -1203,8 +1334,8 @@ por eso he creado una clase nueva modificando la altura */
 
 .wordcamp-organizers li {
     margin: 0 0 1em;
-    background-color: rgba(255,255,255,0.4);
-    border: 1px solid rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     padding: 1em;
 }
@@ -1513,6 +1644,7 @@ por eso he creado una clase nueva modificando la altura */
 *▂ ▃ ▅ ▆ █ 8. Plantilla ASISTENTES █ ▆ ▅ ▃ ▂
 */
 
+<<<<<<< HEAD
 .wct23_asistentes{
     padding: 0 20%;
 }
@@ -1525,6 +1657,10 @@ por eso he creado una clase nueva modificando la altura */
 #tix h2 {
     margin: 4% 0 1%;
     text-align: center;
+=======
+.wct23_asistentes {
+    margin: 0 10%;
+>>>>>>> c25ca70298b4e47f57d9d1dad87aec724b1295bf
 }
 
 #tix-attendees {
@@ -1533,10 +1669,12 @@ por eso he creado una clase nueva modificando la altura */
     max-width: 99%;
 }
 
-#tix-attendees .tix-attendee-name, #tix-attendees .tix-field.tix-attendee-twitter{
+#tix-attendees .tix-attendee-name,
+#tix-attendees .tix-field.tix-attendee-twitter {
     padding: 0 0 0 15px;
 }
-#tix-attendees .tix-field.tix-attendee-twitter{
+
+#tix-attendees .tix-field.tix-attendee-twitter {
     text-decoration: none
 }
 
@@ -1593,8 +1731,9 @@ table td, table th, .wp-block-table td, .wp-block-table th {
 
 
 @media (max-width: 737px) {
+
     /*el mosaico de asistentes en columna*/
-    #tix-attendees  li {
+    #tix-attendees li {
         width: 100% !important;
     }
 }
