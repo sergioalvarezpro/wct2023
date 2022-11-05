@@ -1140,6 +1140,11 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 * ------ooO-(_)-Ooo------
 *    4.3 PATROCINADORES
 */
+
+.wct23_section-patrocinadores{
+	background-color: #fff7da;
+}
+
 .wct23_patrocinadores-group {
     margin-bottom: 80px !important;
 }
@@ -1280,8 +1285,8 @@ por eso he creado una clase nueva modificando la altura */
 
 /* posicionamos el wabalie */
 .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
-    max-width: 22em;
-    right: calc(0vw - -5em);
+    max-width: 90%;
+    right: 1%;
     bottom: 0;
     z-index: 10;
 }
@@ -1434,15 +1439,8 @@ por eso he creado una clase nueva modificando la altura */
 
 @media only screen and (max-width: 967px) {
     .wct23_hero_2 {
-        min-height: 460px !important;
+/*        min-height: 460px !important;*/
     }
-
-    .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -9.3rem;
-    }
-
-
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         max-width: 17em;
@@ -1458,12 +1456,6 @@ por eso he creado una clase nueva modificando la altura */
 
 @media only screen and (max-width: 700px) {
 
-    .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -9.5rem;
-        max-width: 100%;
-    }
-
     .wordcamp-organizers li {
         border-bottom: 6px dotted #82EEFD;
         padding-bottom: .8em;
@@ -1475,11 +1467,6 @@ por eso he creado una clase nueva modificando la altura */
 }
 
 @media only screen and (max-width: 650px) {
-
-    .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -7.8rem;
-    }
 
     .wct23_hero_2 .wct23_title-h1 {
         top: -4.1em;
@@ -1498,24 +1485,10 @@ por eso he creado una clase nueva modificando la altura */
 
 }
 
-@media only screen and (max-width: 592px) {
-
-    .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -6.5em;
-    }
-}
-
-
 @media only screen and (max-width: 500px) {
 
     .wct23_hero_2 {
-        min-height: 480px !important;
-    }
-
-    .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -8rem;
+/*        min-height: 480px !important;*/
     }
 
     .wct23_hero_2 .wct23_title-h1 {
@@ -1528,13 +1501,8 @@ por eso he creado una clase nueva modificando la altura */
 
 @media only screen and (max-width: 482px) {
     .wct23_hero-2 {
-        max-width: 102% !important;
-        width: 102% !important;
-    }
-
-    .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -9.6em;
+        /*max-width: 102% !important;
+        width: 102% !important;*/
     }
 
     .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
@@ -1551,18 +1519,6 @@ por eso he creado una clase nueva modificando la altura */
     }
 }
 
-
-@media only screen and (max-width: 478px) {
-    .wct23_hero-2 {
-        max-width: 102% !important;
-        width: 102% !important;
-    }
-
-    .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -9.6em;
-    }
-}
 
 
 /**
