@@ -811,7 +811,7 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
         min-height: 82rem;
     }
 
-    /*
+    /*.
     .wct23_image img {
         top: 139rem;
     } */
@@ -1381,7 +1381,7 @@ por eso he creado una clase nueva modificando la altura */
 .wordcamp-organizers li .wordcamp-image__avatar-container {
     width: 25%;
     max-width: 25%;
-    float: right;
+    float: left;
 }
 
 .wordcamp-organizers li .wordcamp-block__item-content {
@@ -1644,10 +1644,32 @@ por eso he creado una clase nueva modificando la altura */
 *▂ ▃ ▅ ▆ █ 8. Plantilla ASISTENTES █ ▆ ▅ ▃ ▂
 */
 
-<<<<<<< HEAD
 .wct23_asistentes{
     padding: 0 20%;
 }
+
+.wct23_section-hero-asistentes .wct23_hero_2 .wp-block-media-text__media img {
+    max-width: 55%;
+    right: 1%;
+    bottom: 3%;
+    z-index: 10;
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 9. Plantilla ENTRADAS █ ▆ ▅ ▃ ▂
+*/
+.wct_23_entradas input[type=submit] {
+    margin-top: 1em;
+}
+
+.tix_tickets_table .tix-column-price,
+.tix_tickets_table .tix-column-remaining,
+.tix_tickets_table .tix-column-quantity {
+    white-space: nowrap;
+    text-align: right;
+}
+
 
 #tix {
     padding-top: 5%;
@@ -1657,10 +1679,6 @@ por eso he creado una clase nueva modificando la altura */
 #tix h2 {
     margin: 4% 0 1%;
     text-align: center;
-=======
-.wct23_asistentes {
-    margin: 0 10%;
->>>>>>> c25ca70298b4e47f57d9d1dad87aec724b1295bf
 }
 
 #tix-attendees {
@@ -1713,8 +1731,6 @@ por eso he creado una clase nueva modificando la altura */
     border-spacing: 0;
 }
 
-
-
 ul[class^='tix-columns']>li {
     color: #0F0;
 }
@@ -1722,13 +1738,6 @@ ul[class^='tix-columns']>li {
 table td, table th, .wp-block-table td, .wp-block-table th {
     border-top: 1px solid #ccc;
 }
-
-
-
-
-
-
-
 
 @media (max-width: 737px) {
 
@@ -1738,17 +1747,3 @@ table td, table th, .wp-block-table td, .wp-block-table th {
     }
 }
 
-
-/**
-*▂ ▃ ▅ ▆ █ 9. Plantilla ENTRADAS █ ▆ ▅ ▃ ▂
-*/
-.wct_23_entradas input[type=submit] {
-    margin-top: 1em;
-}
-
-.tix_tickets_table .tix-column-price,
-.tix_tickets_table .tix-column-remaining,
-.tix_tickets_table .tix-column-quantity {
-    white-space: nowrap;
-    text-align: right;
-}
