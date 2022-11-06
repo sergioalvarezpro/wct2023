@@ -1565,10 +1565,6 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 	z-index: 10;
 }
 
-.wct23_localizacion {
-	margin: 2% 10%;
-}
-
 .wct23_localizacion .wct_23_fecha_font_primary,
 .wct23_localizacion .wct_23_evento_font_primary {
 	font-family: 'Metamorphous' !important;
