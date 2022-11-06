@@ -6,6 +6,7 @@
  *(¸.•´ (¸.•` ¤ Content:
  *                  0. Referencias
  *                  1. General
+ * 						1.1 Mostrar muralla en las páginas que no son la HOME
  *                  2. Header
  *                  3. Plantilla 'HOME'
  *                      3.1 Hero
@@ -183,9 +184,51 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 /** Nube de las páginas que no son la Home **/
 .nube_kinton img{
 	 position: absolute;
-    left: 0;
-    top: 11vh;
+	left: 0;
+	top: 11vh;
 }
+
+/**
+*▂ ▃ ▅ ▆ █ 1. GENERAL █ ▆ ▅ ▃ ▂
+*
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*        1.1 Mostrar muralla en las páginas que no son la HOME
+*/
+
+.page-slug-organizadores,
+.page-slug-localizacion {
+	background-color: #82EEFD !important;
+}
+
+.wct23_organizer,
+.wct23_localizacion {
+	margin: 0 0 15%;
+	padding: 0 20%;
+	background-color: #fff7da;
+}
+
+
+/*Se incluye la Almena como Border Bottom de la sección Hero de las distintas páginas*/
+.wct23_section-hero-organizadores,
+.wct23_section-hero-localizacion {
+	width: 100%;
+	border-bottom: 6rem solid black;
+	border-bottom-style: solid;
+	border-image-source: url(https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png);
+	border-image-slice: 160;
+	border-image-outset: .01;
+	border-image-repeat: round;
+}
+
+@media only screen and (max-width: 700px) {
+	.wct23_section-hero-organizadores,
+	.wct23_section-hero-localizacion {
+		border-bottom: 2rem solid black;
+	}
+}
+
 
 
 
@@ -1279,23 +1322,6 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 *▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES █ ▆ ▅ ▃ ▂
 */
 
-.page-slug-organizadores {
-	background-color: #82EEFD !important;
-}
-
-/*Se incluye la Almena como Border Bottom de la sección Hero de los organizadores*/
-.wct23_section-hero-organizadores {
-	width: 100%;
-	border-bottom: 6rem solid black;
-	border-bottom-style: solid;
-	border-image-source: url(https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png);
-	border-image-slice: 160;
-	border-image-outset: .01;
-	border-image-repeat: round;
-}
-
-
-
 /* posicionamos el wabalie */
 .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
 	max-width: 70%;
@@ -1309,13 +1335,6 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 .wct23_hero_2 .wct23_title-h1 {
 	position: relative;
 	top: -0.2em;
-}
-
-
-.wct23_organizer {
-	margin: 0 0 15%;
-	padding: 0 20%;
-	background-color: #fff7da;
 }
 
 .wordcamp-organizers {
@@ -1475,10 +1494,6 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 		padding-left: 0 !important;
 	}
 
-	.wct23_section-hero-organizadores {
-		border-bottom: 2rem solid black;
-	}
-
 	.wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
 		max-width: 90%;
 	}
@@ -1544,9 +1559,10 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 
 /* posicionamos el wabalie */
 .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
-	max-width: 19em;
-	right: calc(0vw - -8em);
-	bottom: calc(0vh - -14em);
+	right: 1%;
+	bottom: 0;
+	position: relative;
+	z-index: 10;
 }
 
 .wct23_localizacion {
