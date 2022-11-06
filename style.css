@@ -205,10 +205,9 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 .wct23_organizer,
 .wct23_localizacion {
 	margin: 0 0 15%;
-	padding: 0 20%;
+	padding: 0 20% 5%;
 	background-color: #fff7da;
 }
-
 
 /*Se incluye la Almena como Border Bottom de la sección Hero de las distintas páginas*/
 .wct23_section-hero-organizadores,
@@ -434,6 +433,7 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 .wct23_button-CTA-text a {
 	font-size: clamp(1.5rem, 2vw, 2rem) !important;
 	font-weight: 600 !important;
+	font-family: 'Metamorphous' !important;
 }
 
 .wct23_button-CTA {
@@ -1571,7 +1571,7 @@ h1, h2, h3, h4 { font-family: 'Metamorphous' !important;}
 
 .wct23_localizacion .wct_23_fecha_font_primary,
 .wct23_localizacion .wct_23_evento_font_primary {
-	font-family: 'Metamorphous';
+	font-family: 'Metamorphous' !important;
 }
 
 .wct23_localizacion .wct_23_fecha_font_primary {
