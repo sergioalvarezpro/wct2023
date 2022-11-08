@@ -46,6 +46,15 @@
  *   --wct23--font-size-xl: clamp(2.2rem, 0.85vw + 1.94rem, 2.96rem);
  *   --wct23--font-size-xxl: clamp(2.75rem, 1.33vw + 2.35rem, 3.95rem);
  *   --wct23--font-size-xxxl: clamp(3.43rem, 2.03vw + 2.82rem, 5.26rem);
+
+
+ --font-size-sm: clamp(0.8rem, 0.1vw + 0.78rem, 0.89rem);
+--font-size-base: clamp(1rem, 0.2vw + 0.95rem, 1.19rem);
+--font-size-md: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
+--font-size-lg: clamp(1.56rem, 0.58vw + 1.42rem, 2.11rem);
+--font-size-xl: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
+--font-size-xxl: clamp(2.44rem, 1.38vw + 2.1rem, 3.75rem);
+--font-size-xxxl: clamp(3.05rem, 2.05vw + 2.54rem, 5rem);
  *
  *   Colors
  *   --wct23--color-naranja-aburrido: #BA9B2F;
@@ -150,14 +159,14 @@ h4 {
 .wct23_title-h1 {
     font-family: 'Metamorphous';
     font-weight: 400;
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(3.05rem, 2.05vw + 2.54rem, 6rem);
     line-height: 1.1em;
 }
 
 .wct23_title-h2 {
     font-family: 'Metamorphous';
     font-weight: 400;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 0.9vw + 1.73rem, 3rem);
     line-height: 1.5em;
 }
 
@@ -441,7 +450,7 @@ h4 {
 /*Posicionar bloque de texto y boton CTA*/
 .wct23_hero-content {
     padding-left: 10rem !important;
-    padding-top: 9rem !important;
+    padding-top: 7rem !important;
 }
 
 /*Quitar padding del H1 para alinear con resto de texto del bloque*/
@@ -453,18 +462,19 @@ h4 {
 .wct23_hero-fecha {
     font-family: 'Metamorphous' !important;
     font-weight: 400;
-    font-size: clamp(1.875rem, 5vw, 2.5rem);
+    font-size: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
 }
 
 /*Estilos al botón CTA*/
 .wct23_button-CTA-text a {
-    font-size: clamp(1.5rem, 2vw, 2rem) !important;
+    font-size: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
     font-weight: 600 !important;
     font-family: 'Metamorphous' !important;
 }
 
 .wct23_button-CTA {
     border: 3px solid #0F3A4A;
+    margin: 3rem 0;
 }
 
 .wct23_button-CTA:hover {
@@ -473,16 +483,16 @@ h4 {
 
 /* Posicionamos el wabalie */
 .wct23_hero-block-image figure {
-    position: relative;
+    position: absolute;
     width: 100vw;
+    z-index: -1;
 }
 
 .wct23_new-wabali img {
     position: absolute;
-    /* z-index: -1; */
+    z-index: -1;
     top: 3vh;
-    right: 0vw;
-    /* width: 64rem; */
+    right: 49vw;
 }
 
 /* Posicionamos las nubes */
@@ -496,232 +506,14 @@ h4 {
     position: absolute;
     z-index: -1;
     left: -1vw;
-    top: 11vh;
+    top: 1vh;
 }
 
 .wct23_hero-cloud-sm img {
     position: absolute;
     z-index: -1;
-    right: 2vw;
-    top: 27vh;
-}
-
-/* Ajustes en estructura para mantener el texto por encima de la imagen Wabali sobre montaña */
-/* .wct23_hero-block-content {
-    position: relative;
-    z-index: 200;
-}
-
-.wct23_hero-block-image {
-    position: absolute;
-    z-index: -1;
-} */
-
-@media only screen and (max-width: 764px) {
-    .wct23_section-new-hero {
-        min-height: 91vh;
-    }
-
-    .wct23_hero-content {
-        padding-left: 2rem !important;
-        padding-top: 2rem !important;
-    }
-
-    /* .wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 42vh;
-		right: -12vw;
-		width: 73rem;
-	} */
-
-    .wct23_hero-cloud-xl img {
-        position: absolute;
-
-        z-index: -1;
-        left: -40vw;
-        top: 17vh;
-    }
-
-    .wct23_hero-cloud-sm img {
-        position: absolute;
-
-        z-index: -1;
-        right: -16vw;
-        top: 58vh;
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    /* .wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 45vh;
-		right: -12vw;
-		width: 73rem;
-	} */
-
-    .wct23_section-new-hero {
-        border-bottom: 4rem solid black;
-        border-bottom-style: solid;
-        border-image-source: url('https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png');
-        border-image-slice: 160;
-        border-image-outset: .03;
-        border-image-repeat: round;
-    }
-
-    .wct23_hero-cloud-sm img {
-        position: absolute;
-
-        z-index: -1;
-        right: -16vw;
-        top: 61vh;
-    }
-}
-
-/* @media only screen and (max-width: 690px) {
-	.wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 47vh;
-		right: -12vw;
-		width: 73rem;
-	}
-} */
-
-@media only screen and (max-width: 656px) {
-    /* .wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 49vh;
-		right: -12vw;
-		width: 73rem;
-	} */
-
-    .wct23_hero-cloud-sm img {
-        position: absolute;
-
-        z-index: -1;
-        right: -23vw;
-        top: 72vh;
-    }
-}
-
-/* @media only screen and (max-width: 625px) {
-	.wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 51vh;
-		right: -12vw;
-		width: 73rem;
-	}
-} */
-
-@media only screen and (max-width: 592px) {
-    .wct23_section-new-hero {
-        min-height: 73vh;
-    }
-
-    /* .wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 35vh;
-		right: -12vw;
-		width: 73rem;
-	} */
-
-    .wct23_hero-cloud-sm img {
-        position: absolute;
-
-        z-index: -1;
-        right: -29vw;
-        top: 56vh;
-    }
-}
-
-/* @media only screen and (max-width: 562px) {
-	.wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 36vh;
-		right: -12vw;
-		width: 73rem;
-	}
-} */
-
-@media only screen and (max-width: 547px) {
-    /* .wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 37vh;
-		right: -12vw;
-		width: 73rem;
-	} */
-
-    .wct23_hero-cloud-sm img {
-        position: absolute;
-
-        z-index: -1;
-        right: -33vw;
-        top: 58vh;
-    }
-}
-
-/* @media only screen and (max-width: 530px) {
-	.wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 38vh;
-		right: -12vw;
-		width: 73rem;
-	}
-} */
-
-/* @media only screen and (max-width: 510px) {
-	.wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 39vh;
-		right: -12vw;
-		width: 73rem;
-	}
-} */
-
-@media only screen and (max-width: 480px) {
-    .wct23_section-new-hero {
-        min-height: 68vh;
-    }
-
-    /* .wct23_new-wabali img {
-		position: absolute;
-		overflow: hidden;
-		z-index: -1;
-		top: 36vh;
-		right: -12vw;
-		width: 73rem;
-	} */
-
-    .wct23_hero-cloud-sm img {
-        position: absolute;
-
-        z-index: -1;
-        right: -40vw;
-        top: 48vh;
-    }
-
-    .wct23_hero-block-content {
-        z-index: 0;
-    }
+    right: 3vw;
+    top: 15vh;
 }
 
 
