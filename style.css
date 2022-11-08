@@ -517,6 +517,22 @@ h4 {
 }
 
 
+@media only screen and (max-width: 764px) {
+    .wct23_section-new-hero {
+        min-height: 85vh;
+        border-bottom: 4rem solid black !important;
+    }
+
+    .wct23_hero-content {
+        padding: 2rem !important;
+    }
+
+    .wct23_new-wabali img {
+        top: -120px;
+        right: 0vw;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .wct23_section-new-hero {
         min-height: 66vh;
