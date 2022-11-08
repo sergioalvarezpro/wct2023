@@ -1159,16 +1159,6 @@ h4 {
     padding: 15px;
 }
 
-/** el borde como si fuera una almena **/
-/* .wct23_section-suscribete {
-	border-top: 1.8em dashed #FFF7DA;
-	border-bottom: 1.8em dashed #FFF7DA;
-	border-left: 2em dashed #FFF7DA;
-	border-right: 2em dashed #FFF7DA;
-	margin: 3em;
-	padding: 4% 0 !important;
-} */
-
 .wct23_section-suscribete {
     width: 100%;
     border: 5rem solid black;
@@ -1181,7 +1171,7 @@ h4 {
 
 @media only screen and (max-width: 764px) {
     .wct23_section-suscribete {
-        width: 100%;
+        width: 99%;
         border: 2rem solid black;
         border-style: solid;
         border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
@@ -1221,7 +1211,7 @@ h4 {
 
 @media only screen and (max-width: 480px) {
     .wct23_section-suscribete {
-        width: 100%;
+        width: 99%;
         border: .7rem solid black;
         border-style: solid;
         border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
