@@ -429,6 +429,7 @@ h4 {
 /*Se incluye la Almena como Border Bottom de la sección Hero*/
 .wct23_section-new-hero {
     width: 100%;
+    overflow: hidden;
     border-bottom: 6rem solid black;
     border-bottom-style: solid;
     border-image-source: url('https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png');
@@ -471,17 +472,23 @@ h4 {
 }
 
 /* Posicionamos el wabalie */
-/* .wct23_new-wabali img {
-	position: absolute;
-	overflow: hidden;
-	z-index: -1;
-	top: 3vh;
-	right: 0vw;
-	width: 64rem;
-} */
+.wct23_hero-block-image figure {
+    position: relative;
+    width: 100vw;
+}
+
+.wct23_new-wabali img {
+    position: absolute;
+    /* z-index: -1; */
+    top: 3vh;
+    right: 0vw;
+    /* width: 64rem; */
+}
 
 /* Posicionamos las nubes */
 .wct23_hero-group-cloud {
+    position: relative;
+    width: 100vw;
     margin: 0 !important;
 }
 
@@ -500,7 +507,7 @@ h4 {
 }
 
 /* Ajustes en estructura para mantener el texto por encima de la imagen Wabali sobre montaña */
-.wct23_hero-block-content {
+/* .wct23_hero-block-content {
     position: relative;
     z-index: 200;
 }
@@ -508,7 +515,7 @@ h4 {
 .wct23_hero-block-image {
     position: absolute;
     z-index: -1;
-}
+} */
 
 @media only screen and (max-width: 764px) {
     .wct23_section-new-hero {
@@ -531,7 +538,7 @@ h4 {
 
     .wct23_hero-cloud-xl img {
         position: absolute;
-        overflow: hidden;
+
         z-index: -1;
         left: -40vw;
         top: 17vh;
@@ -539,7 +546,7 @@ h4 {
 
     .wct23_hero-cloud-sm img {
         position: absolute;
-        overflow: hidden;
+
         z-index: -1;
         right: -16vw;
         top: 58vh;
@@ -567,7 +574,7 @@ h4 {
 
     .wct23_hero-cloud-sm img {
         position: absolute;
-        overflow: hidden;
+
         z-index: -1;
         right: -16vw;
         top: 61vh;
@@ -597,7 +604,7 @@ h4 {
 
     .wct23_hero-cloud-sm img {
         position: absolute;
-        overflow: hidden;
+
         z-index: -1;
         right: -23vw;
         top: 72vh;
@@ -631,7 +638,7 @@ h4 {
 
     .wct23_hero-cloud-sm img {
         position: absolute;
-        overflow: hidden;
+
         z-index: -1;
         right: -29vw;
         top: 56vh;
@@ -661,7 +668,7 @@ h4 {
 
     .wct23_hero-cloud-sm img {
         position: absolute;
-        overflow: hidden;
+
         z-index: -1;
         right: -33vw;
         top: 58vh;
@@ -706,7 +713,7 @@ h4 {
 
     .wct23_hero-cloud-sm img {
         position: absolute;
-        overflow: hidden;
+
         z-index: -1;
         right: -40vw;
         top: 48vh;
@@ -728,6 +735,7 @@ h4 {
 */
 .wct23_section-intro {
     min-height: 46rem;
+    overflow: hidden;
 }
 
 /* .wct23_image img {
@@ -737,12 +745,17 @@ h4 {
 	z-index: 7;
 } */
 
+.wct23_image img {
+    position: relative;
+    z-index: 11;
+}
+
 .wct23_intro-h2 {
-    max-width: 32vw;
+    max-width: 32rem;
 }
 
 .wct23_intro-text {
-    max-width: 44vw;
+    max-width: 47rem;
     margin: 1rem 0 !important;
 }
 
@@ -913,6 +926,11 @@ h4 {
 * ------ooO-(_)-Ooo------
 *       3.3 PREGONES
 */
+
+.wct23_section-pregones {
+    overflow: hidden;
+}
+
 .wct23_group-pregones .wp-block-latest-posts__post-title,
 .wct23_group-pregones .wp-block-latest-posts__post-title:hover {
     text-decoration: none !important;
@@ -996,6 +1014,7 @@ h4 {
 .wct23_section-participa {
     position: relative;
     z-index: 10;
+    overflow: hidden;
 }
 
 .wct23_participa-text {
@@ -1224,6 +1243,7 @@ h4 {
 
 .wct23_section-patrocinadores {
     background-color: #fff7da;
+    overflow: hidden;
 }
 
 .wct23_patrocinadores-group {
