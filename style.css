@@ -452,6 +452,15 @@ h4 {
     border-image-repeat: round;
 }
 
+/*Orden de posicionamiento*/
+.wct23_hero-block-content {
+    order: 1;
+}
+
+.wct23_hero-block-image {
+    order: 2;
+}
+
 /*Posicionar bloque de texto y boton CTA*/
 .wct23_hero-content {
     padding-left: 10rem !important;
@@ -487,12 +496,6 @@ h4 {
 }
 
 /* Posicionamos el wabalie */
-.wct23_hero-block-image figure {
-    position: absolute;
-    width: 100vw;
-    z-index: -1;
-}
-
 .wct23_new-wabali img {
     position: absolute;
     z-index: -1;
@@ -795,6 +798,11 @@ h4 {
     font-family: 'Metamorphous';
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+.wp-block-group.wp-container-24 {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /** Ultimos pregones **/
