@@ -474,7 +474,7 @@ h4 {
 
 .wct23_button-CTA {
     border: 3px solid #0F3A4A;
-    margin: 3rem 0;
+    margin: 3rem 0 !important;
 }
 
 .wct23_button-CTA:hover {
@@ -514,6 +514,23 @@ h4 {
     z-index: -1;
     right: 3vw;
     top: 15vh;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .wct23_section-new-hero {
+        min-height: 66vh;
+        border-bottom: 3rem solid black !important;
+    }
+
+    .wct23_hero-content {
+        padding: 2rem !important;
+    }
+
+    .wct23_new-wabali img {
+        top: -87px;
+        right: 0vw;
+    }
 }
 
 
