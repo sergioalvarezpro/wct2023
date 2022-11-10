@@ -7,6 +7,7 @@
  *                  0. Referencias
  *                  1. General
  *                      1.1 Mostrar muralla en las páginas que no son la HOME
+ *                      1.2 Ocultar el titulo en algunas páginas
  *                  2. Header
  *                  3. Plantilla 'HOME'
  *                      3.1 Hero
@@ -278,6 +279,22 @@ h4 {
     }
 }
 
+/**
+*▂ ▃ ▅ ▆ █ 1. GENERAL █ ▆ ▅ ▃ ▂
+*
+*          \|||/
+*          (o o)
+* ------ooO-(_)-Ooo------
+*        1.2 Ocultar el titulo en algunas páginas
+*/
+
+.page-slug-localizacion .page header .entry-title,
+.page-slug-organizadores .page header .entry-title,
+.page-slug-patrocinadores .page header .entry-title,
+.page-slug-asistentes .page header .entry-title{
+    display: none;
+}
+
 
 
 /**
@@ -354,9 +371,14 @@ h4 {
     color: #0F3A4A;
 }
 
-/* No se muestra el título de la páginas que no son la home */
+header.entry-header{
+    text-align:center;
+}
+
 .page header .entry-title {
-    display: none;
+    margin-top: 2em;
+    width: 100%;
+    font-size: 3em;
 }
 
 .singular .entry-header {
@@ -1640,7 +1662,15 @@ ul[class^='tix-columns']>li {
 }
 
 
+table.tix_tickets_table td, table.tix_tickets_table th {
+    border: 1px solid #ccc;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
 
+table.tix_tickets_table thead th {
+    background: #ccc;
+}
 
 
 
