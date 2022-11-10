@@ -1198,6 +1198,12 @@ header.entry-header {
     overflow: hidden;
 }
 
+/*Se elimina el color FFF7DA (Amarillo) de la plantilla 'Localizacion' para que se muestre el background-color de la plantilla 82EEFD (azul)*/
+.page-slug-localizacion .wct23_section-patrocinadores,
+.page-slug-localizacion .wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form p#subscribe-email input[type=email] {
+    background-color: initial !important;
+}
+
 .wct23_patrocinadores-group {
     margin-bottom: 80px !important;
 }
