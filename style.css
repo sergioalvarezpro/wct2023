@@ -8,17 +8,17 @@
  *                  1. General
  *                      1.1 Mostrar muralla en las páginas que no son la HOME
  *                      1.2 Ocultar el titulo en algunas páginas
- *                  2. Header
+ *                  2. HEADER
  *                  3. Plantilla 'HOME'
  *                      3.1 Hero
  *                      3.2 Intro
  *                      3.3 Pregones
  *                  4. Bloques Reutilizables:
- *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES, ORGANIZADORES, LOCALIZACION)
+ *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES, ORGANIZADORES)
  *                      4.1 Participa
  *                      4.2 Suscribete
  *                      4.3 Patrocinadores
- *                  5. Footer
+ *                  5. FOOTER
  *                  6. Plantilla 'ORGANIZADORES'
  *                  7. Plantilla 'LOCALIZACION'
  *                  8. Plantilla 'ASISTENTES'
@@ -40,22 +40,13 @@
  *   --wct23--font-secondary: 'Source Sans 3' !important;
  *
  *   Font Size
- *   --wct23--font-size-sm: clamp(0.9rem, 0.04vw + 0.89rem, 0.94rem);
- *   --wct23--font-size-base: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
- *   --wct23--font-size-md: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem);
- *   --wct23--font-size-lg: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
- *   --wct23--font-size-xl: clamp(2.2rem, 0.85vw + 1.94rem, 2.96rem);
- *   --wct23--font-size-xxl: clamp(2.75rem, 1.33vw + 2.35rem, 3.95rem);
- *   --wct23--font-size-xxxl: clamp(3.43rem, 2.03vw + 2.82rem, 5.26rem);
-
-
- --font-size-sm: clamp(0.8rem, 0.1vw + 0.78rem, 0.89rem);
---font-size-base: clamp(1rem, 0.2vw + 0.95rem, 1.19rem);
---font-size-md: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
---font-size-lg: clamp(1.56rem, 0.58vw + 1.42rem, 2.11rem);
---font-size-xl: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
---font-size-xxl: clamp(2.44rem, 1.38vw + 2.1rem, 3.75rem);
---font-size-xxxl: clamp(3.05rem, 2.05vw + 2.54rem, 5rem);
+ *   --wct23--font-size-sm: clamp(0.8rem, 0.1vw + 0.78rem, 0.89rem);
+ *   --wct23--font-size-base: clamp(1rem, 0.2vw + 0.95rem, 1.19rem);
+ *   --wct23--font-size-md: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
+ *   --wct23--font-size-lg: clamp(1.56rem, 0.58vw + 1.42rem, 2.11rem);
+ *   --wct23--font-size-xl: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
+ *   --wct23--font-size-xxl: clamp(2.44rem, 1.38vw + 2.1rem, 3.75rem);
+ *   --wct23--font-size-xxxl: clamp(3.05rem, 2.05vw + 2.54rem, 5rem);
  *
  *   Colors
  *   --wct23--color-naranja-aburrido: #BA9B2F;
@@ -84,10 +75,8 @@
  */
 
 /**
-*          \|||/
-*          (o o)
-* ------ooO-(_)-Ooo------
-*        1. GENERAL
+*▂ ▃ ▅ ▆ █ 1. GENERAL █ ▆ ▅ ▃ ▂
+*
 */
 * {
     margin: 0;
@@ -101,7 +90,6 @@ body {
     color: #0F3A4A !important;
     font-family: 'Source Sans 3' !important;
 }
-
 
 p,
 ul,
@@ -200,13 +188,11 @@ header .entry-title {
     text-align: center;
 }
 
-
 .page header .entry-title {
     margin-top: 2em;
     width: 100%;
     font-size: 3em;
 }
-
 
 /* Anuncios */
 .single .entry-content p {
@@ -244,7 +230,6 @@ header .entry-title {
     }
 }
 
-
 /* Espacios entre los parrafos */
 .site-main>article>*,
 .site-main>.not-found>*,
@@ -254,7 +239,6 @@ header .entry-title {
 .wp-block-post-template :where(li > *) {
     margin-bottom: revert;
 }
-
 
 /* Borde de los campos en los formularios */
 form select,
@@ -266,12 +250,7 @@ table textarea {
     border: 1px solid #CCC !important;
 }
 
-
-
-
 /**
-*▂ ▃ ▅ ▆ █ 1. GENERAL █ ▆ ▅ ▃ ▂
-*
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
@@ -315,28 +294,23 @@ table textarea {
 }
 
 /**
-*▂ ▃ ▅ ▆ █ 1. GENERAL █ ▆ ▅ ▃ ▂
-*
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
 *        1.2 Ocultar el titulo en algunas páginas
 */
-
 .page-slug-localizacion .page header .entry-title,
 .page-slug-organizadores .page header .entry-title,
 .page-slug-patrocinadores .page header .entry-title,
-.page-slug-asistentes .page header .entry-title {
+.page-slug-asistentes .page header .entry-title,
+.page-slug-contacto .page header .entry-title {
     display: none;
 }
 
 
-
 /**
-*          \|||/
-*          (o o)
-* ------ooO-(_)-Ooo------
-*        2. HEADER
+*▂ ▃ ▅ ▆ █ 2. HEADER █ ▆ ▅ ▃ ▂
+*
 */
 .site-header {
     padding: 0;
@@ -699,22 +673,6 @@ header.entry-header {
         top: 49vh;
     }
 }
-
-/* @media only screen and (max-width: 480px) {
-    .wct23_section-new-hero {
-        min-height: 66vh;
-        border-bottom: 3rem solid black !important;
-    }
-
-    .wct23_hero-content {
-        padding: 2rem !important;
-    }
-
-    .wct23_new-wabali img {
-        top: -87px;
-        right: 0vw;
-    }
-} */
 
 
 /**
@@ -1274,10 +1232,8 @@ header.entry-header {
 }
 
 /**
-*          \|||/
-*          (o o)
-* ------ooO-(_)-Ooo------
-*        5. FOOTER
+*▂ ▃ ▅ ▆ █ 5. FOOTER █ ▆ ▅ ▃ ▂
+*
 */
 .entry-footer,
 .site-footer {
@@ -1363,6 +1319,7 @@ header.entry-header {
 
 /**
 *▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES █ ▆ ▅ ▃ ▂
+*
 */
 
 /* posicionamos el wabalie */
@@ -1507,6 +1464,7 @@ header.entry-header {
 
 /**
 *▂ ▃ ▅ ▆ █ 7. Plantilla LOCALIZACION █ ▆ ▅ ▃ ▂
+*
 */
 
 /* posicionamos el wabalie */
@@ -1590,6 +1548,7 @@ header.entry-header {
 
 /**
 *▂ ▃ ▅ ▆ █ 8. Plantilla ASISTENTES █ ▆ ▅ ▃ ▂
+*
 */
 
 .wct23_asistentes {
@@ -1606,6 +1565,7 @@ header.entry-header {
 
 /**
 *▂ ▃ ▅ ▆ █ 9. Plantilla ENTRADAS █ ▆ ▅ ▃ ▂
+*
 */
 .wct_23_entradas input[type=submit] {
     margin-top: 1em;
