@@ -207,21 +207,6 @@ h4 {
 }
 
 
-/** Nube de las páginas que no son la Home **/
-.nube_kinton img {
-    position: absolute;
-    left: 0;
-    top: 11vh;
-}
-
-@media only screen and (max-width: 915px) {
-    .nube_kinton img {
-        max-width: 50%;
-    }
-}
-
-
-
 /**
 *▂ ▃ ▅ ▆ █ 1. GENERAL █ ▆ ▅ ▃ ▂
 *
@@ -238,7 +223,7 @@ h4 {
 
 .wct23_organizer,
 .wct23_localizacion {
-    margin: 0 0 15%;
+    /* margin: 0 0 15%; */
     padding: 0 20% 5%;
     background-color: #fff7da;
 }
@@ -263,6 +248,19 @@ h4 {
     }
 }
 
+
+/** Nube de las páginas que no son la Home **/
+.nube_kinton img {
+    position: absolute;
+    left: -4vw;
+    top: 11vh;
+}
+
+/* @media only screen and (max-width: 915px) {
+    .nube_kinton img {
+        max-width: 50%;
+    }
+} */
 
 
 
@@ -835,6 +833,13 @@ h4 {
 * ------ooO-(_)-Ooo------
 *       4.1 PARTICIPA
 */
+
+/*Sólo aplica a la página HOME*/
+.home .wct23_section-participa {
+    margin-top: -26vh !important;
+}
+
+/*Aplica al resto de la Web*/
 .wct23_section-participa {
     position: relative;
     z-index: 10;
@@ -1183,19 +1188,26 @@ h4 {
 */
 
 /* posicionamos el wabalie */
-.wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
+/* .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
     max-width: 70%;
     right: 1%;
     bottom: 0;
     position: relative;
     z-index: 10;
-}
+} */
 
 /* posicionamos el titulo */
-.wct23_hero_2 .wct23_title-h1 {
+/* .wct23_hero_2 .wct23_title-h1 {
     position: relative;
     top: -0.2em;
+} */
+
+.wct23_titulo-hero {
+    margin-top: -13vh;
+    margin-left: 7vw;
+    position: relative;
 }
+
 
 .wordcamp-organizers {
     margin: 0 0 10% !important;
@@ -1289,12 +1301,12 @@ h4 {
 }
 
 
-@media only screen and (max-width: 1550px) {
+/* @media only screen and (max-width: 1550px) {
     .wct23_hero_2 .wct23_title-h1 {
         font-size: 5rem;
         line-height: 1.35em;
     }
-}
+} */
 
 
 @media only screen and (max-width: 1280px) {
@@ -1306,35 +1318,35 @@ h4 {
     }
 
 
-    .wct23_hero_2 .wct23_title-h1 {
+    /* .wct23_hero_2 .wct23_title-h1 {
         font-size: 3.5rem;
-    }
+    } */
 
-    .wct23_organizer {
+    /* .wct23_organizer {
         margin-bottom: 20%;
-    }
+    } */
 
     .wct23_organizer .wct23_title-h2 {
         font-size: 2rem;
     }
 }
 
-@media only screen and (max-width: 910px) {
+/* @media only screen and (max-width: 910px) {
     .wct23_hero-2-content {
         padding-left: 5rem !important;
         padding-top: 2rem !important;
     }
-}
+} */
 
 
 @media only screen and (max-width: 967px) {
     .wct23_organizer {
-        margin-bottom: 30%;
+        /* margin-bottom: 30%; */
         padding: 0 10%;
     }
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
     .wct23_hero_2 .wct23_title-h1 {
         font-size: 3.2rem;
     }
@@ -1342,25 +1354,25 @@ h4 {
     .wct23_hero-2-content {
         padding-left: 2rem !important;
     }
-}
+} */
 
 
 @media only screen and (max-width: 700px) {
 
-    .wct23_hero_2 .wct23_title-h1 {
+    /* .wct23_hero_2 .wct23_title-h1 {
         font-size: 3rem;
-    }
+    } */
 
-    .wct23_hero-2-content {
+    /* .wct23_hero-2-content {
         padding-left: 0 !important;
-    }
+    } */
 
-    .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
+    /* .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
         max-width: 90%;
-    }
+    } */
 
     .wct23_organizer {
-        margin: 0 0 30% !important;
+        /* margin: 0 0 30% !important; */
         padding: 0 4%;
     }
 
@@ -1372,24 +1384,24 @@ h4 {
 
 @media only screen and (max-width: 650px) {
 
-    .wct23_hero_2 .wct23_title-h1 {
+    /* .wct23_hero_2 .wct23_title-h1 {
         top: 0;
         left: 0;
         font-size: 2.5rem;
         line-height: 2.5em;
-    }
+    } */
 
     .wct23_organizer .wct23_title-h2 {
         font-size: 1.8rem;
     }
 
-    .wct23_organizer {
+    /* .wct23_organizer {
         margin: 0 .5%;
-    }
+    } */
 
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
 
     .wct23_hero_2 .wct23_title-h1 {
         top: -6.1em;
@@ -1397,12 +1409,12 @@ h4 {
         font-size: 1.7rem;
         line-height: 4em;
     }
-}
+} */
 
-@media only screen and (max-width: 482px) {
+/* @media only screen and (max-width: 482px) {
     .wct23_hero-2 {
-        /*max-width: 102% !important;
-		width: 102% !important;*/
+        max-width: 102% !important;
+		width: 102% !important;
     }
 
     .wct23_hero_2 .wct23_title-h1 {
@@ -1410,7 +1422,7 @@ h4 {
         left: 20%;
         line-height: .5em;
     }
-}
+} */
 
 
 
