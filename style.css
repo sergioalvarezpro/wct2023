@@ -205,6 +205,31 @@ h4 {
 .single .wp-block-code {
     margin-bottom: 1.5rem;
 }
+/** Nube de las páginas que no son la Home **/
+.nube_kinton img{
+    max-width: 100%
+    position: absolute;
+    left: 0;
+    top: 11vh;
+}
+
+@media only screen and (max-width: 915px){
+    .nube_kinton img {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    .nube_kinton img {
+        top: 21vh;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .nube_kinton img {
+        top: 15vh;
+    }
+}
 
 
 /**
@@ -216,20 +241,24 @@ h4 {
 *        1.1 Mostrar muralla en las páginas que no son la HOME
 */
 .page-slug-organizadores,
-.page-slug-localizacion {
+.page-slug-localizacion,
+.page-slug-patrocinadores,
+.page-slug-llamada-a-patrocinadores {
     background-color: #82EEFD !important;
 }
 
 .wct23_organizer,
+.wct23_sponsors,
 .wct23_localizacion {
-    /* margin: 0 0 15%; */
+     margin: 0 0 15%;
     padding: 0 20% 5%;
     background-color: #fff7da;
 }
 
 /*Se incluye la Almena como Border Bottom de la sección Hero de las distintas páginas*/
 .wct23_section-hero-organizadores,
-.wct23_section-hero-localizacion {
+.wct23_section-hero-localizacion,
+.wct23_section-hero-sponsors {
     width: 100%;
     border-bottom: 6rem solid black;
     border-bottom-style: solid;
@@ -240,20 +269,13 @@ h4 {
 }
 
 @media only screen and (max-width: 700px) {
-
     .wct23_section-hero-organizadores,
-    .wct23_section-hero-localizacion {
+    .wct23_section-hero-localizacion,
+    .wct23_section-hero-sponsors {
         border-bottom: 2rem solid black;
     }
 }
 
-/** Nube de las páginas que no son la Home **/
-.nube_kinton img {
-    max-width: 100%;
-    position: absolute;
-    left: -4vw;
-    top: 11vh;
-}
 
 
 /**
@@ -471,6 +493,7 @@ h4 {
 
 /*Estilos al botón CTA*/
 .wct23_button-CTA-text a {
+    font-family: 'Source Sans 3' !important;
     font-size: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
     font-weight: 600 !important;
 }
@@ -1166,7 +1189,6 @@ h4 {
     margin-top: 32px !important;
 }
 
-
 .wct23_sponsors {
     margin: 0 10%;
 }
@@ -1177,12 +1199,16 @@ h4 {
 
 /*posicionar wapu*/
 .wct23_section-hero-sponsors .wct23_hero_2 .wp-block-media-text__media img {
-    max-width: 30em;
-    right: 0;
-    bottom: calc(0vh - -5em);
+    max-width: 70%;
+    right: 1%;
+    bottom: 0;
+    position: relative;
+    z-index: 10;
 }
 
-
+.wct23_section-hero-sponsors .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+    width: 180%;
+}
 
 /**
 *          \|||/
@@ -1286,11 +1312,6 @@ h4 {
     margin-top: -13vh !important;
     margin-left: 7vw;
     position: relative;
-}
-
-/* posicionamos la nube */
-.nube_kinton img {
-    max-width: 100%;
 }
 
 .wordcamp-organizers {
@@ -1414,22 +1435,9 @@ h4 {
     }
 }
 
-
-@media only screen and (max-width: 683px) {
-    .nube_kinton img {
-        top: 21vh;
-    }
-}
-
 @media only screen and (max-width: 650px) {
     .wct23_organizer .wct23_title-h2 {
         font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 481px) {
-    .nube_kinton img {
-        top: 15vh;
     }
 }
 
@@ -1611,6 +1619,27 @@ h4 {
 ul[class^='tix-columns']>li {
     color: #0F0;
 }
+
+
+#tix input[type=submit],.tix-checkout-button{
+    color: #0f3a4a;
+    background-color: #ffd200;
+    border: 3px solid #0F3A4A  !important;
+    margin: 3rem 0 !important;
+    font-size: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
+    font-weight: 600 !important;
+    font-family: 'Source Sans 3' !important;
+    text-transform: none !important;
+}
+
+.tix-submit .tix-payment-method .tix-payment-tab {
+    margin:.5em
+}
+
+
+
+
+
 
 table td,
 table th,
