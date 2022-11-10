@@ -1203,7 +1203,7 @@ h4 {
 } */
 
 .wct23_titulo-hero {
-    margin-top: -13vh;
+    margin-top: -13vh !important;
     margin-left: 7vw;
     position: relative;
 }
