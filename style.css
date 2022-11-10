@@ -189,7 +189,7 @@ h4 {
 }
 
 
-header .entry-title{
+header .entry-title {
     color: #0F3A4A !important;
 }
 
@@ -246,13 +246,23 @@ header .entry-title{
 
 
 /* Espacios entre los parrafos */
-.site-main>article>*, .site-main>.not-found>*, .entry-content>*, [class*="inner-container"]>*, .wp-block-template-part>*, .wp-block-post-template :where(li > *) {
+.site-main>article>*,
+.site-main>.not-found>*,
+.entry-content>*,
+[class*="inner-container"]>*,
+.wp-block-template-part>*,
+.wp-block-post-template :where(li > *) {
     margin-bottom: revert;
 }
 
 
 /* Borde de los campos en los formularios */
-form select, form input, form textarea, table select, table input, table textarea {
+form select,
+form input,
+form textarea,
+table select,
+table input,
+table textarea {
     border: 1px solid #CCC !important;
 }
 
@@ -344,7 +354,7 @@ form select, form input, form textarea, table select, table input, table textare
     font-weight: 600;
     text-decoration: none;
     position: relative;
-    color: #0F3A4A;
+    color: #0F3A4A !important;
 }
 
 .primary-navigation .current-menu-item>a:first-child,
@@ -393,7 +403,7 @@ form select, form input, form textarea, table select, table input, table textare
 }
 
 .primary-navigation .sub-menu .menu-item>a {
-    color: #0F3A4A;
+    color: #0F3A4A !important;
 }
 
 header.entry-header {
@@ -427,7 +437,7 @@ header.entry-header {
 
 @media only screen and (max-width: 1330px) {
     .primary-navigation .primary-menu-container {
-        margin-right: 0 !important;
+        margin-right: 5rem !important;
     }
 
     .site-header .site-branding {
@@ -444,6 +454,11 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 1100px) {
+
+    .primary-navigation .primary-menu-container {
+        margin-right: 2rem !important;
+    }
+
     .site-header .site-branding {
         left: 2rem;
     }
@@ -477,6 +492,17 @@ header.entry-header {
     }
 }
 
+@media only screen and (max-width: 481px) {
+    .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+        position: fixed !important;
+        padding-top: 0;
+    }
+
+    .site-logo .custom-logo {
+        max-width: 50% !important;
+        max-height: 100% !important;
+    }
+}
 
 
 
@@ -750,7 +776,7 @@ header.entry-header {
 
     .wct23_content {
         position: relative;
-        z-index: 5;
+        z-index: 1;
         order: 1;
     }
 
