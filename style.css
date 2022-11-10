@@ -215,7 +215,6 @@ h4 {
 * ------ooO-(_)-Ooo------
 *        1.1 Mostrar muralla en las páginas que no son la HOME
 */
-
 .page-slug-organizadores,
 .page-slug-localizacion {
     background-color: #82EEFD !important;
@@ -248,7 +247,6 @@ h4 {
     }
 }
 
-
 /** Nube de las páginas que no son la Home **/
 .nube_kinton img {
     max-width: 100%;
@@ -256,13 +254,6 @@ h4 {
     left: -4vw;
     top: 11vh;
 }
-
-/* @media only screen and (max-width: 915px) {
-    .nube_kinton img {
-        max-width: 50%;
-    }
-} */
-
 
 
 /**
@@ -482,7 +473,6 @@ h4 {
 .wct23_button-CTA-text a {
     font-size: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
     font-weight: 600 !important;
-    font-family: 'Metamorphous' !important;
 }
 
 .wct23_button-CTA {
@@ -523,10 +513,108 @@ h4 {
     top: 15vh;
 }
 
+@media only screen and (max-width: 1330px) {
+    .wct23_hero-content {
+        padding-left: 5rem !important;
+    }
+}
 
+@media only screen and (max-width: 1250px) {
+    .wct23_new-wabali img {
+        top: 13vh;
+        width: 75vw;
+    }
+}
 
+@media only screen and (max-width: 1100px) {
+    .wct23_hero-content {
+        padding-left: 2rem !important;
+    }
 
-@media only screen and (max-width: 480px) {
+    .wct23_new-wabali img {
+        top: 21vh;
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 958px) {
+    .wct23_title-h1 {
+        font-size: clamp(3.05rem, 2.05vw + 2.1rem, 6rem);
+    }
+
+    .wct23_new-wabali img {
+        top: 24vh;
+    }
+}
+
+@media only screen and (max-width: 869px) {
+    .wct23_new-wabali img {
+        top: 27vh;
+    }
+}
+
+@media only screen and (max-width: 807px) {
+    .wct23_title-h1 {
+        font-size: clamp(3.05rem, 2.05vw + 2rem, 6rem);
+    }
+
+    .wct23_new-wabali img {
+        top: 30vh;
+    }
+}
+
+@media only screen and (max-width: 787px) {
+    .wct23_section-new-hero {
+        min-height: 85vh;
+        border-bottom: 4rem solid black !important;
+    }
+
+    .wct23_hero-content {
+        padding-top: 2rem !important;
+    }
+
+    .wct23_new-wabali img {
+        width: 100%;
+        top: 50vh;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    .wct23_new-wabali img {
+        top: 62vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wct23_section-new-hero {
+        min-height: 73vh;
+    }
+
+    .wct23_new-wabali img {
+        top: 55vh;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .wct23_section-new-hero {
+        min-height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wct23_new-wabali img {
+        top: 56vh;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .wct23_new-wabali img {
+        top: 49vh;
+    }
+}
+
+/* @media only screen and (max-width: 480px) {
     .wct23_section-new-hero {
         min-height: 66vh;
         border-bottom: 3rem solid black !important;
@@ -540,7 +628,7 @@ h4 {
         top: -87px;
         right: 0vw;
     }
-}
+} */
 
 
 /**
@@ -758,8 +846,8 @@ h4 {
     font-weight: 600;
 }
 
-.wct23_group-maspregrones {
-    align-items: end !important;
+.wct23_group-maspregones {
+    flex-wrap: wrap !important;
 }
 
 /*Botón con enlace a ver más pregones*/
@@ -1189,30 +1277,21 @@ h4 {
 */
 
 /* posicionamos el wabalie */
-/* .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
-    max-width: 70%;
-    right: 1%;
-    bottom: 0;
-    position: relative;
-    z-index: 10;
-} */
-
 .wct23_imagen-hero img {
     position: relative;
 }
 
 /* posicionamos el titulo */
-/* .wct23_hero_2 .wct23_title-h1 {
-    position: relative;
-    top: -0.2em;
-} */
-
 .wct23_titulo-hero {
     margin-top: -13vh !important;
     margin-left: 7vw;
     position: relative;
 }
 
+/* posicionamos la nube */
+.nube_kinton img {
+    max-width: 100%;
+}
 
 .wordcamp-organizers {
     margin: 0 0 10% !important;
@@ -1305,51 +1384,11 @@ h4 {
     border-radius: 200px;
 }
 
-
-/* @media only screen and (max-width: 1550px) {
-    .wct23_hero_2 .wct23_title-h1 {
-        font-size: 5rem;
-        line-height: 1.35em;
-    }
-} */
-
-
 @media only screen and (max-width: 1280px) {
-
-    /* .wct23_hero-2-frame img,
-    .wct23_hero-2-almena-derecha img {
-        bottom: -17rem;
-        max-width: 100%;
-    } */
-
-
-    /* .wct23_hero_2 .wct23_title-h1 {
-        font-size: 3.5rem;
-    } */
-
-    /* .wct23_organizer {
-        margin-bottom: 20%;
-    } */
-
     .wct23_organizer .wct23_title-h2 {
         font-size: 2rem;
     }
 }
-
-/* @media only screen and (max-width: 910px) {
-    .wct23_hero-2-content {
-        padding-left: 5rem !important;
-        padding-top: 2rem !important;
-    }
-} */
-
-
-/* @media only screen and (max-width: 1412px) {
-    .wct23_titulo-hero {
-        margin-left: 5vw;
-    }
-} */
-
 
 @media only screen and (max-width: 967px) {
     .wct23_organizer {
@@ -1358,17 +1397,6 @@ h4 {
     }
 }
 
-/* @media only screen and (max-width: 800px) {
-    .wct23_hero_2 .wct23_title-h1 {
-        font-size: 3.2rem;
-    }
-
-    .wct23_hero-2-content {
-        padding-left: 2rem !important;
-    }
-} */
-
-
 @media only screen and (max-width: 781px) {
     .wct23_titulo-hero {
         margin-top: 9vh !important;
@@ -1376,21 +1404,7 @@ h4 {
 }
 
 @media only screen and (max-width: 700px) {
-
-    /* .wct23_hero_2 .wct23_title-h1 {
-        font-size: 3rem;
-    } */
-
-    /* .wct23_hero-2-content {
-        padding-left: 0 !important;
-    } */
-
-    /* .wct23_section-hero-organizadores .wct23_hero_2 .wp-block-media-text__media img {
-        max-width: 90%;
-    } */
-
     .wct23_organizer {
-        /* margin: 0 0 30% !important; */
         padding: 0 4%;
     }
 
@@ -1408,47 +1422,10 @@ h4 {
 }
 
 @media only screen and (max-width: 650px) {
-
-    /* .wct23_hero_2 .wct23_title-h1 {
-        top: 0;
-        left: 0;
-        font-size: 2.5rem;
-        line-height: 2.5em;
-    } */
-
     .wct23_organizer .wct23_title-h2 {
         font-size: 1.8rem;
     }
-
-    /* .wct23_organizer {
-        margin: 0 .5%;
-    } */
-
 }
-
-/* @media only screen and (max-width: 500px) {
-
-    .wct23_hero_2 .wct23_title-h1 {
-        top: -6.1em;
-        left: 29%;
-        font-size: 1.7rem;
-        line-height: 4em;
-    }
-} */
-
-/* @media only screen and (max-width: 482px) {
-    .wct23_hero-2 {
-        max-width: 102% !important;
-		width: 102% !important;
-    }
-
-    .wct23_hero_2 .wct23_title-h1 {
-        position: relative;
-        left: 20%;
-        line-height: .5em;
-    }
-} */
-
 
 @media only screen and (max-width: 481px) {
     .nube_kinton img {
