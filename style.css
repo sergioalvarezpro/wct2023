@@ -205,15 +205,16 @@ h4 {
 .single .wp-block-code {
     margin-bottom: 1.5rem;
 }
+
 /** Nube de las páginas que no son la Home **/
-.nube_kinton img{
-    max-width: 100%
+.nube_kinton img {
+    max-width: 100%;
     position: absolute;
     left: 0;
     top: 11vh;
 }
 
-@media only screen and (max-width: 915px){
+@media only screen and (max-width: 915px) {
     .nube_kinton img {
         max-width: 50%;
     }
@@ -250,7 +251,7 @@ h4 {
 .wct23_organizer,
 .wct23_sponsors,
 .wct23_localizacion {
-     margin: 0 0 15%;
+    margin: 0 0 15%;
     padding: 0 20% 5%;
     background-color: #fff7da;
 }
@@ -269,6 +270,7 @@ h4 {
 }
 
 @media only screen and (max-width: 700px) {
+
     .wct23_section-hero-organizadores,
     .wct23_section-hero-localizacion,
     .wct23_section-hero-sponsors {
@@ -286,7 +288,7 @@ h4 {
 */
 .site-header {
     padding: 0;
-    max-width: 100vw;
+    max-width: 100%;
     min-height: 60px;
     background-color: #FFF7DA;
 }
@@ -364,7 +366,7 @@ h4 {
 }
 
 
-@media only screen and (min-width: 1021px) {
+@media only screen and (min-width: 1331px) {
     .primary-navigation .primary-menu-container {
         margin-right: 10rem !important;
     }
@@ -378,12 +380,12 @@ h4 {
     }
 
     .site-logo .custom-logo {
-        max-height: 201.39px;
+        max-height: 100%;
     }
 }
 
 
-@media only screen and (max-width: 1020px) {
+/* @media only screen and (max-width: 1020px) {
     .primary-navigation .primary-menu-container {
         margin-right: 3.5rem !important;
     }
@@ -395,7 +397,7 @@ h4 {
         left: 3.5rem;
         margin-top: 0;
     }
-}
+} */
 
 
 
@@ -1621,10 +1623,11 @@ ul[class^='tix-columns']>li {
 }
 
 
-#tix input[type=submit],.tix-checkout-button{
+#tix input[type=submit],
+.tix-checkout-button {
     color: #0f3a4a;
     background-color: #ffd200;
-    border: 3px solid #0F3A4A  !important;
+    border: 3px solid #0F3A4A !important;
     margin: 3rem 0 !important;
     font-size: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
     font-weight: 600 !important;
@@ -1633,7 +1636,7 @@ ul[class^='tix-columns']>li {
 }
 
 .tix-submit .tix-payment-method .tix-payment-tab {
-    margin:.5em
+    margin: .5em
 }
 
 
