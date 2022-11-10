@@ -291,7 +291,7 @@ h4 {
 .page-slug-localizacion .page header .entry-title,
 .page-slug-organizadores .page header .entry-title,
 .page-slug-patrocinadores .page header .entry-title,
-.page-slug-asistentes .page header .entry-title{
+.page-slug-asistentes .page header .entry-title {
     display: none;
 }
 
@@ -371,8 +371,8 @@ h4 {
     color: #0F3A4A;
 }
 
-header.entry-header{
-    text-align:center;
+header.entry-header {
+    text-align: center;
 }
 
 .page header .entry-title {
@@ -406,19 +406,59 @@ header.entry-header{
     }
 }
 
+@media only screen and (max-width: 1330px) {
+    .primary-navigation .primary-menu-container {
+        margin-right: 0 !important;
+    }
 
-/*
-@media only screen and (max-width: 480px) {
-    .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
-        padding-top: 0 !important;
-        left: 10px;
+    .site-header .site-branding {
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        left: 5rem;
+        margin-top: 0;
     }
-    .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
-        max-height: 122px !important;
-        position: relative;
-        z-index: 4;
+
+    .site-logo .custom-logo {
+        max-height: 100%;
     }
-} */
+}
+
+@media only screen and (max-width: 1100px) {
+    .site-header .site-branding {
+        left: 2rem;
+    }
+
+    .site-logo .custom-logo {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .site-logo .custom-logo {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .primary-navigation {
+        margin-left: 20vw;
+    }
+
+    .primary-navigation>div>.menu-wrapper {
+        justify-content: flex-end !important;
+    }
+
+    .site-header {
+        row-gap: 0 !important;
+    }
+
+    .site-logo .custom-logo {
+        max-width: 80%;
+    }
+}
+
+
 
 
 /**
@@ -1616,7 +1656,8 @@ ul[class^='tix-columns']>li {
 }
 
 
-table.tix_tickets_table td, table.tix_tickets_table th {
+table.tix_tickets_table td,
+table.tix_tickets_table th {
     border: 1px solid #ccc;
     border-left: 0 !important;
     border-right: 0 !important;
