@@ -19,7 +19,7 @@
  *                      4.2 Suscribete
  *                      4.3 Patrocinadores
  *                  5. FOOTER
- *                  6. Plantilla 'ORGANIZADORES'
+ *                  6. Plantilla 'ORGANIZADORES / VOLUNTARIOS'
  *                  7. Plantilla 'LOCALIZACION'
  *                  8. Plantilla 'ASISTENTES'
  *                  9. Plantilla 'ENTRADAS'
@@ -281,17 +281,20 @@ table textarea {
 * ------ooO-(_)-Ooo------
 *        1.1 Mostrar muralla en las páginas que no son la HOME
 */
-.page-slug-organizadores,
+
 .page-slug-localizacion,
+.page-slug-organizadores,
 .page-slug-patrocinadores,
-.page-slug-llamada-a-patrocinadores {
+.page-slug-asistentes,
+.page-slug-llamada-a-patrocinadores,
+.page-slug-voluntarios
+.page-slug-contacto {
     background-color: #82EEFD !important;
 }
 
 .wct23_section-organizer,
 .wct23_sponsors,
 .wct23_localizacion {
-    /* margin: 0 0 15%; */
     padding: 0 20% 5%;
     background-color: #fff7da;
 }
@@ -310,8 +313,6 @@ table textarea {
 }
 
 @media only screen and (max-width: 700px) {
-
-
     .wct23_section-hero-localizacion,
     .wct23_section-hero-sponsors {
         border-bottom: 2rem solid black;
@@ -1363,7 +1364,7 @@ header.entry-header {
 
 
 /**
-*▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES █ ▆ ▅ ▃ ▂
+*▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES / VOLUNTARIOS  █ ▆ ▅ ▃ ▂
 *
 */
 
@@ -1385,6 +1386,13 @@ header.entry-header {
 }
 
 
+.wp-block-social-links.is-style-logos-only .wp-social-link,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link {
+    background: none;
+    margin: 0px;
+    padding: 0.5em;
+}
+
 /* nombre de los organizadores */
 .wct23_section-organizer h3 {
     font-family: 'Metamorphous';
@@ -1395,15 +1403,6 @@ header.entry-header {
     margin: 1em;
     top: 0;
     text-align: left;
-}
-
-
-.wordcamp-organizers li {
-    margin: 0 0 1em;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    padding: 1em;
 }
 
 
