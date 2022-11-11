@@ -1385,6 +1385,19 @@ header.entry-header {
     padding: 0;
 }
 
+/* Estilos de cada uno de los organizadores */
+.wordcamp-organizers li {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.wordcamp-organizers li p, article.wordcamp-organizers p{
+    margin:0 !important;
+    margin-bottom:1em !important;
+}
+
 
 .wp-block-social-links.is-style-logos-only .wp-social-link,
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link {
