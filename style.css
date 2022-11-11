@@ -337,6 +337,7 @@ table textarea {
     font-weight: 600;
 }
 
+/*Efecto de subrayado*/
 .site-header .primary-navigation a:after {
     content: "";
     position: absolute;
@@ -358,11 +359,18 @@ table textarea {
     transform: scaleX(1);
 }
 
+/*Cambio de estilos en el menú desplegables*/
 .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
     text-decoration: none;
     background-color: #FFF7DA;
 }
 
+/*Eliminar background negro al selecccionar un item del menú*/
+.has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
+    background: transparent !important;
+}
+
+/*Cambio de estilos en los submenus*/
 .primary-navigation>div>.menu-wrapper>li>.sub-menu:before,
 .primary-navigation>div>.menu-wrapper>li>.sub-menu:after {
     border-style: hidden;
@@ -389,6 +397,7 @@ header.entry-header {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 
 
 @media only screen and (min-width: 1331px) {
