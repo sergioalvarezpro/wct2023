@@ -100,11 +100,19 @@ input {
     font-family: 'Source Sans 3' !important;
 }
 
+p,
+ul,
+ol,
+li {
+    line-height: 1.5em;
+}
+
 h1,
 h2,
 h3,
 h4 {
     font-family: 'Metamorphous' !important;
+    line-height: 1.15em
 }
 
 /*Colores de los enlaces */
