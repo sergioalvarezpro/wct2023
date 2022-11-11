@@ -107,6 +107,10 @@ h4 {
     font-family: 'Metamorphous' !important;
 }
 
+/*Colores de los enlaces */
+a { color: #0F3A4A !important}
+a:hover { color: #ffd200 !important}
+
 .home {
     background-color: #82EEFD !important;
 }
@@ -249,6 +253,19 @@ table input,
 table textarea {
     border: 1px solid #CCC !important;
 }
+
+/* Estilos para los button, submit... */
+.site .button, button, input[type=submit], input[type=reset], .wp-block-search .wp-block-search__button, .wp-block-button .wp-block-button__link, .wp-block-file a.wp-block-file__button
+{
+    background-color: #ffd200 !important;
+    color: #0F3A4A !important;
+    font-family: 'Source Sans 3' !important;
+    border: var(--button--border-width) solid #0F3A4A !important;
+    font-weight: 600 !important;
+}
+
+
+
 
 /**
 *          \|||/
