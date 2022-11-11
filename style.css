@@ -398,8 +398,6 @@ header.entry-header {
     margin-bottom: 0;
 }
 
-
-
 @media only screen and (min-width: 1331px) {
     .primary-navigation .primary-menu-container {
         margin-right: 10rem !important;
@@ -487,8 +485,6 @@ header.entry-header {
     }
 }
 
-
-
 /**
 *▂ ▃ ▅ ▆ █ 3. Plantilla HOME █ ▆ ▅ ▃ ▂
 *
@@ -499,7 +495,7 @@ header.entry-header {
 */
 
 /*Se incluye la Almena como Border Bottom de la sección Hero*/
-.wct23_section-new-hero {
+.wct23_almena-hero {
     width: 100%;
     overflow: hidden;
     border-bottom: 6rem solid black;
@@ -633,8 +629,11 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 787px) {
-    .wct23_section-new-hero {
+    .wct23_section-hero {
         min-height: 85vh;
+    }
+
+    .wct23_almena-hero {
         border-bottom: 4rem solid black !important;
     }
 
@@ -656,7 +655,7 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 600px) {
-    .wct23_section-new-hero {
+    .wct23_section-hero {
         min-height: 73vh;
     }
 
@@ -666,7 +665,7 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 520px) {
-    .wct23_section-new-hero {
+    .wct23_section-hero {
         min-height: 70vh;
     }
 }
