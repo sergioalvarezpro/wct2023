@@ -115,10 +115,8 @@ h4 {
     line-height: 1.15em !important;
 }
 
-/*Colores de los enlaces */
-/*
-a { color: #0F3A4A !important}
-*/
+/* Colores de los enlaces */
+a:not(.ab-item){ color: #0F3A4A !important}
 a:hover { color: #ffd200 !important}
 
 .home {
