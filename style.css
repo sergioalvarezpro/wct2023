@@ -263,7 +263,7 @@ table textarea {
     background-color: #82EEFD !important;
 }
 
-.wct23_organizer,
+.wct23_section-organizer,
 .wct23_sponsors,
 .wct23_localizacion {
     /* margin: 0 0 15%; */
@@ -272,7 +272,7 @@ table textarea {
 }
 
 /*Se incluye la Almena como Border Bottom de la sección Hero de las distintas páginas*/
-.wct23_section-hero-organizadores,
+
 .wct23_section-hero-localizacion,
 .wct23_section-hero-sponsors {
     width: 100%;
@@ -286,7 +286,7 @@ table textarea {
 
 @media only screen and (max-width: 700px) {
 
-    .wct23_section-hero-organizadores,
+
     .wct23_section-hero-localizacion,
     .wct23_section-hero-sponsors {
         border-bottom: 2rem solid black;
@@ -506,6 +506,12 @@ header.entry-header {
     border-image-repeat: round;
 }
 
+@media only screen and (max-width: 787px) {
+    .wct23_almena-hero {
+        border-bottom: 4rem solid black !important;
+    }
+}
+
 /*Orden de posicionamiento*/
 .wct23_hero-block-content {
     order: 1;
@@ -631,10 +637,6 @@ header.entry-header {
 @media only screen and (max-width: 787px) {
     .wct23_section-hero {
         min-height: 85vh;
-    }
-
-    .wct23_almena-hero {
-        border-bottom: 4rem solid black !important;
     }
 
     .wct23_hero-content {
@@ -1358,7 +1360,7 @@ header.entry-header {
 
 
 /* nombre de los organizadores */
-.wct23_organizer h3 {
+.wct23_section-organizer h3 {
     font-family: 'Metamorphous';
     font-size: 1.5rem;
     font-weight: 600;
@@ -1443,13 +1445,13 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 1280px) {
-    .wct23_organizer .wct23_title-h2 {
+    .wct23_section-organizer .wct23_title-h2 {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 967px) {
-    .wct23_organizer {
+    .wct23_section-organizer {
         /* margin-bottom: 30%; */
         padding: 0 10%;
     }
@@ -1462,7 +1464,7 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 700px) {
-    .wct23_organizer {
+    .wct23_section-organizer {
         padding: 0 4%;
     }
 
@@ -1473,7 +1475,7 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 650px) {
-    .wct23_organizer .wct23_title-h2 {
+    .wct23_section-organizer .wct23_title-h2 {
         font-size: 1.8rem;
     }
 }
