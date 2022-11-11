@@ -104,7 +104,7 @@ p,
 ul,
 ol,
 li {
-    line-height: 1.5em;
+    line-height: 1.5em !important;
 }
 
 h1,
@@ -112,7 +112,7 @@ h2,
 h3,
 h4 {
     font-family: 'Metamorphous' !important;
-    line-height: 1.15em
+    line-height: 1.15em !important;
 }
 
 /*Colores de los enlaces */
