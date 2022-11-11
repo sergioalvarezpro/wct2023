@@ -1385,8 +1385,9 @@ header.entry-header {
     padding: 0;
 }
 
-/* Estilos de cada uno de los organizadores */
-.wordcamp-organizers li {
+/* Estilos de cada uno de los organizadores / voluntarios */
+.wordcamp-organizers li,
+.page-slug-voluntarios article.wordcamp-organizers {
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
@@ -1419,7 +1420,8 @@ header.entry-header {
 }
 
 
-.wordcamp-organizers li img {
+.wordcamp-organizers li img,
+.page-slug-voluntarios article.wordcamp-organizers img {
     max-width: 150px;
     position: relative;
     top: 0;
@@ -1435,7 +1437,8 @@ header.entry-header {
     float: left;
 }
 
-.wordcamp-organizers li img:hover {
+.wordcamp-organizers li img:hover,
+.page-slug-voluntarios article.wordcamp-organizers img:hover {
     -moz-transform: scale(1.25);
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
