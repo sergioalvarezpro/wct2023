@@ -266,7 +266,7 @@ table textarea {
 .wct23_organizer,
 .wct23_sponsors,
 .wct23_localizacion {
-    margin: 0 0 15%;
+    /* margin: 0 0 15%; */
     padding: 0 20% 5%;
     background-color: #fff7da;
 }
@@ -1507,13 +1507,17 @@ header.entry-header {
     margin-top: 0;
 }
 
-.wct23_localizacion .wct23_button-CTA {
+/* .wct23_localizacion .wct23_button-CTA {
     border: none;
     margin-top: 2em;
 }
 
 .wct23_localizacion .wct23_button-CTA .wct23_button-CTA-text a {
     border: 3px solid #0F3A4A;
+} */
+
+.page-slug-localizacion .widget-area {
+    background-color: transparent !important;
 }
 
 @media only screen and (max-width: 1419px) {
