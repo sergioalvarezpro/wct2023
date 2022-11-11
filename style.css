@@ -1461,14 +1461,6 @@ header.entry-header {
     float: right;
 }
 
-.wordcamp-organizers .link_twitter,
-.wordcamp-organizers .link_web {
-    background-color: #82eefd;
-    padding: .5em;
-    display: inline-block;
-    margin: .5em;
-    border-radius: 200px;
-}
 
 @media only screen and (max-width: 1280px) {
     .wct23_section-organizer .wct23_title-h2 {
