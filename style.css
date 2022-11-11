@@ -116,7 +116,9 @@ h4 {
 }
 
 /*Colores de los enlaces */
+/*
 a { color: #0F3A4A !important}
+*/
 a:hover { color: #ffd200 !important}
 
 .home {
@@ -328,7 +330,8 @@ table textarea {
 .page-slug-organizadores .page header .entry-title,
 .page-slug-patrocinadores .page header .entry-title,
 .page-slug-asistentes .page header .entry-title,
-.page-slug-contacto .page header .entry-title {
+.page-slug-contacto .page header .entry-title,
+.page-slug-voluntarios .page header .entry-title {
     display: none;
 }
 
