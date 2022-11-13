@@ -601,19 +601,7 @@ header.entry-header {
     font-size: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
 }
 
-/*Estilos al botón CTA*/
-.wct23_button-CTAXXX-text a {
-    font-family: 'Source Sans 3' !important;
-    font-size: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
-    font-weight: 600 !important;
-}
-
-.wct23_button-CTAXXX {
-    border: 0;
-    margin: 3rem 0 !important;
-}
-
-.wct23_button-CTAXXX:hover {
+.wct23_button-CTA:hover {
     background-color: #FFE87F;
 }
 
@@ -887,11 +875,6 @@ header.entry-header {
     /* .wct23_image img {
         top: 125.5rem;
     } */
-
-    .wct23_button-CTAXX-text a {
-        font-size: 1.5rem !important;
-        padding: 13px 15px;
-    }
 }
 
 /* @media only screen and (max-width: 432px) {
