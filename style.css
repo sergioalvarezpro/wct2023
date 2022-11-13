@@ -298,7 +298,6 @@ table textarea {
 
 
 /* MARGENES  Y  PADDINGS*/
-.wct23_sponsors,
 .lista-de-pregones {
     margin: 0 10%;
 }
@@ -331,7 +330,7 @@ table textarea {
 .wct23_sponsors,
 .wct23_localizacion,
 .wct23_asistentes  {
-    padding: 0 20% 5%;
+    padding: 0 15% 5%;
     background-color: #fff7da;
 }
 
@@ -1307,6 +1306,12 @@ a.more-link::after {
 
 .wct23_patrocinadores-group-logotipos {
     margin-top: 32px !important;
+}
+
+.wct23_sponsors ul {
+    max-width: 100% !important;
+    padding: 0;
+    margin: 0 !important;
 }
 
 .wordcamp-sponsors>li {
