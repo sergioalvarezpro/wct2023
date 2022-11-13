@@ -292,6 +292,14 @@ table textarea {
 }
 
 
+/* MARGENES */
+.wct23_sponsors,
+.lista-de-pregones {
+    margin: 0 10%;
+}
+
+
+
 /**
 *          \|||/
 *          (o o)
@@ -961,7 +969,6 @@ header.entry-header {
 /*Botón con enlace a ver más pregones*/
 .wp-block-button.is-style-outline .wp-block-button__link:hover,
 .wp-block-button.is-style-outline .wp-block-button__link:active {
-    border-color: transparent !important;
     background-color: transparent !important;
     color: #0F3A4A !important;
     text-decoration-line: none;
@@ -1281,10 +1288,6 @@ header.entry-header {
 
 .wct23_patrocinadores-group-logotipos {
     margin-top: 32px !important;
-}
-
-.wct23_sponsors {
-    margin: 0 10%;
 }
 
 .wordcamp-sponsors>li {
@@ -1756,7 +1759,6 @@ table.tix_tickets_table thead th {
 }
 
 
-
 table td,
 table th,
 .wp-block-table td,
@@ -1779,12 +1781,31 @@ table th,
 */
 
 .lista-de-pregones {
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 22rem;
+    display: grid !important;
+    gap: 1rem !important;
+    grid-auto-rows: 40rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
 }
 
+.lista-de-pregones li.wp-block-post {
+    width: 99% !important;
+}
+
+.lista-de-pregones li h2.wp-block-post-title{
+    font-size: 1.4em !important;
+}
+
+a.more-link {
+    visibility: hidden;
+}
+a.more-link::after {
+    content: "Seguir leyendo...";
+    visibility: visible;
+    display: block;
+    float: right;
+    text-decoration:underline;
+    font-style: italic;
+}
 
 /**
 *▂ ▃ ▅ ▆ █ 11. Plantilla 'PROGRAMA' █ ▆ ▅ ▃ ▂
