@@ -583,7 +583,7 @@ header.entry-header {
     order: 2;
 }
 
-/*Posicionar bloque de texto y boton CTA*/
+/*Posicionar bloque de texto*/
 .wct23_hero-content {
     padding-left: 10rem !important;
     padding-top: 7rem !important;
@@ -602,18 +602,18 @@ header.entry-header {
 }
 
 /*Estilos al botón CTA*/
-.wct23_button-CTA-text a {
+.wct23_button-CTAXXX-text a {
     font-family: 'Source Sans 3' !important;
     font-size: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
     font-weight: 600 !important;
 }
 
-.wct23_button-CTA {
+.wct23_button-CTAXXX {
     border: 0;
     margin: 3rem 0 !important;
 }
 
-.wct23_button-CTA:hover {
+.wct23_button-CTAXXX:hover {
     background-color: #FFE87F;
 }
 
@@ -888,7 +888,7 @@ header.entry-header {
         top: 125.5rem;
     } */
 
-    .wct23_button-CTA-text a {
+    .wct23_button-CTAXX-text a {
         font-size: 1.5rem !important;
         padding: 13px 15px;
     }
@@ -1614,15 +1614,6 @@ a.more-link::after {
     font-size: 1.6rem;
     margin-top: 0;
 }
-
-/* .wct23_localizacion .wct23_button-CTA {
-    border: none;
-    margin-top: 2em;
-}
-
-.wct23_localizacion .wct23_button-CTA .wct23_button-CTA-text a {
-    border: 3px solid #0F3A4A;
-} */
 
 .page-slug-localizacion .widget-area {
     background-color: transparent !important;
