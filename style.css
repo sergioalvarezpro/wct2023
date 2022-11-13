@@ -980,7 +980,6 @@ header.entry-header {
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-background),
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active).has-background {
-    border-color: transparent !important;
     color: #0F3A4A !important;
     text-decoration-line: underline;
     font-family: 'Metamorphous';
