@@ -25,6 +25,7 @@
  *                  9. Plantilla 'ENTRADAS'
  *                 10. Plantilla 'AUTORES'
  *                 11. Plantilla 'PROGRAMAS'
+ *                 12. Plantilla 'SESIONES'
  *                                              oooO
  *                                             (....)     Oooo
  *                                               ...(     (....)
@@ -296,10 +297,15 @@ table textarea {
 }
 
 
-/* MARGENES */
+/* MARGENES  Y  PADDINGS*/
 .wct23_sponsors,
 .lista-de-pregones {
     margin: 0 10%;
+}
+
+/* padding página de sesiones */
+.wcb_session-template-default.singular .site-content {
+        padding: 0 10%;
 }
 
 
@@ -1876,4 +1882,16 @@ h4.wordcamp-schedule__session-title {
 
 .page-slug-programa h2.wordcamp-schedule__date {
     display: none;
+}
+
+/**
+*▂ ▃ ▅ ▆ █ 12. Plantilla 'SESIONES' █ ▆ ▅ ▃ ▂
+*
+*/
+/* titulo sesiones */
+.wcb_session-template-default.singular .entry-title {
+    letter-spacing: -.05rem;
+    margin: 10rem 0;
+    text-align: center;
+    font-size: 3.5rem !important;
 }
