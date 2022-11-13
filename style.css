@@ -23,6 +23,8 @@
  *                  7. Plantilla 'LOCALIZACION'
  *                  8. Plantilla 'ASISTENTES'
  *                  9. Plantilla 'ENTRADAS'
+ *                 10. Plantilla 'PREGONES'
+ *                 11. Plantilla 'PROGRAMAS'
  *                                              oooO
  *                                             (....)     Oooo
  *                                               ...(     (....)
@@ -122,6 +124,19 @@ a:hover { color: #ffd200 !important}
 .home {
     background-color: #82EEFD !important;
 }
+
+
+.page-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1.page-title {
+    letter-spacing: -.05rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
 
 /** clase con margin top **/
 .mt-1 {
@@ -271,8 +286,6 @@ table textarea {
     border: var(--button--border-width) solid #0F3A4A !important;
     font-weight: 600 !important;
 }
-
-
 
 
 /**
@@ -574,13 +587,23 @@ header.entry-header {
 }
 
 .wct23_button-CTA {
-    border: 3px solid #0F3A4A;
+    border: 0;
     margin: 3rem 0 !important;
 }
 
 .wct23_button-CTA:hover {
     background-color: #FFE87F;
 }
+
+
+/* Estilos a los demás botones */
+.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
+.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-background),
+.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active).has-background{
+    border: var(--button--border-width) solid #0F3A4A !important;
+        text-decoration-line: none  !important;
+}
+
 
 /* Posicionamos el wabalie */
 .wct23_new-wabali img {
@@ -1743,4 +1766,38 @@ table th,
     #tix-attendees li {
         width: 100% !important;
     }
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 10. Plantilla 'PREGONES' █ ▆ ▅ ▃ ▂
+*
+*/
+
+.lista-de-pregones {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 11. Plantilla 'PROGRAMA' █ ▆ ▅ ▃ ▂
+*
+*/
+.wordcamp-schedule__session,
+.wordcamp-schedule__column-header,
+h3.wordcamp-schedule__time-slot-header.has-sessions,
+h4.wordcamp-schedule__session-title {
+    font-size: 1.25rem !important;
+}
+
+h3.wordcamp-schedule__time-slot-header.has-sessions,
+h4.wordcamp-schedule__session-title {
+    font-family: 'Source Sans 3' !important;
+}
+
+.page-slug-programa h2.wordcamp-schedule__date {
+    display: none;
 }
