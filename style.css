@@ -125,11 +125,11 @@ a:hover { color: #ffd200 !important}
     background-color: #82EEFD !important;
 }
 
-
-.page-header {
-    border-bottom: 0;
-    padding-bottom: 0;
+/* Iconos */
+.dashicons, .dashicons-before:before {
+    font-family: dashicons !important;
 }
+
 
 h1.page-title {
     letter-spacing: -.05rem;
@@ -203,6 +203,10 @@ h1.page-title {
     font-family: 'Source Sans 3' !important;
 }
 
+.page-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 
 header .entry-title {
     color: #0F3A4A !important;
@@ -1789,12 +1793,9 @@ table th,
 .wordcamp-schedule__session,
 .wordcamp-schedule__column-header,
 h3.wordcamp-schedule__time-slot-header.has-sessions,
+h3.wordcamp-schedule__time-slot-header.is-empty,
 h4.wordcamp-schedule__session-title {
     font-size: 1.25rem !important;
-}
-
-h3.wordcamp-schedule__time-slot-header.has-sessions,
-h4.wordcamp-schedule__session-title {
     font-family: 'Source Sans 3' !important;
 }
 
