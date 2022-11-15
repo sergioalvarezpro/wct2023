@@ -1239,11 +1239,11 @@ a.more-link::after {
     .wct23_section-suscribete {
         width: 99% !important;
         border: 2rem solid black !important;
-        /* border-style: solid;
+        border-style: solid;
         border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
         border-image-slice: 100;
         border-image-outset: 0;
-        border-image-repeat: round; */
+        border-image-repeat: round;
     }
 }
 
@@ -1279,11 +1279,11 @@ a.more-link::after {
     .wct23_section-suscribete {
         width: 99% !important;
         border: .7rem solid black !important;
-        /* border-style: solid;
+        border-style: solid;
         border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
         border-image-slice: 100;
         border-image-outset: 0;
-        border-image-repeat: round; */
+        border-image-repeat: round;
     }
 }
 
