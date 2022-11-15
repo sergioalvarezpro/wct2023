@@ -6,7 +6,7 @@
  *(¸.•´ (¸.•` ¤ Content:
  *                  0. Referencias
  *                  1. General
- *                      1.1 Mostrar muralla en las páginas que no son la HOME
+ *                      1.1 Section Hero.
  *                      1.2 Ocultar el titulo en algunas páginas
  *                  2. HEADER
  *                  3. Plantilla 'HOME'
@@ -119,15 +119,21 @@ h4 {
 }
 
 /* Colores de los enlaces */
-a:not(.ab-item){ color: #0F3A4A !important}
-a:hover { color: #ffd200 !important}
+a:not(.ab-item) {
+    color: #0F3A4A !important
+}
+
+a:hover {
+    color: #ffd200 !important
+}
 
 .home {
     background-color: #82EEFD !important;
 }
 
 /* Iconos */
-.dashicons, .dashicons-before:before {
+.dashicons,
+.dashicons-before:before {
     font-family: dashicons !important;
 }
 
@@ -287,8 +293,13 @@ table textarea {
 }
 
 /* Estilos para los button, submit... */
-.site .button, button, input[type=submit], input[type=reset], .wp-block-search .wp-block-search__button, .wp-block-button .wp-block-button__link, .wp-block-file a.wp-block-file__button
-{
+.site .button,
+button,
+input[type=submit],
+input[type=reset],
+.wp-block-search .wp-block-search__button,
+.wp-block-button .wp-block-button__link,
+.wp-block-file a.wp-block-file__button {
     background-color: #ffd200 !important;
     color: #0F3A4A !important;
     font-family: 'Source Sans 3' !important;
@@ -304,18 +315,28 @@ table textarea {
 
 /* padding página de sesiones */
 .wcb_session-template-default.singular .site-content {
-        padding: 0 10%;
+    padding: 0 10%;
 }
 
 
+
+.wct23_section-organizer,
+.wct23_sponsors,
+.wct23_localizacion,
+.wct23_asistentes {
+    padding: 0 15% 5%;
+    background-color: #fff7da;
+}
 
 /**
 *          \|||/
 *          (o o)
 * ------ooO-(_)-Ooo------
-*        1.1 Mostrar muralla en las páginas que no son la HOME
+*        1.1 Section Hero.
 */
 
+/*Se incluye la Almena como Border Bottom de la sección Hero en todas las páginas que requiere Almena*/
+/*Se cambia sólo el background-color de las páginas donde contiene Almena*/
 .page-slug-localizacion,
 .page-slug-organizadores,
 .page-slug-patrocinadores,
@@ -326,33 +347,50 @@ table textarea {
     background-color: #82EEFD !important;
 }
 
-.wct23_section-organizer,
-.wct23_sponsors,
-.wct23_localizacion,
-.wct23_asistentes  {
-    padding: 0 15% 5%;
-    background-color: #fff7da;
-}
-
-/*Se incluye la Almena como Border Bottom de la sección Hero de las distintas páginas*/
-
-.wct23_section-hero-localizacion,
-.wct23_section-hero-sponsors {
+.wct23_almena-hero {
     width: 100%;
+    overflow: hidden;
     border-bottom: 6rem solid black;
     border-bottom-style: solid;
-    border-image-source: url(https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png);
+    border-image-source: url('https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png');
     border-image-slice: 160;
     border-image-outset: .01;
     border-image-repeat: round;
 }
 
-@media only screen and (max-width: 700px) {
-    .wct23_section-hero-localizacion,
-    .wct23_section-hero-sponsors {
-        border-bottom: 2rem solid black;
+@media only screen and (max-width: 787px) {
+    .wct23_almena-hero {
+        border-bottom: 4rem solid black !important;
     }
 }
+
+/* posicionamos el wabalie, este no aplica a la página Home*/
+.wct23_imagen-hero img {
+    position: relative;
+}
+
+/* posicionamos el titulo, este no aplica a la página Home */
+.wct23_titulo-hero {
+    margin-top: -13vh !important;
+    margin-left: 7vw;
+    position: relative;
+}
+
+@media only screen and (max-width: 781px) {
+    .wct23_titulo-hero {
+        margin-top: 9vh !important;
+    }
+}
+
+/*Se define el orden de las columnas del Hero para posicionar el texto en la parte superior y la imagen en la parte inferior (visible sólo en responsive)*/
+.wct23_hero-block-content {
+    order: 1;
+}
+
+.wct23_hero-block-image {
+    order: 2;
+}
+
 
 /**
 *          \|||/
@@ -537,7 +575,7 @@ header.entry-header {
 
 @media only screen and (max-width: 481px) {
     .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
-        position: fixed !important;
+        position: relative !important;
         padding-top: 0;
     }
 
@@ -555,34 +593,6 @@ header.entry-header {
 * ------ooO-(_)-Ooo------
 *         3.1 HERO
 */
-
-/*Se incluye la Almena como Border Bottom de la sección Hero*/
-.wct23_almena-hero {
-    width: 100%;
-    overflow: hidden;
-    border-bottom: 6rem solid black;
-    border-bottom-style: solid;
-    border-image-source: url('https://torrelodones.wordcamp.org/2023/files/2022/09/muralla.png');
-    border-image-slice: 160;
-    border-image-outset: .01;
-    border-image-repeat: round;
-}
-
-@media only screen and (max-width: 787px) {
-    .wct23_almena-hero {
-        border-bottom: 4rem solid black !important;
-    }
-}
-
-/*Orden de posicionamiento*/
-.wct23_hero-block-content {
-    order: 1;
-}
-
-.wct23_hero-block-image {
-    order: 2;
-}
-
 /*Posicionar bloque de texto*/
 .wct23_hero-content {
     padding-left: 10rem !important;
@@ -609,9 +619,9 @@ header.entry-header {
 /* Estilos a los demás botones */
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-background),
-.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active).has-background{
+.wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active).has-background {
     border: var(--button--border-width) solid #0F3A4A !important;
-        text-decoration-line: none  !important;
+    text-decoration-line: none !important;
 }
 
 
@@ -1010,19 +1020,20 @@ header.entry-header {
     width: 99% !important;
 }
 
-.lista-de-pregones li h2.wp-block-post-title{
+.lista-de-pregones li h2.wp-block-post-title {
     font-size: 1.4em !important;
 }
 
 a.more-link {
     visibility: hidden;
 }
+
 a.more-link::after {
     content: "Seguir leyendo...";
     visibility: visible;
     display: block;
     float: right;
-    text-decoration:underline;
+    text-decoration: underline;
     font-style: italic;
 }
 
@@ -1226,13 +1237,13 @@ a.more-link::after {
 
 @media only screen and (max-width: 764px) {
     .wct23_section-suscribete {
-        width: 99%;
-        border: 2rem solid black;
-        border-style: solid;
+        width: 99% !important;
+        border: 2rem solid black !important;
+        /* border-style: solid;
         border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
         border-image-slice: 100;
         border-image-outset: 0;
-        border-image-repeat: round;
+        border-image-repeat: round; */
     }
 }
 
@@ -1266,13 +1277,13 @@ a.more-link::after {
 
 @media only screen and (max-width: 480px) {
     .wct23_section-suscribete {
-        width: 99%;
-        border: .7rem solid black;
-        border-style: solid;
+        width: 99% !important;
+        border: .7rem solid black !important;
+        /* border-style: solid;
         border-image: url(https://torrelodones.wordcamp.org/2023/files/2022/10/suscribete.png);
         border-image-slice: 100;
         border-image-outset: 0;
-        border-image-repeat: round;
+        border-image-repeat: round; */
     }
 }
 
@@ -1286,15 +1297,15 @@ a.more-link::after {
 *    4.3 PATROCINADORES
 */
 
-.wct23_section-patrocinadores {
+/* .wct23_section-patrocinadores {
     background-color: #fff7da;
     overflow: hidden;
-}
+} */
 
 /*Se elimina el color FFF7DA (Amarillo) de la plantilla 'Localizacion' para que se muestre el background-color de la plantilla 82EEFD (azul)*/
-.page-slug-localizacion .wct23_section-patrocinadores {
+/* .page-slug-localizacion .wct23_section-patrocinadores {
     background-color: initial !important;
-}
+} */
 
 .wct23_patrocinadores-group {
     margin-bottom: 80px !important;
@@ -1319,7 +1330,7 @@ a.more-link::after {
 }
 
 /*posicionar wapu*/
-.wct23_section-hero-sponsors .wct23_hero_2 .wp-block-media-text__media img {
+/* .wct23_section-hero-sponsors .wct23_hero_2 .wp-block-media-text__media img {
     max-width: 70%;
     right: 1%;
     bottom: 0;
@@ -1329,7 +1340,7 @@ a.more-link::after {
 
 .wct23_section-hero-sponsors .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
     width: 180%;
-}
+} */
 
 /**
 *▂ ▃ ▅ ▆ █ 5. FOOTER █ ▆ ▅ ▃ ▂
@@ -1383,7 +1394,7 @@ a.more-link::after {
 
 .wct23_footer-group .wct23_footer-text a {
     text-decoration: none;
-    color: #FFF7DA;
+    color: #FFF7DA !important;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1421,19 +1432,6 @@ a.more-link::after {
 *▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES / VOLUNTARIOS  █ ▆ ▅ ▃ ▂
 *
 */
-
-/* posicionamos el wabalie */
-.wct23_imagen-hero img {
-    position: relative;
-}
-
-/* posicionamos el titulo */
-.wct23_titulo-hero {
-    margin-top: -13vh !important;
-    margin-left: 7vw;
-    position: relative;
-}
-
 .wordcamp-organizers {
     margin: 0 0 10% !important;
     padding: 0;
@@ -1448,9 +1446,10 @@ a.more-link::after {
     padding: 1em;
 }
 
-.wordcamp-organizers li p, article.wordcamp-organizers p{
-    margin:0 !important;
-    margin-bottom:1em !important;
+.wordcamp-organizers li p,
+article.wordcamp-organizers p {
+    margin: 0 !important;
+    margin-bottom: 1em !important;
 }
 
 
@@ -1544,12 +1543,6 @@ a.more-link::after {
     }
 }
 
-@media only screen and (max-width: 781px) {
-    .wct23_titulo-hero {
-        margin-top: 9vh !important;
-    }
-}
-
 @media only screen and (max-width: 700px) {
     .wct23_section-organizer {
         padding: 0 4%;
@@ -1574,7 +1567,7 @@ a.more-link::after {
 */
 
 /* posicionamos el wabalie */
-.wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
+/* .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
     right: 1%;
     bottom: 0;
     position: relative;
@@ -1587,19 +1580,19 @@ a.more-link::after {
 
 .wct23_section-hero-localizacion .wct23_hero-2-content {
     padding-left: 6rem !important;
-}
+} */
 
-.wct23_localizacion .wct_23_fecha_font_primary,
-.wct23_localizacion .wct_23_evento_font_primary {
+.wct23_localizacion .wct23_fecha_font_primary,
+.wct23_localizacion .wct23_evento_font_primary {
     font-family: 'Metamorphous' !important;
 }
 
-.wct23_localizacion .wct_23_fecha_font_primary {
+.wct23_localizacion .wct23_fecha_font_primary {
     font-size: 1rem;
     margin-bottom: 0;
 }
 
-.wct23_localizacion .wct_23_evento_font_primary {
+.wct23_localizacion .wct23_evento_font_primary {
     font-size: 1.6rem;
     margin-top: 0;
 }
@@ -1608,11 +1601,11 @@ a.more-link::after {
     background-color: transparent !important;
 }
 
-@media only screen and (max-width: 1419px) {
+/* @media only screen and (max-width: 1419px) {
     .wct23_section-hero-localizacion .wct23_title-h1 {
         font-size: 4rem;
     }
-}
+} */
 
 @media only screen and (max-width: 1200px) {
     .wct23_localizacion {
@@ -1621,30 +1614,30 @@ a.more-link::after {
 }
 
 
-@media only screen and (max-width: 1185px) {
+/* @media only screen and (max-width: 1185px) {
     .wct23_section-hero-localizacion .wct23_title-h1 {
         font-size: 3.6rem;
     }
-}
+} */
 
-@media only screen and (max-width: 1100px) {
+/* @media only screen and (max-width: 1100px) {
     .wct23_section-hero-localizacion .wct23_title-h1 {
         font-size: 3rem;
     }
-}
+} */
 
-@media only screen and (max-width: 970px) {
+/* @media only screen and (max-width: 970px) {
     .wct23_section-hero-localizacion .wct23_hero-2-content {
         padding-left: 4rem !important;
     }
-}
+} */
 
-@media only screen and (max-width: 915px) {
+/* @media only screen and (max-width: 915px) {
     .wct23_section-hero-localizacion .wct23_title-h1 {
         font-size: 2.6rem;
         top: -.2em;
     }
-}
+} */
 
 
 /**
@@ -1791,21 +1784,21 @@ table th,
 *
 */
 
-.author main.site-main > *:first-child {
+.author main.site-main>*:first-child {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.author .site-main article{
-    width:30%;
+.author .site-main article {
+    width: 30%;
     float: left;
-    margin:0 0 4%;
-        padding: 0 1%;
+    margin: 0 0 4%;
+    padding: 0 1%;
 }
 
 .author header.page-header h1 {
-    margin-top:4rem;
-  font-size: 3.5rem !important;
+    margin-top: 4rem;
+    font-size: 3.5rem !important;
 }
 
 .author header.page-header h1 span {
@@ -1814,8 +1807,8 @@ table th,
 }
 
 .author header.entry-header h2 {
-    margin-top:4rem;
-  font-size: 1.4em !important;
+    margin-top: 4rem;
+    font-size: 1.4em !important;
 }
 
 .author main.site-main {
@@ -1823,22 +1816,22 @@ table th,
 }
 
 @media only screen and (max-width: 900px) {
-    .author .site-main article{
-        width:48%;
+    .author .site-main article {
+        width: 48%;
         float: left;
-        margin:0;
+        margin: 0;
     }
 
-    .author .site-main article:last-child  {
+    .author .site-main article:last-child {
         margin-right: 2%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .author .site-main article{
-        width:98%;
+    .author .site-main article {
+        width: 98%;
         float: left;
-        margin:0 1%;
+        margin: 0 1%;
     }
 }
 
