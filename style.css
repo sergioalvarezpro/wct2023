@@ -318,12 +318,11 @@ input[type=reset],
     padding: 0 10%;
 }
 
-
-
 .wct23_section-organizer,
 .wct23_sponsors,
 .wct23_localizacion,
-.wct23_asistentes {
+.wct23_asistentes,
+.wct23_ludoteca {
     padding: 0 15% 5%;
     background-color: #fff7da;
 }
@@ -343,7 +342,8 @@ input[type=reset],
 .page-slug-asistentes,
 .page-slug-llamada-a-patrocinadores,
 .page-slug-voluntarios,
-.page-slug-contacto {
+.page-slug-contacto,
+.page-slug-ludoteca {
     background-color: #82EEFD !important;
 }
 
@@ -371,7 +371,6 @@ input[type=reset],
 
 /* posicionamos el titulo, este no aplica a la página Home */
 .wct23_titulo-hero {
-    margin-top: -13vh !important;
     margin-left: 7vw;
     position: relative;
 }
@@ -403,7 +402,9 @@ input[type=reset],
 .page-slug-patrocinadores .page header .entry-title,
 .page-slug-asistentes .page header .entry-title,
 .page-slug-contacto .page header .entry-title,
-.page-slug-voluntarios .page header .entry-title {
+.page-slug-voluntarios .page header .entry-title,
+.ludoteca .page header .entry-title,
+ {
     display: none;
 }
 
@@ -604,6 +605,19 @@ header.entry-header {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+.wct23_title-h1 {
+    width: 150%;
+    /* asi no se corta el titulo cuando cambiamos de tamaño */
+}
+
+@media only screen and (max-width: 782px) {
+    .wct23_title-h1 {
+        width: 90%;
+    }
+}
+
+
 
 .wct23_hero-fecha {
     font-family: 'Metamorphous' !important;
@@ -1328,18 +1342,23 @@ a.more-link::after {
     margin: 0 0 5em !important;
 }
 
-/*posicionar wapu*/
-/* .wct23_section-hero-sponsors .wct23_hero_2 .wp-block-media-text__media img {
-    max-width: 70%;
-    right: 1%;
-    bottom: 0;
-    position: relative;
-    z-index: 10;
+/* Patrocinadores */
+.listado-patrocinadores>div {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 20rem;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    align-items: center;
+    justify-content: center;
 }
 
-.wct23_section-hero-sponsors .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
-    width: 180%;
-} */
+.patrocinador {
+    margin: 0 0 5em !important;
+}
+
+
+
+
 
 /**
 *▂ ▃ ▅ ▆ █ 5. FOOTER █ ▆ ▅ ▃ ▂
