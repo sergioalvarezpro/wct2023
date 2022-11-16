@@ -403,7 +403,7 @@ input[type=reset],
 .page-slug-asistentes .page header .entry-title,
 .page-slug-contacto .page header .entry-title,
 .page-slug-voluntarios .page header .entry-title,
-.ludoteca .page header .entry-title
+.page-slug-ludoteca .page header .entry-title
  {
     display: none;
 }
