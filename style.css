@@ -343,7 +343,8 @@ input[type=reset],
 .page-slug-llamada-a-patrocinadores,
 .page-slug-voluntarios,
 .page-slug-contacto,
-.page-slug-ludoteca {
+.page-slug-ludoteca,
+.page-slug-ponentes {
     background-color: #82EEFD !important;
 }
 
@@ -403,7 +404,8 @@ input[type=reset],
 .page-slug-asistentes .page header .entry-title,
 .page-slug-contacto .page header .entry-title,
 .page-slug-voluntarios .page header .entry-title,
-.page-slug-ludoteca .page header .entry-title
+.page-slug-ludoteca .page header .entry-title,
+.page-slug-ponentes .page header .entry-title
  {
     display: none;
 }
