@@ -365,6 +365,12 @@ input[type=reset],
     }
 }
 
+@media only screen and (max-width: 433px) {
+    .wct23_almena-hero {
+        border-bottom: 2rem solid black !important;
+    }
+}
+
 /* posicionamos el wabalie, este no aplica a la página Home*/
 .wct23_imagen-hero img {
     position: relative;
@@ -381,6 +387,7 @@ input[type=reset],
         margin-top: 9vh !important;
     }
 }
+
 
 /*Se define el orden de las columnas del Hero para posicionar el texto en la parte superior y la imagen en la parte inferior (visible sólo en responsive)*/
 .wct23_hero-block-content {
@@ -405,8 +412,7 @@ input[type=reset],
 .page-slug-contacto .page header .entry-title,
 .page-slug-voluntarios .page header .entry-title,
 .page-slug-ludoteca .page header .entry-title,
-.page-slug-ponentes .page header .entry-title
- {
+.page-slug-ponentes .page header .entry-title {
     display: none;
 }
 
@@ -619,8 +625,6 @@ header.entry-header {
     }
 }
 
-
-
 .wct23_hero-fecha {
     font-family: 'Metamorphous' !important;
     font-weight: 400;
@@ -765,6 +769,20 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 481px) {
+    .wct23_new-wabali img {
+        top: 49vh;
+    }
+}
+
+@media only screen and (max-width: 433px) {
+    .wct23_title-h1 {
+        font-size: clamp(2.7rem, 2.05vw + 2rem, 6rem);
+    }
+
+    .wct23_section-hero {
+        min-height: 58vh;
+    }
+
     .wct23_new-wabali img {
         top: 49vh;
     }
@@ -1383,18 +1401,18 @@ a.more-link::after {
 
 .listado-patrocinadores-plata>div {
     grid-auto-rows: 12rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%,19rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
 }
 
 .listado-patrocinadores-bronce>div {
-        max-width: 85%;
+    max-width: 85%;
     grid-auto-rows: 12rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%,15rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
 }
 
 .listado-patrocinadores-ludoteca>div {
     grid-auto-rows: 12rem;
-    grid-template-columns: repeat(auto-fit, 1fr));
+    grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .listado-patrocinadores-en-especie>div {
