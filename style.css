@@ -792,7 +792,7 @@ header.entry-header {
     }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 414px) {
     .wct23_section-hero {
         min-height: 70vh;
     }
