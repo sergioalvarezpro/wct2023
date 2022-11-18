@@ -619,12 +619,6 @@ header.entry-header {
     /* asi no se corta el titulo cuando cambiamos de tamaño */
 }
 
-@media only screen and (max-width: 782px) {
-    .wct23_title-h1 {
-        width: 90%;
-    }
-}
-
 .wct23_hero-fecha {
     font-family: 'Metamorphous' !important;
     font-weight: 400;
@@ -740,6 +734,16 @@ header.entry-header {
     }
 }
 
+@media only screen and (max-width: 782px) {
+    .wct23_title-h1 {
+        width: 100%;
+    }
+
+    .wct23_titulo-hero {
+        margin-left: 0 !important;
+    }
+}
+
 @media only screen and (max-width: 683px) {
     .wct23_new-wabali img {
         top: 62vh;
@@ -780,11 +784,41 @@ header.entry-header {
     }
 
     .wct23_section-hero {
-        min-height: 58vh;
+        min-height: 60vh;
     }
 
     .wct23_new-wabali img {
-        top: 49vh;
+        top: 42vh;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .wct23_section-hero {
+        min-height: 70vh;
+    }
+
+    .wct23_new-wabali img {
+        top: 50vh;
+    }
+
+    .wct23_hero-cloud-sm img {
+        right: -43vw;
+        top: 40vh;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .wct23_section-hero {
+        min-height: 78vh;
+    }
+
+    .wct23_new-wabali img {
+        top: 57vh;
+    }
+
+    .wct23_hero-cloud-sm img {
+        right: -43vw;
+        top: 45vh;
     }
 }
 
@@ -916,9 +950,9 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 436px) {
-    /* .wct23_image img {
-        top: 125.5rem;
-    } */
+    .wct23_image img {
+        top: -7vh !important;
+    }
 }
 
 /* @media only screen and (max-width: 432px) {
