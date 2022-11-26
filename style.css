@@ -185,7 +185,7 @@ h1.page-title {
     line-height: 1.1em;
 }
 
-.wct23_title-h1, .singular .entry-title {
+.wct23_title-h1, .singular .entry-title, .author header.page-header h1 {
     font-size: clamp(2.3rem, 2.05vw + 2rem, 6rem);
 }
 
@@ -194,7 +194,7 @@ h1.page-title {
     font-family: 'Metamorphous';
     font-weight: 400;
 }
-.wct23_title-h2, .single h2, h2 {
+.wct23_title-h2, .single h2, h2, .author header.page-header h2, h2.entry-title{
     font-size: clamp(1.5rem, 0.777vw + 1.318rem, 2.25rem);
     line-height: clamp(1.725rem, 0.777vw + 1.543rem, 2.475rem);
 }
@@ -204,12 +204,13 @@ h1.page-title {
     font-weight: 400;
 }
 
-.wct23_title-h3, .single h3, h3 {
+.wct23_title-h3, .single h3, h3, .author header.page-header h3,
+.wp-block-latest-posts > li > a {
     font-size: clamp(1.25rem, 0.259vw + 1.189rem, 1.5rem);
     line-height: clamp(1.438rem, 0.22vw + 1.386rem, 1.65rem);
 }
 
-.wct23_text-p {
+.wct23_text-p{
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.6em;
@@ -349,6 +350,10 @@ input[type=reset],
 .wct23_ludoteca {
     padding: 0 15% 5%;
     background-color: #fff7da;
+}
+
+.post-thumbnail .wp-post-image {
+    margin-top: 0;
 }
 
 /**
@@ -1914,7 +1919,7 @@ table th,
     margin-bottom: 0;
 }
 
-.author article.category-pregones {
+.author article.category-pregones, li.category-pregones {
     text-align: center;
 }
 
@@ -1935,7 +1940,7 @@ table th,
 }
 
 .author header.entry-header h2 {
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 .author main.site-main {
@@ -1958,7 +1963,7 @@ table th,
     .author .site-main article {
         width: 98%;
         float: left;
-        margin: 0 1%;
+        margin: 0 1% 1em;
     }
 }
 
