@@ -194,7 +194,7 @@ h1.page-title {
     font-family: 'Metamorphous';
     font-weight: 400;
 }
-.wct23_title-h2, .single h2 {
+.wct23_title-h2, .single h2, h2 {
     font-size: clamp(1.5rem, 0.777vw + 1.318rem, 2.25rem);
     line-height: clamp(1.725rem, 0.777vw + 1.543rem, 2.475rem);
 }
@@ -204,7 +204,7 @@ h1.page-title {
     font-weight: 400;
 }
 
-.wct23_title-h3, .single h3, .wp-block-latest-posts > li > a {
+.wct23_title-h3, .single h3, h3 {
     font-size: clamp(1.25rem, 0.259vw + 1.189rem, 1.5rem);
     line-height: clamp(1.438rem, 0.22vw + 1.386rem, 1.65rem);
 }
@@ -222,7 +222,6 @@ h1.page-title {
     }
 }
 
-
 .entry-content,
 .entry-summary {
     font-family: 'Source Sans 3' !important;
@@ -238,15 +237,10 @@ h1.page-title {
 }
 
 
-
-
 /*Subir botón menu para moviles */
 .menu-button-container {
     padding-top: 3px;
 }
-
-
-
 
 
 header .entry-title {
@@ -1920,6 +1914,10 @@ table th,
     margin-bottom: 0;
 }
 
+.author article.category-pregones {
+    text-align: center;
+}
+
 .author .site-main article {
     width: 30%;
     float: left;
@@ -1929,7 +1927,6 @@ table th,
 
 .author header.page-header h1 {
     margin-top: 4rem;
-    font-size: 3.5rem !important;
 }
 
 .author header.page-header h1 span {
@@ -1939,7 +1936,6 @@ table th,
 
 .author header.entry-header h2 {
     margin-top: 4rem;
-    font-size: 1.4em !important;
 }
 
 .author main.site-main {
