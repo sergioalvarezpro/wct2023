@@ -307,6 +307,13 @@ header .entry-title {
     margin-bottom: revert;
 }
 
+
+.wp-block-latest-posts > li > a {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
 /* Borde de los campos en los formularios */
 form select,
 form input,
@@ -1567,6 +1574,10 @@ a.more-link::after {
 *▂ ▃ ▅ ▆ █ 6. Plantilla ORGANIZADORES / VOLUNTARIOS  █ ▆ ▅ ▃ ▂
 *
 */
+.lista-voluntarios {
+    margin-top: 3rem !important
+}
+
 .wordcamp-organizers {
     margin: 0 0 10% !important;
     padding: 0;
@@ -1609,11 +1620,11 @@ article.wordcamp-organizers p {
 
 
 .wordcamp-organizers li img,
-.page-slug-voluntarios article.wordcamp-organizers img {
+.page-slug-voluntarios section.wct23_section-organizer img {
     max-width: 150px;
     position: relative;
     top: 0;
-    margin: 0;
+    margin: 0 1em 1em 0;
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -1622,11 +1633,11 @@ article.wordcamp-organizers p {
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     filter: saturate(100%);
-    float: left;
+    float:left;
 }
 
 .wordcamp-organizers li img:hover,
-.page-slug-voluntarios article.wordcamp-organizers img:hover {
+.page-slug-voluntarios section.wct23_section-organizer img:hover {
     -moz-transform: scale(1.25);
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
@@ -1689,6 +1700,16 @@ article.wordcamp-organizers p {
     .wct23_section-organizer .wct23_title-h2 {
         font-size: 1.8rem;
     }
+
+    .wordcamp-organizers li .wordcamp-block__item-content {
+        width: 99%;
+        float: none;
+    }
+
+    .wordcamp-organizers li .wordcamp-image__avatar-container {
+        margin-right: 4%;align-content
+    }
+
 }
 
 
