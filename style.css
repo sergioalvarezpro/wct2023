@@ -648,7 +648,7 @@ header.entry-header {
     /* asi no se corta el titulo cuando cambiamos de tamaño */
 }
 
-.wct23_hero-fecha {
+.wct23_hero-fecha, time {
     font-family: 'Metamorphous' !important;
     font-weight: 400;
     font-size: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
@@ -1097,7 +1097,7 @@ header.entry-header {
 .lista-de-pregones {
     display: grid !important;
     gap: 1rem !important;
-    grid-auto-rows: 40rem;
+    grid-auto-rows: 35rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
 }
 
@@ -1139,6 +1139,12 @@ a.more-link::after {
         width: 100vw !important;
         margin-right: 0 !important;
         margin-bottom: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .lista-de-pregones {
+        grid-auto-rows: 25rem;
     }
 }
 
@@ -1421,13 +1427,8 @@ a.more-link::after {
     justify-content: center;
 }
 
-.patrocinador {
-    margin: 0 0 5em !important;
-}
-
-
-.listado-patrocinadores {
-    margin-top: 3em !important;
+.patrocinador, .listado-patrocinadores {
+    margin: 0 !important;
 }
 
 .listado-patrocinadores img {
