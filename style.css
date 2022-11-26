@@ -350,16 +350,16 @@ input[type=reset],
     padding: 0 10%;
 }
 
-.wct23_section-organizer,
-.wct23_sponsors,
 .wct23_localizacion,
 .wct23_asistentes,
 .wct23_ludoteca {
     padding: 0 15% 5%;
     background-color: #fff7da;
 }
+.wct23_sponsors,
 .wct23_section-organizer{
-    padding: 0 15% !important;
+    padding: 0 15%;
+    background-color: #fff7da;
 }
 
 .post-thumbnail .wp-post-image {
@@ -1488,9 +1488,10 @@ a.more-link::after {
 *▂ ▃ ▅ ▆ █ 5. FOOTER █ ▆ ▅ ▃ ▂
 *
 */
+.post-navigation,
 .entry-footer,
 .site-footer {
-    display: none;
+    display: none !important;
 }
 
 .widget-area {
