@@ -1475,7 +1475,7 @@ a.more-link::after {
 
 .listado-patrocinadores-globales>div,
 .listado-patrocinadores-oro>div {
-    grid-auto-rows: 15rem;
+    /*grid-auto-rows: 15rem;*/
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
 }
 
