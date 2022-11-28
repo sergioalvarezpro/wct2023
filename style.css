@@ -1396,7 +1396,7 @@ a.more-link::after {
 */
 
 /* Eliminamos espacio inferior de la imagen destacada de LLamadas a Patrocinadores */
-.post-slug-llamada-a-patrocinadores .singular .has-post-thumbnail .entry-header {
+.post-slug-llamada-a-patrocinadores.singular .has-post-thumbnail .entry-header {
     padding-bottom:0
 }
 
