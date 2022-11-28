@@ -1176,6 +1176,10 @@ a.more-link::after {
     overflow: hidden;
 }
 
+.wct23_section-participa h2{
+    padding:0 4%;
+}
+
 .wct23_participa-text {
     margin-bottom: 58px !important;
     font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
@@ -1390,6 +1394,14 @@ a.more-link::after {
 * ------ooO-(_)-Ooo------
 *    4.3 PATROCINADORES
 */
+
+/* Eliminamos espacio inferior de la imagen destacada de LLamadas a Patrocinadores */
+.post-slug-llamada-a-patrocinadores .singular .has-post-thumbnail .entry-header {
+    padding-bottom:0
+}
+
+
+
 .wct23_section-patrocinadores {
     background-color: #fff7da;
     overflow: hidden;
