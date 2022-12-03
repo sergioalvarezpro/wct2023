@@ -1517,6 +1517,13 @@ a.more-link::after {
     display: none;
 }
 
+.page .post-navigation,
+.page .entry-footer,
+.page .site-footer {
+   display: none !important;
+}
+
+
 .widget-area {
     grid-template-columns: 1fr;
     max-width: 100vw;
