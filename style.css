@@ -1509,10 +1509,12 @@ a.more-link::after {
 *▂ ▃ ▅ ▆ █ 5. FOOTER █ ▆ ▅ ▃ ▂
 *
 */
-.post-navigation,
-.entry-footer,
-.site-footer {
-    /*display: none !important;*/
+
+.site-footer{
+    padding-bottom: 0;
+}
+.site-footer > .site-info {
+    display: none;
 }
 
 .widget-area {
