@@ -1512,7 +1512,7 @@ a.more-link::after {
 .post-navigation,
 .entry-footer,
 .site-footer {
-    display: none !important;
+    /*display: none !important;*/
 }
 
 .widget-area {
