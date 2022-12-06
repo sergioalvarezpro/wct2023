@@ -807,6 +807,10 @@ time {
 }
 
 @media only screen and (max-width: 958px) {
+	.wct23_section-hero {
+		min-height: 80vh;
+	}
+
 	.wct23_new-wabali img {
 		top: 24vh;
 	}
@@ -826,17 +830,27 @@ time {
 
 @media only screen and (max-width: 787px) {
 	.wct23_section-hero {
-		min-height: 85vh;
+		min-height: 118vh;
 	}
 
 	.wct23_hero-content {
-		padding-top: 2rem !important;
+		padding-top: 5rem !important;
 	}
 
 	.wct23_new-wabali img {
 		width: 100%;
-		top: 50vh;
+		top: 57vh;
 		right: 0;
+	}
+
+	.wct23_hero-cloud-xl img {
+		left: -48vw;
+		top: 0vh;
+	}
+
+	.wct23_hero-cloud-sm img {
+		right: -3vw;
+		top: 59vh;
 	}
 }
 
@@ -853,6 +867,11 @@ time {
 @media only screen and (max-width: 683px) {
 	.wct23_new-wabali img {
 		top: 62vh;
+	}
+
+	.wct23_hero-cloud-sm img {
+		right: -9vw;
+		top: 64vh;
 	}
 }
 
