@@ -494,6 +494,12 @@ input[type=reset],
 	font-weight: 600;
 }
 
+/* Estilo botón menu en móviles */
+button#primary-mobile-menu {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
 /*Efecto de subrayado*/
 .site-header .primary-navigation a:after {
 	content: "";
