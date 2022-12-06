@@ -187,7 +187,8 @@ h1.page-title {
 
 .wct23_title-h1,
 .singular .entry-title,
-.author header.page-header h1 {
+.author header.page-header h1,
+h1 {
 	font-size: clamp(2.3rem, 2.05vw + 2rem, 6rem);
 }
 
@@ -386,6 +387,12 @@ input[type=reset],
 	margin-top: 0;
 }
 
+@media only screen and (max-width: 480px) {
+	.wct23_sponsors {
+		padding: 0;
+	}
+}
+
 /**
 *          \|||/
 *          (o o)
@@ -484,7 +491,7 @@ input[type=reset],
 	padding: 0;
 	max-width: 100%;
 	min-height: 60px;
-	background-color: #FFF7DA;
+	/* background-color: #FFF7DA; */
 }
 
 .primary-navigation>div>.menu-wrapper .sub-menu-toggle {
@@ -648,13 +655,21 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 481px) {
+
+	header {
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+		top: 0;
+	}
+
 	.site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
 		position: relative !important;
 		padding-top: 0;
 	}
 
 	.site-logo .custom-logo {
-		max-width: 50% !important;
+		max-width: 45% !important;
 		max-height: 100% !important;
 	}
 }
@@ -1989,20 +2004,26 @@ table th,
 	}
 }
 
-tr.tix-row-total td{
-	text-align:right
+tr.tix-row-total td {
+	text-align: right
 }
 
 /* CSS para la tabla de la venta de entradas */
 @media screen and (max-width: 600px) {
-	table, thead, tbody, th, td, tr {
-			display: block;
+
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
 	}
 
 	thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
 	}
 
 	tr {
@@ -2010,7 +2031,7 @@ tr.tix-row-total td{
 	}
 
 	tr:nth-child(odd) {
-		text-align:center;
+		text-align: center;
 	}
 
 	td {
@@ -2033,30 +2054,48 @@ tr.tix-row-total td{
 		white-space: nowrap;
 	}
 
-	table.tix-tickets-list td:nth-of-type(1):before { content: "Precio"; }
-	table.tix-tickets-list td:nth-of-type(2):before { content: "Quedan"; }
-	table.tix-tickets-list td:nth-of-type(3):before { content: "Cantidad"; }
+	table.tix-tickets-list td:nth-of-type(1):before {
+		content: "Precio";
+	}
+
+	table.tix-tickets-list td:nth-of-type(2):before {
+		content: "Quedan";
+	}
+
+	table.tix-tickets-list td:nth-of-type(3):before {
+		content: "Cantidad";
+	}
 
 	td.tix-column-description {
 		text-align: left;
-		font-weight:bold;
+		font-weight: bold;
 	}
 
 	table.tix_tickets_table,
-	td.tix-column-per-ticket{
-		text-align:right
+	td.tix-column-per-ticket {
+		text-align: right
 	}
 
-		table.tix-order-summary td:nth-of-type(2):before { content: "Precio por entrada"; }
-	table.tix-order-summary td:nth-of-type(3):before { content: "Cantidad"; }
-	table.tix-order-summary td:nth-of-type(4):before { content: "Importe total"; }
+	table.tix-order-summary td:nth-of-type(2):before {
+		content: "Precio por entrada";
+	}
+
+	table.tix-order-summary td:nth-of-type(3):before {
+		content: "Cantidad";
+	}
+
+	table.tix-order-summary td:nth-of-type(4):before {
+		content: "Importe total";
+	}
 
 	tr.tix-row-total td {
-		border-top:0px !important;
+		border-top: 0px !important;
 	}
 
 
-	tr.tix-row-total td:nth-of-type(2):before { content: "Total" !important; }
+	tr.tix-row-total td:nth-of-type(2):before {
+		content: "Total" !important;
+	}
 
 
 	table.tix-attendee-form td {
@@ -2064,15 +2103,15 @@ tr.tix-row-total td{
 		position: relative;
 	}
 
-	table.tix-attendee-form tr{
+	table.tix-attendee-form tr {
 		border-bottom: 1px solid #ccc;
 	}
 
 
 	table.tix-attendee-form td.tix-left,
-	table.tix-attendee-form td.tix-right{
-		width:98%;
-		text-align:left;
+	table.tix-attendee-form td.tix-right {
+		width: 98%;
+		text-align: left;
 	}
 
 	.tix-ticket-form input[type="text"],
@@ -2091,7 +2130,7 @@ tr.tix-row-total td{
 	.tix-receipt-form input[type="email"],
 	.tix-receipt-form input[type="url"],
 	.tix-receipt-form textarea {
-    	width: 98%;
+		width: 98%;
 	}
 
 
