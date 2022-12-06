@@ -1989,6 +1989,58 @@ table th,
 	}
 }
 
+/* CSS para la tabla de la venta de entradas */
+@media screen and (max-width: 600px) {
+
+	table, thead, tbody, th, td, tr {
+			display: block;
+	}
+
+	thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+	}
+
+	tr {
+    	margin: 0 0 1rem 0;
+	}
+
+    tr:nth-child(odd) {
+    	text-align:center;
+    }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	table td:last-child {
+		border-bottom: 0px !important;
+	}
+
+	td:before {
+		position: absolute;
+		top: 0;
+		left: 6px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	td:nth-of-type(1):before { content: "Precio"; }
+		td:nth-of-type(2):before { content: "Quedan"; }
+		td:nth-of-type(3):before { content: "Cantidad"; }
+	}
+
+
+	.tix-tickets-list .tix-column-description {
+    	text-align: left;
+		font-weight:bold;
+	}
+}
 
 /**
 *▂ ▃ ▅ ▆ █ 10. Plantilla 'AUTORES' █ ▆ ▅ ▃ ▂
