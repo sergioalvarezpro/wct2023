@@ -1882,7 +1882,7 @@ article.wordcamp-organizers p {
 
 #tix {
 	padding-top: 5%;
-	max-width: 80%;
+	max-width: 95%;
 }
 
 #tix h2 {
@@ -1988,6 +1988,96 @@ table th,
 		width: 100% !important;
 	}
 }
+
+tr.tix-row-total td{
+	text-align:right
+}
+
+/* CSS para la tabla de la venta de entradas */
+@media screen and (max-width: 600px) {
+
+	table, thead, tbody, th, td, tr {
+			display: block;
+	}
+
+	thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+	}
+
+	tr {
+		margin: 0 0 1rem 0;
+	}
+
+	tr:nth-child(odd) {
+		text-align:center;
+	}
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:last-child {
+		border-bottom: 0px !important;
+	}
+
+	td:before {
+		position: absolute;
+		top: 0;
+		left: 6px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	table.tix-tickets-list td:nth-of-type(1):before { content: "Precio"; }
+	table.tix-tickets-list td:nth-of-type(2):before { content: "Quedan"; }
+	table.tix-tickets-list td:nth-of-type(3):before { content: "Cantidad"; }
+
+	td.tix-column-description {
+		text-align: left;
+		font-weight:bold;
+	}
+
+	table.tix_tickets_table,
+	td.tix-column-per-ticket{
+		text-align:right
+	}
+
+		table.tix-order-summary td:nth-of-type(2):before { content: "Precio por entrada"; }
+	table.tix-order-summary td:nth-of-type(3):before { content: "Cantidad"; }
+	table.tix-order-summary td:nth-of-type(4):before { content: "Importe total"; }
+
+	tr.tix-row-total td {
+		border-top:0px !important;
+	}
+
+
+	tr.tix-row-total td:nth-of-type(2):before { content: "Total" !important; }
+
+
+	table.tix-attendee-form td {
+		border: none !important;
+		position: relative;
+	}
+
+	table.tix-attendee-form tr{
+		border-bottom: 1px solid #ccc;
+	}
+
+
+	table.tix-attendee-form td.tix-left,
+	table.tix-attendee-form td.tix-right{
+		width:98%;
+		text-align:left;
+	}
+}
+
+
 
 
 
