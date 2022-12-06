@@ -491,7 +491,6 @@ input[type=reset],
 	padding: 0;
 	max-width: 100%;
 	min-height: 60px;
-	/* background-color: #FFF7DA; */
 }
 
 .primary-navigation>div>.menu-wrapper .sub-menu-toggle {
@@ -656,7 +655,7 @@ header.entry-header {
 
 @media only screen and (max-width: 481px) {
 
-	header {
+	.site-header {
 		position: fixed;
 		width: 100%;
 		z-index: 999;
