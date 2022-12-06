@@ -185,7 +185,9 @@ h1.page-title {
 	line-height: 1.1em;
 }
 
-.wct23_title-h1, .singular .entry-title, .author header.page-header h1 {
+.wct23_title-h1,
+.singular .entry-title,
+.author header.page-header h1 {
 	font-size: clamp(2.3rem, 2.05vw + 2rem, 6rem);
 }
 
@@ -194,7 +196,12 @@ h1.page-title {
 	font-family: 'Metamorphous';
 	font-weight: 400;
 }
-.wct23_title-h2, .single h2, h2, .author header.page-header h2, h2.entry-title{
+
+.wct23_title-h2,
+.single h2,
+h2,
+.author header.page-header h2,
+h2.entry-title {
 	font-size: clamp(1.5rem, 0.777vw + 1.318rem, 2.25rem);
 	line-height: clamp(1.725rem, 0.777vw + 1.543rem, 2.475rem);
 }
@@ -204,13 +211,16 @@ h1.page-title {
 	font-weight: 400;
 }
 
-.wct23_title-h3, .single h3, h3, .author header.page-header h3,
-.wp-block-latest-posts > li > a {
+.wct23_title-h3,
+.single h3,
+h3,
+.author header.page-header h3,
+.wp-block-latest-posts>li>a {
 	font-size: clamp(1.25rem, 0.259vw + 1.189rem, 1.5rem);
 	line-height: clamp(1.438rem, 0.22vw + 1.386rem, 1.65rem);
 }
 
-.wct23_text-p{
+.wct23_text-p {
 	font-weight: 400;
 	font-size: 1.2rem;
 	line-height: 1.6em;
@@ -317,7 +327,7 @@ header .entry-title {
 }
 
 
-.wp-block-latest-posts > li > a {
+.wp-block-latest-posts>li>a {
 	margin-bottom: 0;
 	margin-top: 0;
 }
@@ -365,8 +375,9 @@ input[type=reset],
 	padding: 0 15% 5%;
 	background-color: #fff7da;
 }
+
 .wct23_sponsors,
-.wct23_section-organizer{
+.wct23_section-organizer {
 	padding: 0 15%;
 	background-color: #fff7da;
 }
@@ -673,13 +684,16 @@ header.entry-header {
 	/* asi no se corta el titulo cuando cambiamos de tamaño */
 }
 
-.wct23_hero-fecha, time {
+.wct23_hero-fecha,
+time {
 	font-family: 'Metamorphous' !important;
 	font-weight: 400;
 }
-.wct23_hero-fecha{
+
+.wct23_hero-fecha {
 	font-size: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
 }
+
 time {
 	font-size: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
 }
@@ -1201,8 +1215,8 @@ a.more-link::after {
 	overflow: hidden;
 }
 
-.wct23_section-participa h2{
-	padding:0 4%;
+.wct23_section-participa h2 {
+	padding: 0 4%;
 }
 
 .wct23_participa-text {
@@ -1422,7 +1436,7 @@ a.more-link::after {
 
 /* Eliminamos espacio inferior de la imagen destacada de LLamadas a Patrocinadores */
 .post-slug-llamada-a-patrocinadores.singular .has-post-thumbnail .entry-header {
-	padding-bottom:0
+	padding-bottom: 0
 }
 
 
@@ -1467,7 +1481,8 @@ a.more-link::after {
 	justify-content: center;
 }
 
-.patrocinador, .listado-patrocinadores {
+.patrocinador,
+.listado-patrocinadores {
 	margin: 0 !important;
 }
 
@@ -1522,17 +1537,18 @@ a.more-link::after {
 *
 */
 
-.site-footer{
+.site-footer {
 	padding-bottom: 0;
 }
-.site-footer > .site-info {
+
+.site-footer>.site-info {
 	display: none;
 }
 
 .page .post-navigation,
 .page .entry-footer,
 .page .site-footer {
-   display: none !important;
+	display: none !important;
 }
 
 
@@ -1675,7 +1691,7 @@ article.wordcamp-organizers p {
 	-moz-transition: all .5s ease;
 	-ms-transition: all .5s ease;
 	filter: saturate(100%);
-	float:left;
+	float: left;
 }
 
 .wordcamp-organizers li img:hover,
@@ -1749,7 +1765,8 @@ article.wordcamp-organizers p {
 	}
 
 	.wordcamp-organizers li .wordcamp-image__avatar-container {
-		margin-right: 4%;align-content
+		margin-right: 4%;
+		align-content
 	}
 
 }
@@ -1851,7 +1868,7 @@ article.wordcamp-organizers p {
 *▂ ▃ ▅ ▆ █ 9. Plantilla ENTRADAS █ ▆ ▅ ▃ ▂
 *
 */
-.wct_23_entradas input[type=submit] {
+.wct23_entradas input[type=submit] {
 	margin-top: 1em;
 }
 
@@ -1983,7 +2000,8 @@ table th,
 	margin-bottom: 0;
 }
 
-.author article.category-pregones, li.category-pregones {
+.author article.category-pregones,
+li.category-pregones {
 	text-align: center;
 }
 
