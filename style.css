@@ -454,6 +454,12 @@ input[type=reset],
 	}
 }
 
+@media only screen and (max-width: 380px) {
+	.wct23_titulo-hero {
+		margin-top: 11vh !important;
+	}
+}
+
 
 /*Se define el orden de las columnas del Hero para posicionar el texto en la parte superior y la imagen en la parte inferior (visible sólo en responsive)*/
 .wct23_hero-block-content {
