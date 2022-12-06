@@ -877,17 +877,32 @@ time {
 
 @media only screen and (max-width: 600px) {
 	.wct23_section-hero {
-		min-height: 73vh;
+		min-height: 100vh;
 	}
 
 	.wct23_new-wabali img {
 		top: 55vh;
 	}
+
+	.wct23_hero-cloud-sm img {
+		right: -15vw;
+		top: 53vh;
+	}
 }
 
 @media only screen and (max-width: 520px) {
 	.wct23_section-hero {
-		min-height: 70vh;
+		min-height: 95vh;
+	}
+
+	.wct23_hero-cloud-xl img {
+		left: -30vw;
+		top: 8vh;
+	}
+
+	.wct23_hero-cloud-sm img {
+		right: -24vw;
+		top: 52vh;
 	}
 }
 
@@ -899,7 +914,7 @@ time {
 
 @media only screen and (max-width: 481px) {
 	.wct23_new-wabali img {
-		top: 49vh;
+		top: 58vh;
 	}
 }
 
@@ -915,16 +930,16 @@ time {
 
 @media only screen and (max-width: 414px) {
 	.wct23_section-hero {
-		min-height: 70vh;
+		min-height: 83vh;
 	}
 
 	.wct23_new-wabali img {
-		top: 50vh;
+		top: 53vh;
 	}
 
 	.wct23_hero-cloud-sm img {
-		right: -43vw;
-		top: 40vh;
+		right: -34vw;
+		top: 52vh;
 	}
 }
 
