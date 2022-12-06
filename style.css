@@ -488,6 +488,10 @@ input[type=reset],
 *
 */
 .site-header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
 	padding: 0;
 	max-width: 100%;
 	min-height: 60px;
@@ -654,13 +658,6 @@ header.entry-header {
 }
 
 @media only screen and (max-width: 481px) {
-
-	.site-header {
-		position: fixed;
-		width: 100%;
-		z-index: 999;
-		top: 0;
-	}
 
 	.site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
 		position: relative !important;
