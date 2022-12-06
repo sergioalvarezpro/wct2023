@@ -490,11 +490,9 @@ input[type=reset],
 .site-header {
 	position: fixed;
 	width: 100%;
+	min-height: 60px;
 	z-index: 999;
 	top: 0;
-	padding: 0;
-	max-width: 100%;
-	min-height: 60px;
 }
 
 .primary-navigation>div>.menu-wrapper .sub-menu-toggle {
@@ -678,10 +676,15 @@ header.entry-header {
 * ------ooO-(_)-Ooo------
 *         3.1 HERO
 */
+
+.wct23_section-hero {
+	min-height: 90vh;
+}
+
 /*Posicionar bloque de texto*/
 .wct23_hero-content {
 	padding-left: 10rem !important;
-	padding-top: 7rem !important;
+	padding-top: 11rem !important;
 }
 
 /*Quitar padding del H1 para alinear con resto de texto del bloque*/
@@ -728,7 +731,7 @@ time {
 .wct23_new-wabali img {
 	position: absolute;
 	z-index: -1;
-	top: 9vh;
+	top: 16vh;
 	right: 0vw;
 }
 
@@ -750,7 +753,7 @@ time {
 	position: absolute;
 	z-index: -1;
 	right: 3vw;
-	top: 15vh;
+	top: 31vh;
 }
 
 @media only screen and (max-width: 1330px) {
