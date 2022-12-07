@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
- *            WORDCAMP TORRELODONES 2023
+ *                                  WORDCAMP TORRELODONES 2023
  * *´¨)
  *¸.•´¸.•*´¨) ¸.•*¨)
  *(¸.•´ (¸.•` ¤ Content:
@@ -26,13 +26,13 @@
  *                 10. Plantilla 'AUTORES'
  *                 11. Plantilla 'PROGRAMAS'
  *                 12. Plantilla 'SESIONES'
- *                                              oooO
- *                                             (....)     Oooo
- *                                               ...(     (....)
- *                                                ._)      )../
- *                                                         (_/
- *                                            Solo pasaba por aquí
- *                                                  ¡Saludos!
+ *                                                                            oooO
+ *                                                                           (....)     Oooo
+ *                                                                             ...(     (....)
+ *                                                                              ._)      )../
+ *                                                                                       (_/
+ *                                                                          Solo pasaba por aquí
+ *                                                                                ¡Saludos!
  */
 
 /*
@@ -977,7 +977,6 @@ time {
 *        3.2 INTRO
 */
 .wct23_section-intro {
-	/* min-height: 46rem; */
 	overflow: hidden;
 }
 
@@ -995,16 +994,12 @@ time {
 	margin: 1rem 0 !important;
 }
 
-/* .wp-block-columns.alignfull .wp-block-column h2:not(.has-background),
+.wp-block-columns.alignfull .wp-block-column h2:not(.has-background),
 .wp-block-columns.alignfull .wp-block-column p:not(.has-background) {
 	padding: 0;
-} */
+}
 
 @media only screen and (max-width: 781px) {
-	/* .wct23_section-intro {
-		min-height: 73rem;
-	} */
-
 	.wct23_image {
 		position: inherit;
 		z-index: 11;
@@ -1023,65 +1018,12 @@ time {
 	}
 }
 
-/* @media only screen and (max-width: 744px) {
-	.wct23_section-intro {
-		min-height: 72.5rem;
-	}
-}
-
-@media only screen and (max-width: 685px) {
-	.wct23_section-intro {
-		min-height: 74rem;
-	}
-}
-
-@media only screen and (max-width: 611px) {
-	.wct23_section-intro {
-		min-height: 78rem;
-	}
-}
-
-@media only screen and (max-width: 488px) {
-	.wct23_section-intro {
-		min-height: 76rem;
-	}
-}
-
-@media only screen and (max-width: 481px) {
-	.wct23_section-intro {
-		min-height: 78.5rem;
-	}
-}
-
-@media only screen and (max-width: 436px) {
-	.wct23_image img {
-		top: -7vh !important;
-	}
-}
-
-@media only screen and (max-width: 388px) {
-
-	.wct23_section-intro {
-		min-height: 82.5rem;
-	}
-} */
-
 @media only screen and (max-width: 375px) {
-	/* .wct23_section-intro {
-		min-height: 82rem;
-	} */
-
 	.wct23_text-content {
 		margin: 0 auto;
 		padding: 0 5%;
 	}
 }
-
-/* @media only screen and (max-width: 363px) {
-	.wct23_section-intro {
-		min-height: 82rem;
-	}
-} */
 
 
 /**
@@ -1092,7 +1034,6 @@ time {
 * ------ooO-(_)-Ooo------
 *       3.3 PREGONES
 */
-
 .wct23_section-pregones {
 	overflow: hidden;
 }
@@ -1409,7 +1350,6 @@ a.more-link::after {
 	}
 }
 
-
 @media only screen and (max-width: 700px) {
 	.wct23_section-suscribete {
 		padding: 2% 0 !important;
@@ -1461,8 +1401,6 @@ a.more-link::after {
 .post-slug-llamada-a-patrocinadores.singular .has-post-thumbnail .entry-header {
 	padding-bottom: 0
 }
-
-
 
 .wct23_section-patrocinadores {
 	background-color: #fff7da;
@@ -1556,7 +1494,6 @@ a.more-link::after {
 }
 
 @media only screen and (max-width: 480px) {
-
 	.patrocinador {
 		margin: 0 auto !important;
 	}
@@ -1580,7 +1517,6 @@ a.more-link::after {
 .page .site-footer {
 	display: none !important;
 }
-
 
 .widget-area {
 	grid-template-columns: 1fr;
@@ -1686,7 +1622,6 @@ article.wordcamp-organizers p {
 	margin-bottom: 1em !important;
 }
 
-
 .wp-block-social-links.is-style-logos-only .wp-social-link,
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link {
 	background: none;
@@ -1705,7 +1640,6 @@ article.wordcamp-organizers p {
 	top: 0;
 	text-align: left;
 }
-
 
 .wordcamp-organizers li img,
 .page-slug-voluntarios section.wct23_section-organizer img {
@@ -1751,7 +1685,6 @@ article.wordcamp-organizers p {
 	color: #0F3A4A;
 }
 
-
 .wordcamp-organizers li .wordcamp-image__avatar-container {
 	margin-right: 2%;
 	width: 25%;
@@ -1763,7 +1696,6 @@ article.wordcamp-organizers p {
 	float: right;
 }
 
-
 @media only screen and (max-width: 1280px) {
 	.wct23_section-organizer .wct23_title-h2 {
 		font-size: 2rem;
@@ -1772,7 +1704,6 @@ article.wordcamp-organizers p {
 
 @media only screen and (max-width: 967px) {
 	.wct23_section-organizer {
-		/* margin-bottom: 30%; */
 		padding: 0 10%;
 	}
 }
@@ -1781,7 +1712,6 @@ article.wordcamp-organizers p {
 	.wct23_section-organizer {
 		padding: 0 4%;
 	}
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -1796,9 +1726,7 @@ article.wordcamp-organizers p {
 
 	.wordcamp-organizers li .wordcamp-image__avatar-container {
 		margin-right: 4%;
-		align-content
 	}
-
 }
 
 
@@ -1806,23 +1734,6 @@ article.wordcamp-organizers p {
 *▂ ▃ ▅ ▆ █ 7. Plantilla LOCALIZACION █ ▆ ▅ ▃ ▂
 *
 */
-
-/* posicionamos el wabalie */
-/* .wct23_section-hero-localizacion .wct23_hero_2 .wp-block-media-text__media img {
-	right: 1%;
-	bottom: 0;
-	position: relative;
-	z-index: 10;
-}
-
-.wct23_section-hero-localizacion .wct23_title-h1 {
-	font-size: 5rem;
-}
-
-.wct23_section-hero-localizacion .wct23_hero-2-content {
-	padding-left: 6rem !important;
-} */
-
 .wct23_localizacion .wct23_fecha_font_primary,
 .wct23_localizacion .wct23_evento_font_primary {
 	font-family: 'Metamorphous' !important;
@@ -1842,12 +1753,6 @@ article.wordcamp-organizers p {
 	background-color: transparent !important;
 }
 
-/* @media only screen and (max-width: 1419px) {
-	.wct23_section-hero-localizacion .wct23_title-h1 {
-		font-size: 4rem;
-	}
-} */
-
 @media only screen and (max-width: 1200px) {
 	.wct23_localizacion {
 		padding: 0 10% 5%;
@@ -1855,37 +1760,10 @@ article.wordcamp-organizers p {
 }
 
 
-/* @media only screen and (max-width: 1185px) {
-	.wct23_section-hero-localizacion .wct23_title-h1 {
-		font-size: 3.6rem;
-	}
-} */
-
-/* @media only screen and (max-width: 1100px) {
-	.wct23_section-hero-localizacion .wct23_title-h1 {
-		font-size: 3rem;
-	}
-} */
-
-/* @media only screen and (max-width: 970px) {
-	.wct23_section-hero-localizacion .wct23_hero-2-content {
-		padding-left: 4rem !important;
-	}
-} */
-
-/* @media only screen and (max-width: 915px) {
-	.wct23_section-hero-localizacion .wct23_title-h1 {
-		font-size: 2.6rem;
-		top: -.2em;
-	}
-} */
-
-
 /**
 *▂ ▃ ▅ ▆ █ 8. Plantilla ASISTENTES █ ▆ ▅ ▃ ▂
 *
 */
-
 .wct23_section-hero-asistentes .wct23_hero_2 .wp-block-media-text__media img {
 	max-width: 55%;
 	right: 1%;
@@ -1908,7 +1786,6 @@ article.wordcamp-organizers p {
 	white-space: nowrap;
 	text-align: right;
 }
-
 
 #tix {
 	padding-top: 5%;
@@ -1974,7 +1851,6 @@ ul[class^='tix-columns']>li {
 	color: #0F0;
 }
 
-
 #tix input[type=submit],
 .tix-checkout-button {
 	color: #0f3a4a;
@@ -1991,7 +1867,6 @@ ul[class^='tix-columns']>li {
 	margin: .5em
 }
 
-
 table.tix_tickets_table td,
 table.tix_tickets_table th {
 	border: 1px solid #ccc;
@@ -2002,7 +1877,6 @@ table.tix_tickets_table th {
 table.tix_tickets_table thead th {
 	background: #ccc;
 }
-
 
 table td,
 table th,
@@ -2149,11 +2023,11 @@ tr.tix-row-total td {
 	}
 }
 
+
 /**
 *▂ ▃ ▅ ▆ █ 10. Plantilla 'AUTORES' █ ▆ ▅ ▃ ▂
 *
 */
-
 .author main.site-main>*:first-child {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -2225,6 +2099,7 @@ h4.wordcamp-schedule__session-title {
 .page-slug-programa h2.wordcamp-schedule__date {
 	display: none;
 }
+
 
 /**
 *▂ ▃ ▅ ▆ █ 12. Plantilla 'SESIONES' █ ▆ ▅ ▃ ▂
