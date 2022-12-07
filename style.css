@@ -1012,7 +1012,7 @@ time {
 		min-height: 73rem;
 	}
 
-	.wct23_image {
+/*	.wct23_image {
 		position: inherit;
 		z-index: 1;
 		order: 2;
@@ -2207,15 +2207,7 @@ tr.tix-row-total td {
 	.tix-receipt-form textarea {
 		width: 98%;
 	}
-
-
-
-
 }
-
-
-
-
 
 /**
 *▂ ▃ ▅ ▆ █ 10. Plantilla 'AUTORES' █ ▆ ▅ ▃ ▂
