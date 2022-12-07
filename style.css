@@ -292,7 +292,6 @@ header .entry-title {
 	}
 }
 
-
 @media only screen and (max-width: 915px) {
 	.nube_kinton img {
 		max-width: 50%;
@@ -386,8 +385,10 @@ input[type=reset],
 }
 
 @media only screen and (max-width: 480px) {
-	.wct23_sponsors {
-		padding: 0;
+
+	.wct23_sponsors,
+	.wct23_section-organizer {
+		padding: 0 5% !important;
 	}
 }
 
@@ -1447,8 +1448,7 @@ a.more-link::after {
 	border: 3px dashed #FFF7DA !important;
 }
 
-.listado-patrocinadores img:hover,
-.listado-patrocinadores_bg-Azul img:hover {
+.listado-patrocinadores img:hover {
 	filter: opacity(.5);
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
@@ -1750,9 +1750,9 @@ article.wordcamp-organizers p {
 	background-color: #82EEFD !important;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 480px) {
 	.wct23_localizacion {
-		padding: 0 10% 5%;
+		padding: 0 5% 5%;
 	}
 }
 
@@ -1850,7 +1850,7 @@ ul[class^='tix-columns']>li {
 
 #tix input[type=submit],
 .tix-checkout-button {
-	color: #0f3a4a;
+	color: #0F3A4A !important;
 	background-color: #ffd200;
 	border: 3px solid #0F3A4A !important;
 	margin: 3rem 0 !important;
