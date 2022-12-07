@@ -380,7 +380,6 @@ input[type=reset],
 .wct23_sponsors,
 .wct23_section-organizer {
 	padding: 0 15% !important;
-	/* background-color: #fff7da; */
 }
 
 .post-thumbnail .wp-post-image {
@@ -1445,6 +1444,10 @@ a.more-link::after {
 	border: 3px dashed #82EEFD;
 }
 
+.listado-patrocinadores_bg-Azul img {
+	border: 3px dashed #FFF7DA !important;
+}
+
 .listado-patrocinadores img:hover {
 	filter: opacity(.5);
 	-webkit-transform: scale(1.3);
@@ -1457,7 +1460,6 @@ a.more-link::after {
 
 .listado-patrocinadores-globales>div,
 .listado-patrocinadores-oro>div {
-	/*grid-auto-rows: 15rem;*/
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
 }
 
