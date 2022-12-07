@@ -1752,7 +1752,7 @@ article.wordcamp-organizers p {
 
 @media only screen and (max-width: 480px) {
 	.wct23_localizacion {
-		padding: 0 5% 5%;
+		padding: 0 5% 5% !important;
 	}
 }
 
