@@ -14,7 +14,6 @@
  *                      3.2 Intro
  *                      3.3 Pregones
  *                  4. Bloques Reutilizables:
- *                     Plantillas - (HOME, LOCALIZACION, LLAMADA PATROCINADORES, ORGANIZADORES)
  *                      4.1 Participa
  *                      4.2 Suscribete
  *                      4.3 Patrocinadores
@@ -26,6 +25,7 @@
  *                 10. Plantilla 'AUTORES'
  *                 11. Plantilla 'PROGRAMAS'
  *                 12. Plantilla 'SESIONES'
+ *                 13. Post 'LLAMADA A PATROCINADORES'
  *                                                                            oooO
  *                                                                           (....)     Oooo
  *                                                                             ...(     (....)
@@ -379,8 +379,8 @@ input[type=reset],
 
 .wct23_sponsors,
 .wct23_section-organizer {
-	padding: 0 15%;
-	background-color: #fff7da;
+	padding: 0 15% !important;
+	/* background-color: #fff7da; */
 }
 
 .post-thumbnail .wp-post-image {
@@ -1396,23 +1396,17 @@ a.more-link::after {
 * ------ooO-(_)-Ooo------
 *    4.3 PATROCINADORES
 */
-
-/* Eliminamos espacio inferior de la imagen destacada de LLamadas a Patrocinadores */
-.post-slug-llamada-a-patrocinadores.singular .has-post-thumbnail .entry-header {
-	padding-bottom: 0
-}
-
-.wct23_section-patrocinadores {
+/* .wct23_section-patrocinadores {
 	background-color: #fff7da;
 	overflow: hidden;
-}
+} */
 
 /*Se elimina el color FFF7DA (Amarillo) de la plantilla 'Localizacion' para que se muestre el background-color de la plantilla 82EEFD (azul)*/
-.page-slug-localizacion .wct23_section-patrocinadores {
+/* .page-slug-localizacion .wct23_section-patrocinadores {
 	background-color: initial !important;
-}
+} */
 
-.wct23_patrocinadores-group {
+/* .wct23_patrocinadores-group {
 	margin-bottom: 80px !important;
 }
 
@@ -1422,9 +1416,9 @@ a.more-link::after {
 
 .wct23_patrocinadores-group-logotipos {
 	margin-top: 32px !important;
-}
+} */
 
-.wct23_sponsors ul {
+/* .wct23_sponsors ul {
 	max-width: 100% !important;
 	padding: 0;
 	margin: 0 !important;
@@ -1432,7 +1426,7 @@ a.more-link::after {
 
 .wordcamp-sponsors>li {
 	margin: 0 0 5em !important;
-}
+} */
 
 /* Patrocinadores */
 .listado-patrocinadores>div {
@@ -1499,11 +1493,11 @@ a.more-link::after {
 	}
 }
 
+
 /**
 *▂ ▃ ▅ ▆ █ 5. FOOTER █ ▆ ▅ ▃ ▂
 *
 */
-
 .site-footer {
 	padding-bottom: 0;
 }
@@ -2111,4 +2105,14 @@ h4.wordcamp-schedule__session-title {
 	margin: 10rem 0;
 	text-align: center;
 	font-size: 3.5rem !important;
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 13. POST 'LLAMADA A PATROCINADORES' █ ▆ ▅ ▃ ▂
+*
+*/
+/* Eliminamos espacio inferior de la imagen destacada de LLamadas a Patrocinadores */
+.post-slug-llamada-a-patrocinadores.singular .has-post-thumbnail .entry-header {
+	padding-bottom: 0
 }
