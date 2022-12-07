@@ -1447,7 +1447,8 @@ a.more-link::after {
 	border: 3px dashed #FFF7DA !important;
 }
 
-.listado-patrocinadores img:hover {
+.listado-patrocinadores img:hover,
+.listado-patrocinadores_bg-Azul img:hover {
 	filter: opacity(.5);
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
