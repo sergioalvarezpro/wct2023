@@ -87,6 +87,11 @@
 	box-sizing: border-box;
 }
 
+html,
+body {
+	overflow-x: hidden;
+}
+
 body {
 	width: 100%;
 	min-height: 100vh;
@@ -265,7 +270,7 @@ header .entry-title {
 .page header .entry-title {
 	margin-top: 2em;
 	width: 100%;
-	font-size: 3em;
+	font-size: clamp(2.7rem, 2.05vw + 2rem, 6rem);
 }
 
 /* Anuncios */
@@ -593,7 +598,6 @@ header.entry-header {
 	.site-header .site-branding {
 		position: absolute;
 		z-index: 50;
-		top: 0;
 		left: 10.125rem;
 		margin-top: 0;
 	}
