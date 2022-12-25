@@ -443,7 +443,7 @@ input[type=reset],
 /* posicionamos el titulo, este no aplica a la página Home */
 .wct23_titulo-hero {
 	margin-left: 7vw;
-	margin-top: 9vh;
+	margin-top: 9vh !important;
 	position: relative;
 }
 
