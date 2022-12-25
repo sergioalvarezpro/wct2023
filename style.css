@@ -120,7 +120,7 @@ h2,
 h3,
 h4 {
 	font-family: 'Metamorphous' !important;
-	line-height: 1.15em !important;
+	line-height: 1.3em !important;
 }
 
 /* Colores de los enlaces */
@@ -443,13 +443,8 @@ input[type=reset],
 /* posicionamos el titulo, este no aplica a la página Home */
 .wct23_titulo-hero {
 	margin-left: 7vw;
+	margin-top: 9vh;
 	position: relative;
-}
-
-@media only screen and (max-width: 781px) {
-	.wct23_titulo-hero {
-		margin-top: 9vh !important;
-	}
 }
 
 @media only screen and (max-width: 380px) {
