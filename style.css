@@ -1592,7 +1592,7 @@ a.more-link::after {
 	}
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
 
 	.wct23_footer {
 		height: 253px;
@@ -1601,15 +1601,17 @@ a.more-link::after {
 	.wct23_footer-group p:last-child {
 		margin-right: 0;
 	}
-}
+} */
 
 @media only screen and (max-width: 600px) {
 
-	.wct23_footer-group p {
-		margin-right: 0;
+	.wct23_footer-group {
+		margin-right: 40px;
 		width: 100vw;
 		text-align: end;
 	}
+
+
 }
 
 
