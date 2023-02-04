@@ -385,7 +385,7 @@ input[type=reset],
 
 /* margin-bottom para separar los navegadores de los posts con el footer */
 .post-navigation {
-	margin-bottom: 150px;
+	margin-bottom: 150px !important;
 }
 
 @media only screen and (max-width: 480px) {
