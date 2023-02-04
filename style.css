@@ -1155,18 +1155,18 @@ a.more-link::after {
 
 /*Sólo aplica a la página HOME*/
 .home .wct23_section-participa {
-	margin-top: -26vh !important;
+	margin-top: -14vh !important;
 }
 
 @media only screen and (max-width: 1550px) {
 	.home .wct23_section-participa {
-		margin-top: -13vh !important;
+		margin-top: -8vh !important;
 	}
 }
 
 @media only screen and (max-width: 1390px) {
 	.home .wct23_section-participa {
-		margin-top: -9vh !important;
+		margin-top: -5vh !important;
 	}
 }
 
