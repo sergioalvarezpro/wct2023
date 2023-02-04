@@ -1526,7 +1526,7 @@ a.more-link::after {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 273px;
+	/* height: 273px; */
 	background-color: #0F3A4A;
 	/* clip-path: polygon(100% 0, 0% 100%, 100% 100%); */
 }
@@ -1546,7 +1546,7 @@ a.more-link::after {
 }
 
 .wct23_footer-group p:last-child {
-	margin-right: 120px;
+	margin-right: 0;
 }
 
 .wct23_footer-group .wct23_footer-text a {
@@ -1554,33 +1554,33 @@ a.more-link::after {
 	color: #FFF7DA !important;
 }
 
+.wct23_footer-social-icon svg {
+	color: #FFF7DA !important;
+}
 
 /* Incluimos la almena en el footer */
 .wct23_almena-footer {
 	width: 100%;
 	overflow: hidden;
-	border-bottom: 6rem solid black;
-	border-bottom-style: solid;
+	border-top: 6rem solid black;
+	border-top-style: solid;
 	border-image-source: url('https://torrelodones.wordcamp.org/2023/files/2023/02/banda-torre_azul.png');
-	border-image-slice: 160;
-	border-image-outset: .01;
+	border-image-slice: 320;
+	border-image-outset: 1.0;
 	border-image-repeat: round;
 }
 
 @media only screen and (max-width: 787px) {
 	.wct23_almena-footer {
-		border-bottom: 4rem solid black !important;
+		border-top: 4rem solid black !important;
 	}
 }
 
 @media only screen and (max-width: 433px) {
 	.wct23_almena-footer {
-		border-bottom: 2rem solid black !important;
+		border-top: 2rem solid black !important;
 	}
 }
-
-
-
 
 @media only screen and (max-width: 1200px) {
 	.wct23_footer-group {
