@@ -1554,6 +1554,10 @@ a.more-link::after {
 	color: #FFF7DA !important;
 }
 
+.wct23_footer-group-social-icon {
+	max-width: max-content !important;
+}
+
 .wct23_footer-social-icon svg {
 	color: #FFF7DA !important;
 }
@@ -1605,13 +1609,11 @@ a.more-link::after {
 
 @media only screen and (max-width: 600px) {
 
-	.wct23_footer-group {
+	.wct23_footer-group p {
 		margin-right: 40px;
 		width: 100vw;
 		text-align: end;
 	}
-
-
 }
 
 
