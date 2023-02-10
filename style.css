@@ -2189,17 +2189,31 @@ h4.wordcamp-schedule__session-title {
 	margin-bottom: 2vh !important;
 }
 
+/* Alineación nombre ponente en la página de la ponencia */
+ul#session-speaker-names {
+	max-width: var(--responsive--aligndefault-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul#session-speaker-names li {
+	margin-left: -2.5em;
+}
+
+/* Quitar el padding en el nombre del ponente en la tabla del Programa */
+dl.wordcamp-schedule__session-speakers dd a {
+	margin-left: -2.5em;
+}
+
 @media only screen and (max-width: 781px) {
-	.wcb_speaker header h1,
-												  .wcb_session-template-default.singular .entry-title {
+	.wcb_speaker header h1, .wcb_session-template-default.singular .entry-title {
 		margin-top: 18vh !important;
 		margin-left: 0 !important;
 	}
 }
 
 @media only screen and (max-width: 482px) {
-	.wcb_speaker header h1,
-							.wcb_session-template-default.singular .entry-title {
+	.wcb_speaker header h1, .wcb_session-template-default.singular .entry-title {
 		margin-top: 14vh !important;
 	}
 }
