@@ -1941,6 +1941,11 @@ table th,
 	border-top: 1px solid #ccc;
 }
 
+/* para que las facturas no queden por debajo de las almenas del footer */
+.page-slug-entradas form#tix_checkout_form{
+	padding-bottom:13em;
+}
+
 @media (max-width: 737px) {
 
 	/*el mosaico de asistentes en columna*/
