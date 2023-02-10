@@ -26,6 +26,7 @@
  *                 11. Plantilla 'PROGRAMAS'
  *                 12. Plantilla 'SESIONES'
  *                 13. Post 'LLAMADA A PATROCINADORES'
+ *                 14. Post 'PONENTES'
  *                                                                            oooO
  *                                                                           (....)     Oooo
  *                                                                             ...(     (....)
@@ -2168,4 +2169,37 @@ h4.wordcamp-schedule__session-title {
 /* Eliminamos espacio inferior de la imagen destacada de LLamadas a Patrocinadores */
 .post-slug-llamada-a-patrocinadores.singular .has-post-thumbnail .entry-header {
 	padding-bottom: 0
+}
+
+
+/**
+*▂ ▃ ▅ ▆ █ 14. POST 'PONENTES' █ ▆ ▅ ▃ ▂
+*
+*/
+/* TITULOS PONENTES */
+.wcb_speaker header h1 {
+	margin-left: 7vw;
+	position: relative;
+	margin-top: 14vh !important;
+}
+
+/* TITULO PONENCIA */
+.wcb_session-template-default.singular .entry-title {
+	font-size: clamp(2.3rem, 2.05vw + 2rem, 6rem) !important;
+	margin-bottom: 2vh !important;
+}
+
+@media only screen and (max-width: 781px) {
+	.wcb_speaker header h1,
+												  .wcb_session-template-default.singular .entry-title {
+		margin-top: 18vh !important;
+		margin-left: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 482px) {
+	.wcb_speaker header h1,
+							.wcb_session-template-default.singular .entry-title {
+		margin-top: 14vh !important;
+	}
 }
