@@ -1695,6 +1695,7 @@ article.wordcamp-organizers p {
 }
 
 .wordcamp-organizers li img,
+.wordcamp-speakers li img,
 .page-slug-voluntarios section.wct23_section-organizer img {
 	max-width: 150px;
 	position: relative;
@@ -1712,6 +1713,7 @@ article.wordcamp-organizers p {
 }
 
 .wordcamp-organizers li img:hover,
+.wordcamp-speakers li img:hover,
 .page-slug-voluntarios section.wct23_section-organizer img:hover {
 	-moz-transform: scale(1.25);
 	-ms-transform: scale(1.25);
