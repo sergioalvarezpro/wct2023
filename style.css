@@ -2184,6 +2184,13 @@ h4.wordcamp-schedule__session-title {
 *▂ ▃ ▅ ▆ █ 14. POST 'PONENTES' █ ▆ ▅ ▃ ▂
 *
 */
+
+.wordcamp-speakers {
+	padding: 0;
+}
+
+
+
 /* TITULOS PONENTES */
 .wcb_speaker header h1 {
 	margin-left: 7vw;
