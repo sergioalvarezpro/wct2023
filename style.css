@@ -1495,6 +1495,39 @@ a.more-link::after {
 	}
 }
 
+/******* SPONSORS  / LOGO  ********/
+.patrocinador.patrocinador-bronce {
+/*quitar cuando haya mas bronces */
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.single-wcb_sponsor .entry-title {
+	visibility: hidden;
+}
+
+.single-wcb_sponsor .entry-header figure {
+	margin-top: 7rem;
+}
+
+@media only screen and (max-width: 480px) {
+	.single-wcb_sponsor .entry-header figure {
+		margin-top: 4rem;
+	}
+}
+
+/*tamaño img sponsor plata, bronce y ludoteca */
+#plata .patrocinador img {
+	max-width: 80%;
+}
+
+#bronce .patrocinador img {
+	max-width: 50%;
+}
+
+.patrocinador.patrocinador-ludoteca img {
+	max-width: 70%;
+}
 
 /**
 *▂ ▃ ▅ ▆ █ 5. FOOTER █ ▆ ▅ ▃ ▂
