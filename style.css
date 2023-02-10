@@ -223,7 +223,8 @@ h2.entry-title {
 h3,
 .author header.page-header h3,
 .wp-block-latest-posts>li>a {
-	font-size: clamp(1.25rem, 0.259vw + 1.189rem, 1.5rem);
+	/*font-size: clamp(1.25rem, 0.259vw + 1.189rem, 1.5rem);*/
+	font-weight: 700;
 	line-height: clamp(1.438rem, 0.22vw + 1.386rem, 1.65rem);
 }
 
@@ -1048,6 +1049,10 @@ time {
 
 .wct23_group-maspregones {
 	flex-wrap: wrap !important;
+}
+
+.home .wp-block-latest-posts__featured-image.aligncenter {
+	margin-bottom: 0;
 }
 
 /*Botón con enlace a ver más pregones*/
