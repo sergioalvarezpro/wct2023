@@ -1958,6 +1958,18 @@ tr.tix-row-total td {
 	text-align: right
 }
 
+/*estilos para los campos de la factura en tamaños menores a a 1120px */
+@media only screen and (max-width: 1120px) {
+	.camptix-invoice-toggle-wrapper{
+		width:99%
+	}
+
+	.camptix-invoice-toggle-wrapper input[type="text"], .camptix-invoice-toggle-wrapper textarea
+	{
+		width: 90%;
+	}
+}
+
 /* CSS para la tabla de la venta de entradas */
 @media screen and (max-width: 600px) {
 
