@@ -1524,11 +1524,11 @@ a.more-link::after {
 
 /*tamaño img sponsor plata, bronce y ludoteca */
 #plata .patrocinador img {
-	max-width: 80%;
+	max-width: 90%;
 }
 
 #bronce .patrocinador img {
-	max-width: 50%;
+	max-width: 80%;
 }
 
 .patrocinador.patrocinador-ludoteca img {
