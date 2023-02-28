@@ -1697,8 +1697,7 @@ article.wordcamp-organizers p {
 
 .wordcamp-organizers li img,
 .wordcamp-speakers li img,
-.page-slug-voluntarios section.wct23_section-organizer img,
-.wcb_speaker .speaker-avatar img {
+.page-slug-voluntarios section.wct23_section-organizer img {
 	max-width: 150px;
 	position: relative;
 	top: 0;
@@ -1712,6 +1711,21 @@ article.wordcamp-organizers p {
 	-ms-transition: all .5s ease;
 	filter: saturate(100%);
 	float: left;
+}
+
+.wcb_speaker .speaker-avatar img {
+	max-width: 150px;
+	position: relative;
+	top: 0;
+	margin: 0 1em 1em 0;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	border: 2px solid #82EEFD;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	filter: saturate(100%);
 }
 
 .wordcamp-organizers li img:hover,
