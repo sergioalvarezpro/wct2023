@@ -1717,7 +1717,7 @@ article.wordcamp-organizers p {
 	max-width: 150px;
 	position: relative;
 	top: 0;
-	margin: 0 1em 1em 0;
+	margin: 2em 0 2em 0;
 	width: 100%;
 	height: auto;
 	border-radius: 50%;
@@ -1797,6 +1797,12 @@ article.wordcamp-organizers p {
 
 	.wordcamp-organizers li .wordcamp-image__avatar-container {
 		margin-right: 4%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.wcb_speaker .speaker-avatar {
+		text-align: center;
 	}
 }
 
