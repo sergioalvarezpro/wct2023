@@ -1503,7 +1503,7 @@ a.more-link::after {
 
 /******* SPONSORS  / LOGO  ********/
 .patrocinador.patrocinador-bronce {
-/*quitar cuando haya mas bronces */
+	/*quitar cuando haya mas bronces */
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
@@ -1697,7 +1697,8 @@ article.wordcamp-organizers p {
 
 .wordcamp-organizers li img,
 .wordcamp-speakers li img,
-.page-slug-voluntarios section.wct23_section-organizer img {
+.page-slug-voluntarios section.wct23_section-organizer img,
+.wcb_speaker .speaker-avatar img {
 	max-width: 150px;
 	position: relative;
 	top: 0;
@@ -1942,8 +1943,8 @@ table th,
 }
 
 /* para que las facturas no queden por debajo de las almenas del footer */
-.page-slug-entradas form#tix_checkout_form{
-	padding-bottom:13em;
+.page-slug-entradas form#tix_checkout_form {
+	padding-bottom: 13em;
 }
 
 @media (max-width: 737px) {
@@ -1960,12 +1961,12 @@ tr.tix-row-total td {
 
 /*estilos para los campos de la factura en tamaños menores a a 1120px */
 @media only screen and (max-width: 1120px) {
-	.camptix-invoice-toggle-wrapper{
-		width:99%
+	.camptix-invoice-toggle-wrapper {
+		width: 99%
 	}
 
-	.camptix-invoice-toggle-wrapper input[type="text"], .camptix-invoice-toggle-wrapper textarea
-	{
+	.camptix-invoice-toggle-wrapper input[type="text"],
+	.camptix-invoice-toggle-wrapper textarea {
 		width: 90%;
 	}
 }
@@ -2246,14 +2247,18 @@ dl.wordcamp-schedule__session-speakers dd a {
 }
 
 @media only screen and (max-width: 781px) {
-	.wcb_speaker header h1, .wcb_session-template-default.singular .entry-title {
+
+	.wcb_speaker header h1,
+	.wcb_session-template-default.singular .entry-title {
 		margin-top: 18vh !important;
 		margin-left: 0 !important;
 	}
 }
 
 @media only screen and (max-width: 482px) {
-	.wcb_speaker header h1, .wcb_session-template-default.singular .entry-title {
+
+	.wcb_speaker header h1,
+	.wcb_session-template-default.singular .entry-title {
 		margin-top: 14vh !important;
 	}
 }
